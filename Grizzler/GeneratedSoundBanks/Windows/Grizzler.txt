@@ -1,0 +1,18 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1580062387	StopMoving			\PlayerEvents\StopMoving	
+	3315242463	GrizzlerMovement			\PlayerEvents\GrizzlerMovement	
+	3807729250	BeginMoving			\PlayerEvents\BeginMoving	
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	1446210263	WheelSurface			\Player\WheelSurface	
+	1493153371	PlayerSpeed			\Player\PlayerSpeed	
+	3610741985	Player_Load			\Player\Player_Load	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	20269213	StopEvent	D:\Unity Projects\Grizzler Implementation\Grizzler\.cache\Windows\SFX\Player\Locomotion\Vehicles\Grizzler\StopEvent_10C4C929.wem		\Actor-Mixer Hierarchy\Player_Driven_Sounds\Player_Locomotion\Player_Vehicles\Grizzler\Imported Assets\StopEvent		768192
+	98987776	Idle	D:\Unity Projects\Grizzler Implementation\Grizzler\.cache\Windows\SFX\Player\Locomotion\Vehicles\Grizzler\Idle_D9611FCD.wem		\Actor-Mixer Hierarchy\Player_Driven_Sounds\Player_Locomotion\Player_Vehicles\Grizzler\Grizzler Blend Container\Idle		363388
+	144582377	Begin Moving	D:\Unity Projects\Grizzler Implementation\Grizzler\.cache\Windows\SFX\Player\Locomotion\Vehicles\Grizzler\Begin Moving_10C4C929.wem		\Actor-Mixer Hierarchy\Player_Driven_Sounds\Player_Locomotion\Player_Vehicles\Grizzler\Imported Assets\Begin Moving		384208
+	385143876	Wheels_On_Concrete	D:\Unity Projects\Grizzler Implementation\Grizzler\.cache\Windows\SFX\Player\Locomotion\Vehicles\Grizzler\Wheels_On_Metal__D79FB2B7.wem		\Actor-Mixer Hierarchy\Player_Driven_Sounds\Player_Locomotion\Player_Vehicles\Grizzler\Grizzler Blend Container\Wheels_On_Concrete		384192
+	554176368	Wheels_On_Metal	D:\Unity Projects\Grizzler Implementation\Grizzler\.cache\Windows\SFX\Player\Locomotion\Vehicles\Grizzler\Wheels_On_Concree_D79FB2B7.wem		\Actor-Mixer Hierarchy\Player_Driven_Sounds\Player_Locomotion\Player_Vehicles\Grizzler\Grizzler Blend Container\Wheels_On_Metal		384208
+	638871171	MoveLoop_OnLoad	D:\Unity Projects\Grizzler Implementation\Grizzler\.cache\Windows\SFX\Player\Locomotion\Vehicles\Grizzler\MoveLoop_D0285A3C.wem		\Actor-Mixer Hierarchy\Player_Driven_Sounds\Player_Locomotion\Player_Vehicles\Grizzler\Grizzler Blend Container\MoveLoop_OnLoad		366292
+

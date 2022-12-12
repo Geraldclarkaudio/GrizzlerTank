@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{AE25431F-4C75-4404-91A6-2B27C7D9F689}" SchemaVersion="110">
+	<SoundBanks>
+		<WorkUnit Name="GrizzlerTankBank" ID="{AE25431F-4C75-4404-91A6-2B27C7D9F689}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="Grizzler" ID="{076FCCAF-746B-4306-8242-68D176804272}">
+					<ObjectInclusionList>
+						<ObjectRef Name="PlayerEvents" ID="{85A4C27F-005B-4269-A282-AE929AB4BB7B}" WorkUnitID="{85A4C27F-005B-4269-A282-AE929AB4BB7B}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundBanks>
+</WwiseDocument>

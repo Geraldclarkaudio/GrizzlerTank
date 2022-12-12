@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2bae0205680eb3742a2b742ef5c226d8, type: 3}
+  m_Name: DC855666-1EF9-4244-A312-E6709A6D0A1C
+  m_EditorClassIdentifier: 
+  objectName: Player_Load
+  id: 3610741985
+  guid: DC855666-1EF9-4244-A312-E6709A6D0A1C

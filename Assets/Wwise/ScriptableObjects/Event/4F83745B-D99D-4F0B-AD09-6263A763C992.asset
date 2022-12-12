@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92f9639dab3c49844be60b09c23acf4f, type: 3}
+  m_Name: 4F83745B-D99D-4F0B-AD09-6263A763C992
+  m_EditorClassIdentifier: 
+  objectName: StopMoving
+  id: 1580062387
+  guid: 4F83745B-D99D-4F0B-AD09-6263A763C992
