@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{9558C0EF-9527-4BAE-97B4-67355677D648}" SchemaVersion="110">
+	<GameParameters>
+		<WorkUnit Name="Misc" ID="{9558C0EF-9527-4BAE-97B4-67355677D648}" PersistMode="Standalone">
+			<ChildrenList>
+				<WorkUnit Name="Factory Soundseed Grain" ID="{0BCBBD97-7751-4A77-85BB-6AC940F8CC3F}" PersistMode="Reference"/>
+				<WorkUnit Name="Factory Soundseed Air Game Syncs" ID="{3B167755-FB42-458B-98BF-96F557AFB3B9}" PersistMode="Reference"/>
+				<WorkUnit Name="Factory Igniter Live Game Syncs" ID="{9B7BCB7B-72BA-4291-B504-77F748886EA4}" PersistMode="Reference"/>
+				<WorkUnit Name="Factory Igniter Live Synth Game Syncs" ID="{82E46A00-2047-48F9-92D4-01684C1325F6}" PersistMode="Reference"/>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>

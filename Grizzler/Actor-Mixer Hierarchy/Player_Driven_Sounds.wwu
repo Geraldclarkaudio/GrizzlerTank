@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{4A553AFE-4AAB-4E0B-AEBA-5BD41DCAE664}" SchemaVersion="110">
+	<AudioObjects>
+		<WorkUnit Name="Player_Driven_Sounds" ID="{4A553AFE-4AAB-4E0B-AEBA-5BD41DCAE664}" PersistMode="Standalone">
+			<ChildrenList>
+				<WorkUnit Name="Player_Locomotion" ID="{D6570597-4EB1-4BC1-882E-3395C256DB77}" PersistMode="Reference"/>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{3817A49C-46CE-4F8C-8E3A-BBF29DBA184B}" SchemaVersion="110">
+	<SoundcasterSessions>
+		<WorkUnit Name="Vehicle Session" ID="{3817A49C-46CE-4F8C-8E3A-BBF29DBA184B}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="Grizzler" ID="{ACD96C63-2285-4953-B5E1-168214C7BDE0}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="BeginMoving" ID="{2B80BE1C-F7C8-4683-AD85-ED647B27A29C}" WorkUnitID="{85A4C27F-005B-4269-A282-AE929AB4BB7B}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="GrizzlerMovement" ID="{7591BFC3-3D08-4C44-AC75-F0A1A6B10776}" WorkUnitID="{85A4C27F-005B-4269-A282-AE929AB4BB7B}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="StopMoving" ID="{4F83745B-D99D-4F0B-AD09-6263A763C992}" WorkUnitID="{85A4C27F-005B-4269-A282-AE929AB4BB7B}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="Player_Load" ID="{DC855666-1EF9-4244-A312-E6709A6D0A1C}"/>
+							<Value>1</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="WheelSurface" ID="{A3AEDCC8-BDCF-4406-97C6-CD2F2A371E0B}"/>
+							<Value>1</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="PlayerSpeed" ID="{FD740967-E193-465C-9D02-E5B4F2E93EC3}"/>
+							<Value>25</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true"/>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundcasterSessions>
+</WwiseDocument>

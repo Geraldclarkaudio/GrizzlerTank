@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{3948FE54-F7E5-45B6-AD95-0D1593D6B278}" SchemaVersion="110">
+	<AudioObjects>
+		<WorkUnit Name="Misc" ID="{3948FE54-F7E5-45B6-AD95-0D1593D6B278}" PersistMode="Standalone">
+			<ChildrenList>
+				<WorkUnit Name="Factory Soundseed Grain" ID="{AFC59BDA-7F7C-40EB-BE11-A2FACB2CC1B8}" PersistMode="Reference"/>
+				<WorkUnit Name="Factory Igniter Live Synth" ID="{34441EDA-00B9-4B32-AF85-E1EDB098C997}" PersistMode="Reference"/>
+				<WorkUnit Name="Factory Igniter Live" ID="{50640BE0-79CC-43FE-8333-0450A1AE6626}" PersistMode="Reference"/>
+				<WorkUnit Name="Factory Soundseed Air Objects" ID="{BB5DD793-F285-4F74-8D1D-DF7A4B893280}" PersistMode="Reference"/>
+				<WorkUnit Name="Factory Synth One" ID="{D9329DB3-E4D7-45AA-BD40-6EB28C6C4D39}" PersistMode="Reference"/>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

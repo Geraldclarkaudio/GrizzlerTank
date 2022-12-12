@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{81279BA2-8A0E-47D6-A112-99F5CC6B8F72}" SchemaVersion="110">
+	<Switches>
+		<WorkUnit Name="PlayerDriven" ID="{81279BA2-8A0E-47D6-A112-99F5CC6B8F72}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchGroup Name="SurfaceType" ID="{82F337CB-5DA6-4464-98B5-440463210958}">
+					<ChildrenList>
+						<Switch Name="Metal" ID="{C88295FD-54D3-40EA-A433-8BFED5621460}"/>
+						<Switch Name="Concrete" ID="{1102A276-BF6E-4751-B510-98811A05FC15}"/>
+					</ChildrenList>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</Switches>
+</WwiseDocument>

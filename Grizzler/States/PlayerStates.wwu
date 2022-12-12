@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{8982B44B-9370-4396-8CE4-FA019879A792}" SchemaVersion="110">
+	<States>
+		<WorkUnit Name="PlayerStates" ID="{8982B44B-9370-4396-8CE4-FA019879A792}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="PlayerMovement" ID="{35222748-9E31-4762-BA40-BCAD8C2B0AB9}">
+					<ChildrenList>
+						<State Name="None" ID="{1DC4A198-8FEB-4564-B0D9-76A33A0768DB}"/>
+						<State Name="IsMoving" ID="{37CEB452-6966-48F8-9783-E1E390F67C78}"/>
+						<State Name="IsIdle" ID="{1BF9B204-3BEB-4EFC-816A-BDDB771A0374}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</States>
+</WwiseDocument>

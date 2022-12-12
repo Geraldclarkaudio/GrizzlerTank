@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{D6570597-4EB1-4BC1-882E-3395C256DB77}" SchemaVersion="110" RootDocumentID="{4A553AFE-4AAB-4E0B-AEBA-5BD41DCAE664}" ParentDocumentID="{4A553AFE-4AAB-4E0B-AEBA-5BD41DCAE664}">
+	<AudioObjects>
+		<WorkUnit Name="Player_Locomotion" ID="{D6570597-4EB1-4BC1-882E-3395C256DB77}" OwnerID="{4A553AFE-4AAB-4E0B-AEBA-5BD41DCAE664}" PersistMode="Nested">
+			<ChildrenList>
+				<WorkUnit Name="Player_Vehicles" ID="{CA46A490-537B-4F30-8E4F-C617EBCB8A0B}" PersistMode="Reference"/>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>
