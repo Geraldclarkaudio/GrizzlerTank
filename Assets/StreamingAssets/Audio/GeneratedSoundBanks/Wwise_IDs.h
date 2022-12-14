@@ -13,9 +13,7 @@ namespace AK
 {
     namespace EVENTS
     {
-        static const AkUniqueID BEGINMOVING = 3807729250U;
-        static const AkUniqueID GRIZZLERMOVEMENT = 3315242463U;
-        static const AkUniqueID STOPMOVING = 1580062387U;
+        static const AkUniqueID GRIZZLER_MOVEMENT = 4170865704U;
     } // namespace EVENTS
 
     namespace STATES
@@ -36,6 +34,18 @@ namespace AK
 
     namespace SWITCHES
     {
+        namespace ACCELERATION
+        {
+            static const AkUniqueID GROUP = 212170665U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID ACCEL = 1778882555U;
+                static const AkUniqueID DECCEL = 3089792801U;
+                static const AkUniqueID IDLE = 1874288895U;
+            } // namespace SWITCH
+        } // namespace ACCELERATION
+
         namespace SURFACETYPE
         {
             static const AkUniqueID GROUP = 63790334U;
@@ -46,6 +56,17 @@ namespace AK
                 static const AkUniqueID METAL = 2473969246U;
             } // namespace SWITCH
         } // namespace SURFACETYPE
+
+        namespace TURNING
+        {
+            static const AkUniqueID GROUP = 503499828U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID NOTTURNING = 1375871011U;
+                static const AkUniqueID TURNING = 503499828U;
+            } // namespace SWITCH
+        } // namespace TURNING
 
     } // namespace SWITCHES
 
@@ -61,6 +82,7 @@ namespace AK
         static const AkUniqueID IGNITERSYNTH_STATE = 3696491809U;
         static const AkUniqueID IMMERSION_FA_SSGRAIN = 2481728872U;
         static const AkUniqueID INSTRUMENT_FA_SSGRAIN = 2317409760U;
+        static const AkUniqueID PLAYER_ACCELERATION = 3698658901U;
         static const AkUniqueID PLAYER_LOAD = 3610741985U;
         static const AkUniqueID PLAYERSPEED = 1493153371U;
         static const AkUniqueID PROXIMITY_FA_SSGRAIN = 1791284502U;
@@ -76,6 +98,7 @@ namespace AK
         static const AkUniqueID SS_AIR_STORM = 3715662592U;
         static const AkUniqueID SS_AIR_TIMEOFDAY = 3203397129U;
         static const AkUniqueID SS_AIR_TURBULENCE = 4160247818U;
+        static const AkUniqueID TURNING = 503499828U;
         static const AkUniqueID WHEELSURFACE = 1446210263U;
     } // namespace GAME_PARAMETERS
 

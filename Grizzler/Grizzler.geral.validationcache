@@ -3,12 +3,13 @@
 	<ValidationCacheItem File="D:\Unity Projects\Grizzler Implementation\Grizzler\Virtual Acoustics\Factory Acoustic Textures.wwu" DateLow="1670821717" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Unity Projects\Grizzler Implementation\Grizzler\Virtual Acoustics\Default Work Unit.wwu" DateLow="1670821717" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Unity Projects\Grizzler Implementation\Grizzler\Triggers\Default Work Unit.wwu" DateLow="1670821717" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Unity Projects\Grizzler Implementation\Grizzler\Switches\PlayerDriven.wwu" DateLow="1670821717" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Unity Projects\Grizzler Implementation\Grizzler\Switches\PlayerDriven.wwu" DateLow="1670998203" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Unity Projects\Grizzler Implementation\Grizzler\Switches\Default Work Unit.wwu" DateLow="1670821717" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Unity Projects\Grizzler Implementation\Grizzler\States\PlayerStates.wwu" DateLow="1670821717" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Unity Projects\Grizzler Implementation\Grizzler\States\Default Work Unit.wwu" DateLow="1670821717" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Unity Projects\Grizzler Implementation\Grizzler\Soundcaster Sessions\Vehicle Session.wwu" DateLow="1670821717" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Unity Projects\Grizzler Implementation\Grizzler\Soundcaster Sessions\Vehicle Session.wwu" DateLow="1670998203" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Unity Projects\Grizzler Implementation\Grizzler\Soundcaster Sessions\Default Work Unit.wwu" DateLow="1670821717" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Unity Projects\Grizzler Implementation\Grizzler\SoundBanks\GrizzlerTankBank.wwu" DateLow="1670822330" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Unity Projects\Grizzler Implementation\Grizzler\SoundBanks\Default Work Unit.wwu" DateLow="1670821717" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Unity Projects\Grizzler Implementation\Grizzler\Queries\Factory Queries.wwu" DateLow="1670821717" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Unity Projects\Grizzler Implementation\Grizzler\Queries\Default Work Unit.wwu" DateLow="1670821717" DateHigh="0"/>
@@ -21,14 +22,15 @@
 	<ValidationCacheItem File="D:\Unity Projects\Grizzler Implementation\Grizzler\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1670821714" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Unity Projects\Grizzler Implementation\Grizzler\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="1670821714" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Unity Projects\Grizzler Implementation\Grizzler\Grizzler.wproj" DateLow="1670822069" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Unity Projects\Grizzler Implementation\Grizzler\Game Parameters\Player.wwu" DateLow="1670821714" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Unity Projects\Grizzler Implementation\Grizzler\Grizzler.geral.wsettings" DateLow="1670827985" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Unity Projects\Grizzler Implementation\Grizzler\Game Parameters\Player.wwu" DateLow="1670998203" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Unity Projects\Grizzler Implementation\Grizzler\Game Parameters\Misc.wwu" DateLow="1670821714" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Unity Projects\Grizzler Implementation\Grizzler\Game Parameters\Factory Soundseed Grain.wwu" DateLow="1670821714" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Unity Projects\Grizzler Implementation\Grizzler\Game Parameters\Factory Soundseed Air Game Syncs.wwu" DateLow="1670821714" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Unity Projects\Grizzler Implementation\Grizzler\Game Parameters\Factory Igniter Live Synth Game Syncs.wwu" DateLow="1670821714" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Unity Projects\Grizzler Implementation\Grizzler\Game Parameters\Factory Igniter Live Game Syncs.wwu" DateLow="1670821714" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Unity Projects\Grizzler Implementation\Grizzler\Game Parameters\Default Work Unit.wwu" DateLow="1670821714" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Unity Projects\Grizzler Implementation\Grizzler\Events\PlayerEvents.wwu" DateLow="1670821714" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Unity Projects\Grizzler Implementation\Grizzler\Events\PlayerEvents.wwu" DateLow="1670998203" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Unity Projects\Grizzler Implementation\Grizzler\Events\Default Work Unit.wwu" DateLow="1670821714" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Unity Projects\Grizzler Implementation\Grizzler\Effects\Factory Reflect.wwu" DateLow="1670821714" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Unity Projects\Grizzler Implementation\Grizzler\Effects\Factory McDSP Effects.wwu" DateLow="1670821714" DateHigh="0"/>
@@ -57,7 +59,7 @@
 	<ValidationCacheItem File="D:\Unity Projects\Grizzler Implementation\Grizzler\Actor-Mixer Hierarchy\Player_Locomotion.wwu" DateLow="1670821714" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Unity Projects\Grizzler Implementation\Grizzler\Actor-Mixer Hierarchy\Player_Driven_Sounds.wwu" DateLow="1670821714" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Unity Projects\Grizzler Implementation\Grizzler\Actor-Mixer Hierarchy\Misc.wwu" DateLow="1670821714" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Unity Projects\Grizzler Implementation\Grizzler\Actor-Mixer Hierarchy\Grizzler.wwu" DateLow="1670821714" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Unity Projects\Grizzler Implementation\Grizzler\Actor-Mixer Hierarchy\Grizzler.wwu" DateLow="1670998203" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Unity Projects\Grizzler Implementation\Grizzler\Actor-Mixer Hierarchy\Factory Synth One.wwu" DateLow="1670821714" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Unity Projects\Grizzler Implementation\Grizzler\Actor-Mixer Hierarchy\Factory Soundseed Grain.wwu" DateLow="1670821714" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Unity Projects\Grizzler Implementation\Grizzler\Actor-Mixer Hierarchy\Factory Soundseed Air Objects.wwu" DateLow="1670821714" DateHigh="0"/>

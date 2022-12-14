@@ -385,11 +385,11 @@ MonoBehaviour:
     ParentPath: Events\PlayerEvents
     guid: 7fc2a4855b006942a282ae929ab4bb7b
     GuidInternal: 
-    m_lastTime: -8585307851713727083
+    m_lastTime: -8585306086816267795
     List:
-    - name: BeginMoving
-      guid: 1cbe802bc8f78346ad85ed647b27a29c
-      id: 3807729250
+    - name: Grizzler_Movement
+      guid: a67610cd45be5f4599ba5d3075b654d6
+      id: 4170865704
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
@@ -397,44 +397,10 @@ MonoBehaviour:
       - ElementName: PlayerEvents
         ObjectType: 12
         guid: 7fc2a4855b006942a282ae929ab4bb7b
-      - ElementName: BeginMoving
+      - ElementName: Grizzler_Movement
         ObjectType: 3
-        guid: 1cbe802bc8f78346ad85ed647b27a29c
-      Path: Events\PlayerEvents\BeginMoving
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: GrizzlerMovement
-      guid: c3bf9175083d444cac75f0a1a6b10776
-      id: 3315242463
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: PlayerEvents
-        ObjectType: 12
-        guid: 7fc2a4855b006942a282ae929ab4bb7b
-      - ElementName: GrizzlerMovement
-        ObjectType: 3
-        guid: c3bf9175083d444cac75f0a1a6b10776
-      Path: Events\PlayerEvents\GrizzlerMovement
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: StopMoving
-      guid: 5b74834f9dd90b4fad096263a763c992
-      id: 1580062387
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: PlayerEvents
-        ObjectType: 12
-        guid: 7fc2a4855b006942a282ae929ab4bb7b
-      - ElementName: StopMoving
-        ObjectType: 3
-        guid: 5b74834f9dd90b4fad096263a763c992
-      Path: Events\PlayerEvents\StopMoving
+        guid: a67610cd45be5f4599ba5d3075b654d6
+      Path: Events\PlayerEvents\Grizzler_Movement
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -931,8 +897,22 @@ MonoBehaviour:
     ParentPath: Game Parameters\Player
     guid: 0d781cf13899b044b03afcd1a9e09adc
     GuidInternal: 
-    m_lastTime: -8585307851713717111
+    m_lastTime: -8585306086816257819
     List:
+    - name: Player_Acceleration
+      guid: 5a69abc21f04c343b7c9cc4f75e2d4b0
+      id: 3698658901
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Player
+        ObjectType: 12
+        guid: 0d781cf13899b044b03afcd1a9e09adc
+      - ElementName: Player_Acceleration
+        ObjectType: 13
+        guid: 5a69abc21f04c343b7c9cc4f75e2d4b0
+      Path: Game Parameters\Player\Player_Acceleration
     - name: Player_Load
       guid: 665685dcf91e4442a312e6709a6d0a1c
       id: 3610741985
@@ -961,6 +941,20 @@ MonoBehaviour:
         ObjectType: 13
         guid: 670974fd93e15c469d02e5b4f2e93ec3
       Path: Game Parameters\Player\PlayerSpeed
+    - name: Turning
+      guid: 62ca89d9ec825b4a931944c97951019f
+      id: 503499828
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Player
+        ObjectType: 12
+        guid: 0d781cf13899b044b03afcd1a9e09adc
+      - ElementName: Turning
+        ObjectType: 13
+        guid: 62ca89d9ec825b4a931944c97951019f
+      Path: Game Parameters\Player\Turning
     - name: WheelSurface
       guid: c8dcaea3cfbd064497c6cd2f2a371e0b
       id: 1446210263
@@ -1093,8 +1087,74 @@ MonoBehaviour:
     ParentPath: Switches\PlayerDriven
     guid: a29b27810e8ad647a11299f5cc6b8f72
     GuidInternal: 
-    m_lastTime: -8585307851684459379
+    m_lastTime: -8585306086815499849
     List:
+    - name: Acceleration
+      guid: 1b5d38e0d26cd743951d3de91e0ea987
+      id: 212170665
+      PathAndIcons:
+      - ElementName: Switches
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: PlayerDriven
+        ObjectType: 12
+        guid: a29b27810e8ad647a11299f5cc6b8f72
+      - ElementName: Acceleration
+        ObjectType: 11
+        guid: 1b5d38e0d26cd743951d3de91e0ea987
+      Path: Switches\PlayerDriven\Acceleration
+      values:
+      - name: Accel
+        guid: 8a2f9eaaf861224586355b3a3ea83c3a
+        id: 1778882555
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: PlayerDriven
+          ObjectType: 12
+          guid: a29b27810e8ad647a11299f5cc6b8f72
+        - ElementName: Acceleration
+          ObjectType: 11
+          guid: 1b5d38e0d26cd743951d3de91e0ea987
+        - ElementName: Accel
+          ObjectType: 10
+          guid: 8a2f9eaaf861224586355b3a3ea83c3a
+      - name: Deccel
+        guid: 432c4f695c124844bb20fdb2056ab5b3
+        id: 3089792801
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: PlayerDriven
+          ObjectType: 12
+          guid: a29b27810e8ad647a11299f5cc6b8f72
+        - ElementName: Acceleration
+          ObjectType: 11
+          guid: 1b5d38e0d26cd743951d3de91e0ea987
+        - ElementName: Deccel
+          ObjectType: 10
+          guid: 432c4f695c124844bb20fdb2056ab5b3
+      - name: Idle
+        guid: 0b9c48f8a7c6574da10fcdbbc5074745
+        id: 1874288895
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: PlayerDriven
+          ObjectType: 12
+          guid: a29b27810e8ad647a11299f5cc6b8f72
+        - ElementName: Acceleration
+          ObjectType: 11
+          guid: 1b5d38e0d26cd743951d3de91e0ea987
+        - ElementName: Idle
+          ObjectType: 10
+          guid: 0b9c48f8a7c6574da10fcdbbc5074745
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
     - name: SurfaceType
       guid: cb37f382a65d644498b5440463210958
       id: 63790334
@@ -1145,6 +1205,56 @@ MonoBehaviour:
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
+    - name: Turning
+      guid: 030ee49bab06134caad580ee1fcbbea2
+      id: 503499828
+      PathAndIcons:
+      - ElementName: Switches
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: PlayerDriven
+        ObjectType: 12
+        guid: a29b27810e8ad647a11299f5cc6b8f72
+      - ElementName: Turning
+        ObjectType: 11
+        guid: 030ee49bab06134caad580ee1fcbbea2
+      Path: Switches\PlayerDriven\Turning
+      values:
+      - name: NotTurning
+        guid: ae144b433e49be449ba5738bc7fd3acb
+        id: 1375871011
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: PlayerDriven
+          ObjectType: 12
+          guid: a29b27810e8ad647a11299f5cc6b8f72
+        - ElementName: Turning
+          ObjectType: 11
+          guid: 030ee49bab06134caad580ee1fcbbea2
+        - ElementName: NotTurning
+          ObjectType: 10
+          guid: ae144b433e49be449ba5738bc7fd3acb
+      - name: Turning
+        guid: 530afd577f290e418496c05e38d6385e
+        id: 503499828
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: PlayerDriven
+          ObjectType: 12
+          guid: a29b27810e8ad647a11299f5cc6b8f72
+        - ElementName: Turning
+          ObjectType: 11
+          guid: 030ee49bab06134caad580ee1fcbbea2
+        - ElementName: Turning
+          ObjectType: 10
+          guid: 530afd577f290e418496c05e38d6385e
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
     PathAndIcons:
@@ -1160,7 +1270,7 @@ MonoBehaviour:
     m_lastTime: -8585307851684449409
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0500000006000000070000000800000010000000120000001b00000022000000
+  ExpandedWaapiItemIds: 0500000006000000070000000800000010000000120000001b0000001c0000002200000023000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

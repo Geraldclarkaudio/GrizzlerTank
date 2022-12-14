@@ -1,3 +1,17 @@
+Switch Group	ID	Name			Wwise Object Path	Notes
+	63790334	SurfaceType			\PlayerDriven\SurfaceType	
+	212170665	Acceleration			\PlayerDriven\Acceleration	
+	503499828	Turning			\PlayerDriven\Turning	
+
+Switch	ID	Name	Switch Group			Notes
+	841620460	Concrete	SurfaceType			
+	2473969246	Metal	SurfaceType			
+	1778882555	Accel	Acceleration			
+	1874288895	Idle	Acceleration			
+	3089792801	Deccel	Acceleration			
+	503499828	Turning	Turning			
+	1375871011	NotTurning	Turning			
+
 State Group	ID	Name			Wwise Object Path	Notes
 	1350496757	PlayerMovement			\PlayerStates\PlayerMovement	
 
