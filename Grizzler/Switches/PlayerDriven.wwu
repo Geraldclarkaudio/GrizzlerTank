@@ -4,10 +4,112 @@
 		<WorkUnit Name="PlayerDriven" ID="{81279BA2-8A0E-47D6-A112-99F5CC6B8F72}" PersistMode="Standalone">
 			<ChildrenList>
 				<SwitchGroup Name="SurfaceType" ID="{82F337CB-5DA6-4464-98B5-440463210958}">
+					<PropertyList>
+						<Property Name="UseGameParameter" Type="bool" Value="True"/>
+					</PropertyList>
 					<ChildrenList>
 						<Switch Name="Metal" ID="{C88295FD-54D3-40EA-A433-8BFED5621460}"/>
 						<Switch Name="Concrete" ID="{1102A276-BF6E-4751-B510-98811A05FC15}"/>
 					</ChildrenList>
+					<SwitchOnRTPC>
+						<GameParameterRef Name="WheelSurface" ID="{A3AEDCC8-BDCF-4406-97C6-CD2F2A371E0B}"/>
+						<Curve Name="" ID="{FD1261DE-62DB-482D-8441-F21398F90538}">
+							<PropertyList>
+								<Property Name="Flags" Type="int32" Value="65537"/>
+							</PropertyList>
+							<PointList>
+								<Point>
+									<XPos>0</XPos>
+									<YPos>0</YPos>
+									<Flags>5</Flags>
+								</Point>
+								<Point>
+									<XPos>0.001</XPos>
+									<YPos>1</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>1</XPos>
+									<YPos>2</YPos>
+									<Flags>37</Flags>
+								</Point>
+							</PointList>
+						</Curve>
+					</SwitchOnRTPC>
+				</SwitchGroup>
+				<SwitchGroup Name="Acceleration" ID="{E0385D1B-6CD2-43D7-951D-3DE91E0EA987}">
+					<PropertyList>
+						<Property Name="UseGameParameter" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Switch Name="Idle" ID="{F8489C0B-C6A7-4D57-A10F-CDBBC5074745}"/>
+						<Switch Name="Accel" ID="{AA9E2F8A-61F8-4522-8635-5B3A3EA83C3A}"/>
+						<Switch Name="Deccel" ID="{694F2C43-125C-4448-BB20-FDB2056AB5B3}"/>
+					</ChildrenList>
+					<SwitchOnRTPC>
+						<GameParameterRef Name="Player_Acceleration" ID="{C2AB695A-041F-43C3-B7C9-CC4F75E2D4B0}"/>
+						<Curve Name="" ID="{F0C3C39E-7B76-4A63-A4B4-03A2AC371101}">
+							<PropertyList>
+								<Property Name="Flags" Type="int32" Value="65537"/>
+							</PropertyList>
+							<PointList>
+								<Point>
+									<XPos>0</XPos>
+									<YPos>1</YPos>
+									<Flags>5</Flags>
+								</Point>
+								<Point>
+									<XPos>0.001</XPos>
+									<YPos>2</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>1.00196</XPos>
+									<YPos>3</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>2</XPos>
+									<YPos>3</YPos>
+									<Flags>37</Flags>
+								</Point>
+							</PointList>
+						</Curve>
+					</SwitchOnRTPC>
+				</SwitchGroup>
+				<SwitchGroup Name="Turning" ID="{9BE40E03-06AB-4C13-AAD5-80EE1FCBBEA2}">
+					<PropertyList>
+						<Property Name="UseGameParameter" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Switch Name="NotTurning" ID="{434B14AE-493E-44BE-9BA5-738BC7FD3ACB}"/>
+						<Switch Name="Turning" ID="{57FD0A53-297F-410E-8496-C05E38D6385E}"/>
+					</ChildrenList>
+					<SwitchOnRTPC>
+						<GameParameterRef Name="Turning" ID="{D989CA62-82EC-4A5B-9319-44C97951019F}"/>
+						<Curve Name="" ID="{E98EFBEA-AD19-4874-B167-C790DE4A6529}">
+							<PropertyList>
+								<Property Name="Flags" Type="int32" Value="65537"/>
+							</PropertyList>
+							<PointList>
+								<Point>
+									<XPos>0</XPos>
+									<YPos>1</YPos>
+									<Flags>5</Flags>
+								</Point>
+								<Point>
+									<XPos>0.89992</XPos>
+									<YPos>2</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>1</XPos>
+									<YPos>2</YPos>
+									<Flags>37</Flags>
+								</Point>
+							</PointList>
+						</Curve>
+					</SwitchOnRTPC>
 				</SwitchGroup>
 			</ChildrenList>
 		</WorkUnit>

@@ -3,34 +3,12 @@
 	<Events>
 		<WorkUnit Name="PlayerEvents" ID="{85A4C27F-005B-4269-A282-AE929AB4BB7B}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="GrizzlerMovement" ID="{7591BFC3-3D08-4C44-AC75-F0A1A6B10776}">
+				<Event Name="Grizzler_Movement" ID="{CD1076A6-BE45-455F-99BA-5D3075B654D6}">
 					<ChildrenList>
-						<Action Name="" ID="{20D7F0DE-CF6C-4DDB-BC12-B6F0C32B6EF0}" ShortID="625084881">
+						<Action Name="" ID="{1235F07C-D762-49B3-B82B-3094C699F136}" ShortID="746991684">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Grizzler Blend Container" ID="{5EB20AB2-33A0-4324-86C4-A5FAEA410B3A}" WorkUnitID="{973B0F3E-63A1-43F6-BC7D-7BA9D8CAA641}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="BeginMoving" ID="{2B80BE1C-F7C8-4683-AD85-ED647B27A29C}">
-					<ChildrenList>
-						<Action Name="" ID="{4C196469-5B42-492A-88D5-0E076DDF3A88}" ShortID="219772203">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Begin Moving" ID="{26F62E15-6F72-493D-9815-2CFB283A398A}" WorkUnitID="{973B0F3E-63A1-43F6-BC7D-7BA9D8CAA641}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="StopMoving" ID="{4F83745B-D99D-4F0B-AD09-6263A763C992}">
-					<ChildrenList>
-						<Action Name="" ID="{A49DD53A-CFE6-4B9B-A471-7943F58B98C3}" ShortID="639737791">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="StopEvent" ID="{88388449-7593-4EBD-8A1D-C955B48F4F3C}" WorkUnitID="{973B0F3E-63A1-43F6-BC7D-7BA9D8CAA641}"/>
+									<ObjectRef Name="Grizzler_Movement" ID="{D04E1FBD-CD5B-46A4-9C7C-1D7BEF0A8DAA}" WorkUnitID="{973B0F3E-63A1-43F6-BC7D-7BA9D8CAA641}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
