@@ -785,6 +785,40 @@
 								<ActiveSource Name="Wheels_On_Metal_" ID="{E064D23C-0159-46DD-9DDB-124D46CC0935}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<Sound Name="Deccelerate" ID="{1B063DA3-6B6B-4C16-A1D7-0F5B9658E445}" ShortID="1009196194">
+							<PropertyList>
+								<Property Name="MakeUpGain" Type="Real64">
+									<ValueList>
+										<Value>3</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>-60</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{76303271-6B26-4C24-9127-2CA0A617594D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D644C3B1-4CAA-4FEE-AF64-4347A85E2B06}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Deccelerate" ID="{9BC3E5BD-54EA-4FE9-8D22-4F07C2FAD29C}">
+									<Language>SFX</Language>
+									<AudioFile>Player\Locomotion\Vehicles\Grizzler\Deccelerate.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="804114056"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Deccelerate" ID="{9BC3E5BD-54EA-4FE9-8D22-4F07C2FAD29C}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</Folder>
 				<BlendContainer Name="Grizzler Blend Container" ID="{5EB20AB2-33A0-4324-86C4-A5FAEA410B3A}" ShortID="1004909550">
@@ -1582,9 +1616,46 @@
 										<ActiveSource Name="StopEvent" ID="{EDAEB03C-DD92-4132-990A-2B21CF9B71FA}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
+								<Sound Name="Deccelerate" ID="{AC7FD033-C0B6-49C1-A9A4-F24E62B5F8CB}" ShortID="858848001">
+									<PropertyList>
+										<Property Name="MakeUpGain" Type="Real64">
+											<ValueList>
+												<Value>3</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-60</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{76303271-6B26-4C24-9127-2CA0A617594D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D644C3B1-4CAA-4FEE-AF64-4347A85E2B06}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Deccelerate" ID="{AD4E6FC8-F245-405E-AB8A-C8B0C6B43BFA}">
+											<Language>SFX</Language>
+											<AudioFile>Player\Locomotion\Vehicles\Grizzler\Deccelerate.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="804114056"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Deccelerate" ID="{AD4E6FC8-F245-405E-AB8A-C8B0C6B43BFA}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
 							</ChildrenList>
 							<GroupingInfo>
 								<GroupingBehaviorList>
+									<GroupingBehavior>
+										<ItemRef Name="Deccelerate" ID="{AC7FD033-C0B6-49C1-A9A4-F24E62B5F8CB}"/>
+									</GroupingBehavior>
 									<GroupingBehavior>
 										<ItemRef Name="Stop Moving" ID="{18B02273-354A-474B-B61E-2ECB08BADAD0}"/>
 									</GroupingBehavior>
@@ -1594,9 +1665,15 @@
 								</GroupingBehaviorList>
 								<GroupingList>
 									<Grouping>
-										<SwitchRef Name="Deccel" ID="{694F2C43-125C-4448-BB20-FDB2056AB5B3}"/>
+										<SwitchRef Name="Idle" ID="{F8489C0B-C6A7-4D57-A10F-CDBBC5074745}"/>
 										<ItemList>
 											<ItemRef Name="Stop Moving" ID="{18B02273-354A-474B-B61E-2ECB08BADAD0}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Deccel" ID="{694F2C43-125C-4448-BB20-FDB2056AB5B3}"/>
+										<ItemList>
+											<ItemRef Name="Deccelerate" ID="{AC7FD033-C0B6-49C1-A9A4-F24E62B5F8CB}"/>
 										</ItemList>
 									</Grouping>
 									<Grouping>
