@@ -385,7 +385,7 @@ MonoBehaviour:
     ParentPath: Events\PlayerEvents
     guid: 7fc2a4855b006942a282ae929ab4bb7b
     GuidInternal: 
-    m_lastTime: -8585306086816267795
+    m_lastTime: -8585304347174781874
     List:
     - name: Grizzler_Movement
       guid: a67610cd45be5f4599ba5d3075b654d6
@@ -401,6 +401,40 @@ MonoBehaviour:
         ObjectType: 3
         guid: a67610cd45be5f4599ba5d3075b654d6
       Path: Events\PlayerEvents\Grizzler_Movement
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Grizzler_Movement_01
+      guid: b72f57d08b77424788877d8c8c90dbf6
+      id: 684729214
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: PlayerEvents
+        ObjectType: 12
+        guid: 7fc2a4855b006942a282ae929ab4bb7b
+      - ElementName: Grizzler_Movement_01
+        ObjectType: 3
+        guid: b72f57d08b77424788877d8c8c90dbf6
+      Path: Events\PlayerEvents\Grizzler_Movement_01
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Grizzler_Turret
+      guid: d15d067ad83d4840a33034ab23b9f049
+      id: 2616164525
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: PlayerEvents
+        ObjectType: 12
+        guid: 7fc2a4855b006942a282ae929ab4bb7b
+      - ElementName: Grizzler_Turret
+        ObjectType: 3
+        guid: d15d067ad83d4840a33034ab23b9f049
+      Path: Events\PlayerEvents\Grizzler_Turret
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -897,7 +931,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Player
     guid: 0d781cf13899b044b03afcd1a9e09adc
     GuidInternal: 
-    m_lastTime: -8585306086816257819
+    m_lastTime: -8585304341650447101
     List:
     - name: Player_Acceleration
       guid: 5a69abc21f04c343b7c9cc4f75e2d4b0
@@ -955,6 +989,20 @@ MonoBehaviour:
         ObjectType: 13
         guid: 62ca89d9ec825b4a931944c97951019f
       Path: Game Parameters\Player\Turning
+    - name: Turret
+      guid: 561492e726a00c4083fdaad84adbbb75
+      id: 2674766611
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Player
+        ObjectType: 12
+        guid: 0d781cf13899b044b03afcd1a9e09adc
+      - ElementName: Turret
+        ObjectType: 13
+        guid: 561492e726a00c4083fdaad84adbbb75
+      Path: Game Parameters\Player\Turret
     - name: WheelSurface
       guid: c8dcaea3cfbd064497c6cd2f2a371e0b
       id: 1446210263
@@ -1087,7 +1135,7 @@ MonoBehaviour:
     ParentPath: Switches\PlayerDriven
     guid: a29b27810e8ad647a11299f5cc6b8f72
     GuidInternal: 
-    m_lastTime: -8585306086815499849
+    m_lastTime: -8585304333968472672
     List:
     - name: Acceleration
       guid: 1b5d38e0d26cd743951d3de91e0ea987
@@ -1255,6 +1303,88 @@ MonoBehaviour:
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
+    - name: Turret
+      guid: 3a3475ca37110c47938fb8ad05f84e9a
+      id: 2674766611
+      PathAndIcons:
+      - ElementName: Switches
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: PlayerDriven
+        ObjectType: 12
+        guid: a29b27810e8ad647a11299f5cc6b8f72
+      - ElementName: Turret
+        ObjectType: 11
+        guid: 3a3475ca37110c47938fb8ad05f84e9a
+      Path: Switches\PlayerDriven\Turret
+      values:
+      - name: Idle
+        guid: 52b67ef0d7d8b44ea224967ffa43be40
+        id: 1874288895
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: PlayerDriven
+          ObjectType: 12
+          guid: a29b27810e8ad647a11299f5cc6b8f72
+        - ElementName: Turret
+          ObjectType: 11
+          guid: 3a3475ca37110c47938fb8ad05f84e9a
+        - ElementName: Idle
+          ObjectType: 10
+          guid: 52b67ef0d7d8b44ea224967ffa43be40
+      - name: StartTurning
+        guid: a83d11cb93f5dd40ac6aa2bd74ab5fd5
+        id: 1712436050
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: PlayerDriven
+          ObjectType: 12
+          guid: a29b27810e8ad647a11299f5cc6b8f72
+        - ElementName: Turret
+          ObjectType: 11
+          guid: 3a3475ca37110c47938fb8ad05f84e9a
+        - ElementName: StartTurning
+          ObjectType: 10
+          guid: a83d11cb93f5dd40ac6aa2bd74ab5fd5
+      - name: StopTurning
+        guid: eaef93f21736934e90a39e2237673234
+        id: 1370828620
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: PlayerDriven
+          ObjectType: 12
+          guid: a29b27810e8ad647a11299f5cc6b8f72
+        - ElementName: Turret
+          ObjectType: 11
+          guid: 3a3475ca37110c47938fb8ad05f84e9a
+        - ElementName: StopTurning
+          ObjectType: 10
+          guid: eaef93f21736934e90a39e2237673234
+      - name: Turning
+        guid: b9b2135107d1444e98c9982f8c89d194
+        id: 503499828
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: PlayerDriven
+          ObjectType: 12
+          guid: a29b27810e8ad647a11299f5cc6b8f72
+        - ElementName: Turret
+          ObjectType: 11
+          guid: 3a3475ca37110c47938fb8ad05f84e9a
+        - ElementName: Turning
+          ObjectType: 10
+          guid: b9b2135107d1444e98c9982f8c89d194
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
     PathAndIcons:
@@ -1270,7 +1400,7 @@ MonoBehaviour:
     m_lastTime: -8585307851684449409
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0500000006000000070000000800000010000000120000001b0000001c0000002200000023000000
+  ExpandedWaapiItemIds: 0500000006000000070000000800000010000000120000001b0000001c0000001e000000220000002300000025000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

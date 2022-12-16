@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{C0E78DAA-768A-438F-8F7B-3701395185C3}" SchemaVersion="110">
+	<DynamicDialogue>
+		<WorkUnit Name="Factory Altiverb - Outdoor and More" ID="{C0E78DAA-768A-438F-8F7B-3701395185C3}" OwnerID="{00000000-0000-0000-0000-000000000000}" PersistMode="Nested">
+			<ChildrenList>
+				<Folder Name="Altiverb - Outdoor and More" ID="{20CF463A-52F5-4EA4-8D92-E953D08279A6}" ShortID="524214845">
+					<ChildrenList>
+						<Folder Name="Outdoor Alley" ID="{98C3C024-9A3A-4D12-8AFC-215F1BA20CAC}" ShortID="964102458"/>
+						<Folder Name="Outdoor Field" ID="{A0FC6A9C-592A-419D-9B60-4FF7B7A65336}" ShortID="473889025"/>
+						<Folder Name="Outdoor Forest" ID="{A34017F2-9807-4C42-9AAA-4F87F8EEED44}" ShortID="474401675"/>
+						<Folder Name="Outdoor Tunnel" ID="{98626C03-7727-47C2-87E0-0D760D4995E5}" ShortID="350681886"/>
+						<Folder Name="Outdoor Street" ID="{DCCB498D-3998-4448-91EC-1CD52DBEE7E4}" ShortID="614929730"/>
+						<Folder Name="Domestic" ID="{443A376B-0791-42E1-93DC-931F502048A2}" ShortID="683834947"/>
+						<Folder Name="Misc" ID="{1A0106FD-D191-4C34-B5DA-59DC13E9E2A5}" ShortID="990030948"/>
+						<Folder Name="Transport" ID="{749ABDC3-2B3A-4CD9-A835-5CFCE7C31086}" ShortID="159552160"/>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
+	</DynamicDialogue>
+</WwiseDocument>

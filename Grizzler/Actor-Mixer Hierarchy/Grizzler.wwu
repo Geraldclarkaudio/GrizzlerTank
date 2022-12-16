@@ -348,477 +348,696 @@
 				</BlendContainer>
 				<Folder Name="Imported Assets" ID="{8D7B114D-98EC-42E0-AB76-401E0671937D}" ShortID="601595160">
 					<ChildrenList>
-						<Sound Name="Idle" ID="{ABD076B1-102E-4FD3-AE74-D939375032D0}" ShortID="974522118">
-							<PropertyList>
-								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{76303271-6B26-4C24-9127-2CA0A617594D}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D644C3B1-4CAA-4FEE-AF64-4347A85E2B06}"/>
-								</Reference>
-							</ReferenceList>
+						<Folder Name="Idea1" ID="{30C9CF36-9AEC-4620-B5D2-9DDDE0D46518}" ShortID="830811742">
 							<ChildrenList>
-								<AudioFileSource Name="Idle" ID="{E5DEBA32-E7C6-471C-84F4-079620B75563}">
+								<Sound Name="Begin Moving" ID="{6242E847-662F-49A6-B89D-E965E39FDEFE}" ShortID="623826493">
 									<PropertyList>
-										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-										<Property Name="TrimBegin" Type="Real64" Value="0.107852412488174"/>
+										<Property Name="MakeUpGain" Type="Real64">
+											<ValueList>
+												<Value>8</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
-									<Language>SFX</Language>
-									<AudioFile>Player\Locomotion\Vehicles\Grizzler\Idle.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="98987776"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ObjectLists>
-								<ObjectList Name="RTPC">
-									<Reference>
-										<Local>
-											<RTPC Name="" ID="{6DC9E6DB-B790-48D1-9AE6-774FE677B0EC}" ShortID="65611709">
-												<PropertyList>
-													<Property Name="PropertyName" Type="string" Value="Volume"/>
-												</PropertyList>
-												<ReferenceList>
-													<Reference Name="ControlInput">
-														<ObjectRef Name="PlayerSpeed" ID="{FD740967-E193-465C-9D02-E5B4F2E93EC3}" WorkUnitID="{F11C780D-9938-44B0-B03A-FCD1A9E09ADC}"/>
-													</Reference>
-													<Reference Name="Curve">
-														<Custom>
-															<Curve Name="" ID="{A28DD45C-7445-4358-BD52-11F2A51F9D8C}">
-																<PropertyList>
-																	<Property Name="Flags" Type="int32" Value="3"/>
-																</PropertyList>
-																<PointList>
-																	<Point>
-																		<XPos>0</XPos>
-																		<YPos>0</YPos>
-																		<Flags>5</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>2.501</XPos>
-																		<YPos>-1.58908</YPos>
-																		<Flags>0</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>25</XPos>
-																		<YPos>-200</YPos>
-																		<Flags>37</Flags>
-																	</Point>
-																</PointList>
-															</Curve>
-														</Custom>
-													</Reference>
-												</ReferenceList>
-											</RTPC>
-										</Local>
-									</Reference>
-								</ObjectList>
-							</ObjectLists>
-							<ActiveSourceList>
-								<ActiveSource Name="Idle" ID="{E5DEBA32-E7C6-471C-84F4-079620B75563}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="MoveLoop" ID="{B8F16ECA-3C7E-45E7-ABAD-6BDB1B2CE951}" ShortID="883261461">
-							<PropertyList>
-								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{76303271-6B26-4C24-9127-2CA0A617594D}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D644C3B1-4CAA-4FEE-AF64-4347A85E2B06}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="MoveLoop" ID="{3F551054-4A7C-4D9B-9367-6402BFD33206}">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{76303271-6B26-4C24-9127-2CA0A617594D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D644C3B1-4CAA-4FEE-AF64-4347A85E2B06}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Begine Moving" ID="{52DB7BCF-68F9-4FB2-A48B-8EEB4A4EC578}">
+											<Language>SFX</Language>
+											<AudioFile>Player\Locomotion\Vehicles\Grizzler\Begine Moving.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1043149136"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Begine Moving" ID="{52DB7BCF-68F9-4FB2-A48B-8EEB4A4EC578}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Deccelerate" ID="{1B063DA3-6B6B-4C16-A1D7-0F5B9658E445}" ShortID="1009196194">
 									<PropertyList>
-										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-										<Property Name="TrimBegin" Type="Real64" Value="0.0927152317880795"/>
+										<Property Name="MakeUpGain" Type="Real64">
+											<ValueList>
+												<Value>3</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-60</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
-									<Language>SFX</Language>
-									<AudioFile>Player\Locomotion\Vehicles\Grizzler\MoveLoop.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="638871171"/>
-									</MediaIDList>
-								</AudioFileSource>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{76303271-6B26-4C24-9127-2CA0A617594D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D644C3B1-4CAA-4FEE-AF64-4347A85E2B06}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Deccelerate" ID="{9BC3E5BD-54EA-4FE9-8D22-4F07C2FAD29C}">
+											<Language>SFX</Language>
+											<AudioFile>Player\Locomotion\Vehicles\Grizzler\Deccelerate.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="804114056"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Deccelerate" ID="{9BC3E5BD-54EA-4FE9-8D22-4F07C2FAD29C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Idle" ID="{ABD076B1-102E-4FD3-AE74-D939375032D0}" ShortID="974522118">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{76303271-6B26-4C24-9127-2CA0A617594D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D644C3B1-4CAA-4FEE-AF64-4347A85E2B06}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Idle" ID="{E5DEBA32-E7C6-471C-84F4-079620B75563}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.107852412488174"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Player\Locomotion\Vehicles\Grizzler\Idle.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="98987776"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="RTPC">
+											<Reference>
+												<Local>
+													<RTPC Name="" ID="{6DC9E6DB-B790-48D1-9AE6-774FE677B0EC}" ShortID="65611709">
+														<PropertyList>
+															<Property Name="PropertyName" Type="string" Value="Volume"/>
+														</PropertyList>
+														<ReferenceList>
+															<Reference Name="ControlInput">
+																<ObjectRef Name="PlayerSpeed" ID="{FD740967-E193-465C-9D02-E5B4F2E93EC3}" WorkUnitID="{F11C780D-9938-44B0-B03A-FCD1A9E09ADC}"/>
+															</Reference>
+															<Reference Name="Curve">
+																<Custom>
+																	<Curve Name="" ID="{A28DD45C-7445-4358-BD52-11F2A51F9D8C}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>0</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>2.501</XPos>
+																				<YPos>-1.58908</YPos>
+																				<Flags>0</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>25</XPos>
+																				<YPos>-200</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</Custom>
+															</Reference>
+														</ReferenceList>
+													</RTPC>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+									<ActiveSourceList>
+										<ActiveSource Name="Idle" ID="{E5DEBA32-E7C6-471C-84F4-079620B75563}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="MoveLoop" ID="{B8F16ECA-3C7E-45E7-ABAD-6BDB1B2CE951}" ShortID="883261461">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{76303271-6B26-4C24-9127-2CA0A617594D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D644C3B1-4CAA-4FEE-AF64-4347A85E2B06}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="MoveLoop" ID="{3F551054-4A7C-4D9B-9367-6402BFD33206}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.0927152317880795"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Player\Locomotion\Vehicles\Grizzler\MoveLoop.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="638871171"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="RTPC">
+											<Reference>
+												<Local>
+													<RTPC Name="" ID="{6382CE88-B432-4742-9559-C069662632F8}" ShortID="85962640">
+														<PropertyList>
+															<Property Name="PropertyName" Type="string" Value="Pitch"/>
+														</PropertyList>
+														<ReferenceList>
+															<Reference Name="ControlInput">
+																<ObjectRef Name="PlayerSpeed" ID="{FD740967-E193-465C-9D02-E5B4F2E93EC3}" WorkUnitID="{F11C780D-9938-44B0-B03A-FCD1A9E09ADC}"/>
+															</Reference>
+															<Reference Name="Curve">
+																<Custom>
+																	<Curve Name="" ID="{B9734531-B436-472D-B919-7C939A9C8D91}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="65537"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>-483</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>2.55067</XPos>
+																				<YPos>70</YPos>
+																				<Flags>0</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>25</XPos>
+																				<YPos>917</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</Custom>
+															</Reference>
+														</ReferenceList>
+													</RTPC>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+									<ActiveSourceList>
+										<ActiveSource Name="MoveLoop" ID="{3F551054-4A7C-4D9B-9367-6402BFD33206}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Stop Moving" ID="{746E6111-5FB2-4CB2-B7CA-79496EDB6D19}" ShortID="642728132">
+									<PropertyList>
+										<Property Name="MakeUpGain" Type="Real64">
+											<ValueList>
+												<Value>8</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{76303271-6B26-4C24-9127-2CA0A617594D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D644C3B1-4CAA-4FEE-AF64-4347A85E2B06}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="StopEvent" ID="{D72007D1-2C2D-4EC4-919E-0030C5399A11}">
+											<Language>SFX</Language>
+											<AudioFile>Player\Locomotion\Vehicles\Grizzler\StopEvent.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="20269213"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="StopEvent" ID="{D72007D1-2C2D-4EC4-919E-0030C5399A11}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Turning" ID="{58D99ADF-682E-49E4-9538-284AA122282A}" ShortID="863469350">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{76303271-6B26-4C24-9127-2CA0A617594D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D644C3B1-4CAA-4FEE-AF64-4347A85E2B06}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Turning" ID="{D9FE84D7-0EAD-4705-BE77-36ACE9F1D963}">
+											<Language>SFX</Language>
+											<AudioFile>Player\Locomotion\Vehicles\Grizzler\Turning.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="328188123"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Turning" ID="{D9FE84D7-0EAD-4705-BE77-36ACE9F1D963}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Wheels_On_Concrete" ID="{462C46D2-B026-4F78-AF37-562D16C805C3}" ShortID="214325052">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{76303271-6B26-4C24-9127-2CA0A617594D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D644C3B1-4CAA-4FEE-AF64-4347A85E2B06}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Wheels_On_Metal_" ID="{E064D23C-0159-46DD-9DDB-124D46CC0935}">
+											<Language>SFX</Language>
+											<AudioFile>Player\Locomotion\Vehicles\Grizzler\Wheels_On_Metal_.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="385143876"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="RTPC">
+											<Reference>
+												<Local>
+													<RTPC Name="" ID="{D71346B3-0D53-44C9-B84C-3841823CCABE}" ShortID="1054670207">
+														<PropertyList>
+															<Property Name="PropertyName" Type="string" Value="Pitch"/>
+														</PropertyList>
+														<ReferenceList>
+															<Reference Name="ControlInput">
+																<ObjectRef Name="PlayerSpeed" ID="{FD740967-E193-465C-9D02-E5B4F2E93EC3}" WorkUnitID="{F11C780D-9938-44B0-B03A-FCD1A9E09ADC}"/>
+															</Reference>
+															<Reference Name="Curve">
+																<Custom>
+																	<Curve Name="" ID="{64D459E4-CA2A-4B86-A874-A41B7F3008DE}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="65537"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>-500</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>25</XPos>
+																				<YPos>130</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</Custom>
+															</Reference>
+														</ReferenceList>
+													</RTPC>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<RTPC Name="" ID="{F1963665-A7BD-4789-A766-A28930688B94}" ShortID="332125494">
+														<PropertyList>
+															<Property Name="PropertyName" Type="string" Value="Volume"/>
+														</PropertyList>
+														<ReferenceList>
+															<Reference Name="ControlInput">
+																<ObjectRef Name="PlayerSpeed" ID="{FD740967-E193-465C-9D02-E5B4F2E93EC3}" WorkUnitID="{F11C780D-9938-44B0-B03A-FCD1A9E09ADC}"/>
+															</Reference>
+															<Reference Name="Curve">
+																<Custom>
+																	<Curve Name="" ID="{9CBE443B-237E-4819-BBA0-3BA7AA677C46}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>-200</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>1</XPos>
+																				<YPos>0</YPos>
+																				<Flags>0</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>25</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</Custom>
+															</Reference>
+														</ReferenceList>
+													</RTPC>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+									<ActiveSourceList>
+										<ActiveSource Name="Wheels_On_Metal_" ID="{E064D23C-0159-46DD-9DDB-124D46CC0935}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Wheels_On_Metal" ID="{47C2BAAE-8E38-4CE7-9A9E-BA41D3BE4CE7}" ShortID="1054811860">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{76303271-6B26-4C24-9127-2CA0A617594D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D644C3B1-4CAA-4FEE-AF64-4347A85E2B06}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Wheels_On_Concree" ID="{1FAC6A80-21CC-435B-BFD7-FDAFFDC8865E}">
+											<Language>SFX</Language>
+											<AudioFile>Player\Locomotion\Vehicles\Grizzler\Wheels_On_Concree.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="554176368"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="RTPC">
+											<Reference>
+												<Local>
+													<RTPC Name="" ID="{10C8924D-AE05-45DA-900A-1E0A959559E5}" ShortID="754517259">
+														<PropertyList>
+															<Property Name="PropertyName" Type="string" Value="Pitch"/>
+														</PropertyList>
+														<ReferenceList>
+															<Reference Name="ControlInput">
+																<ObjectRef Name="PlayerSpeed" ID="{FD740967-E193-465C-9D02-E5B4F2E93EC3}" WorkUnitID="{F11C780D-9938-44B0-B03A-FCD1A9E09ADC}"/>
+															</Reference>
+															<Reference Name="Curve">
+																<Custom>
+																	<Curve Name="" ID="{A6FDE58A-A697-4C80-8BEF-95F3C64A1B7C}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="65537"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>-500</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>25</XPos>
+																				<YPos>130</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</Custom>
+															</Reference>
+														</ReferenceList>
+													</RTPC>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<RTPC Name="" ID="{510F66F6-F324-4CA8-BF53-7C2332E2C385}" ShortID="1024766116">
+														<PropertyList>
+															<Property Name="PropertyName" Type="string" Value="Volume"/>
+														</PropertyList>
+														<ReferenceList>
+															<Reference Name="ControlInput">
+																<ObjectRef Name="PlayerSpeed" ID="{FD740967-E193-465C-9D02-E5B4F2E93EC3}" WorkUnitID="{F11C780D-9938-44B0-B03A-FCD1A9E09ADC}"/>
+															</Reference>
+															<Reference Name="Curve">
+																<Custom>
+																	<Curve Name="" ID="{3A410256-4813-430B-B4BE-71223A191188}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>-200</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>1</XPos>
+																				<YPos>0</YPos>
+																				<Flags>0</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>25</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</Custom>
+															</Reference>
+														</ReferenceList>
+													</RTPC>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+									<ActiveSourceList>
+										<ActiveSource Name="Wheels_On_Concree" ID="{1FAC6A80-21CC-435B-BFD7-FDAFFDC8865E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
 							</ChildrenList>
-							<ObjectLists>
-								<ObjectList Name="RTPC">
-									<Reference>
-										<Local>
-											<RTPC Name="" ID="{6382CE88-B432-4742-9559-C069662632F8}" ShortID="85962640">
-												<PropertyList>
-													<Property Name="PropertyName" Type="string" Value="Pitch"/>
-												</PropertyList>
-												<ReferenceList>
-													<Reference Name="ControlInput">
-														<ObjectRef Name="PlayerSpeed" ID="{FD740967-E193-465C-9D02-E5B4F2E93EC3}" WorkUnitID="{F11C780D-9938-44B0-B03A-FCD1A9E09ADC}"/>
-													</Reference>
-													<Reference Name="Curve">
-														<Custom>
-															<Curve Name="" ID="{B9734531-B436-472D-B919-7C939A9C8D91}">
-																<PropertyList>
-																	<Property Name="Flags" Type="int32" Value="65537"/>
-																</PropertyList>
-																<PointList>
-																	<Point>
-																		<XPos>0</XPos>
-																		<YPos>-483</YPos>
-																		<Flags>5</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>2.55067</XPos>
-																		<YPos>70</YPos>
-																		<Flags>0</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>25</XPos>
-																		<YPos>917</YPos>
-																		<Flags>37</Flags>
-																	</Point>
-																</PointList>
-															</Curve>
-														</Custom>
-													</Reference>
-												</ReferenceList>
-											</RTPC>
-										</Local>
-									</Reference>
-								</ObjectList>
-							</ObjectLists>
-							<ActiveSourceList>
-								<ActiveSource Name="MoveLoop" ID="{3F551054-4A7C-4D9B-9367-6402BFD33206}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="Begin Moving" ID="{6242E847-662F-49A6-B89D-E965E39FDEFE}" ShortID="623826493">
-							<PropertyList>
-								<Property Name="MakeUpGain" Type="Real64">
-									<ValueList>
-										<Value>8</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{76303271-6B26-4C24-9127-2CA0A617594D}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D644C3B1-4CAA-4FEE-AF64-4347A85E2B06}"/>
-								</Reference>
-							</ReferenceList>
+						</Folder>
+						<Folder Name="Idea2" ID="{0F19CC45-BA2A-41AF-88FA-3225E58F0CD5}" ShortID="110265670">
 							<ChildrenList>
-								<AudioFileSource Name="Begine Moving" ID="{52DB7BCF-68F9-4FB2-A48B-8EEB4A4EC578}">
-									<Language>SFX</Language>
-									<AudioFile>Player\Locomotion\Vehicles\Grizzler\Begine Moving.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="1043149136"/>
-									</MediaIDList>
-								</AudioFileSource>
+								<Sound Name="Idle2" ID="{34235AF9-AE6D-4CAC-86FB-426CCACABA7B}" ShortID="228182871">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{76303271-6B26-4C24-9127-2CA0A617594D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D644C3B1-4CAA-4FEE-AF64-4347A85E2B06}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Idle2" ID="{2FB130B6-F6E7-4A09-8BD9-1DDFD82409AB}">
+											<Language>SFX</Language>
+											<AudioFile>Player\Locomotion\Vehicles\Grizzler\Idle2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="469452242"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Idle2" ID="{2FB130B6-F6E7-4A09-8BD9-1DDFD82409AB}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Move" ID="{D2BAA9E5-31EB-4B81-8C93-957C90C9AD16}" ShortID="1064071299">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{76303271-6B26-4C24-9127-2CA0A617594D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D644C3B1-4CAA-4FEE-AF64-4347A85E2B06}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Move" ID="{BA169146-C312-4B46-A7A3-F6753CA6E071}">
+											<Language>SFX</Language>
+											<AudioFile>Player\Locomotion\Vehicles\Grizzler\Move.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="919551733"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="RTPC">
+											<Reference>
+												<Local>
+													<RTPC Name="" ID="{551EAEE9-9C4A-4ECA-A9E3-92F6B21EBCD1}" ShortID="795017858">
+														<PropertyList>
+															<Property Name="PropertyName" Type="string" Value="Pitch"/>
+														</PropertyList>
+														<ReferenceList>
+															<Reference Name="ControlInput">
+																<ObjectRef Name="PlayerSpeed" ID="{FD740967-E193-465C-9D02-E5B4F2E93EC3}" WorkUnitID="{F11C780D-9938-44B0-B03A-FCD1A9E09ADC}"/>
+															</Reference>
+															<Reference Name="Curve">
+																<Custom>
+																	<Curve Name="" ID="{9204D174-9491-46F0-8FDD-5F3C25514F56}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="65537"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>-483</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>2.55067</XPos>
+																				<YPos>70</YPos>
+																				<Flags>0</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>25</XPos>
+																				<YPos>917</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</Custom>
+															</Reference>
+														</ReferenceList>
+													</RTPC>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+									<ActiveSourceList>
+										<ActiveSource Name="Move" ID="{BA169146-C312-4B46-A7A3-F6753CA6E071}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="StartMoving" ID="{3CC6E700-DB6C-4095-A7A2-DA313FA42D1B}" ShortID="111160856">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{76303271-6B26-4C24-9127-2CA0A617594D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D644C3B1-4CAA-4FEE-AF64-4347A85E2B06}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="StartMoving" ID="{6DFF765A-8F53-4C0F-B969-2B6729C5E267}">
+											<Language>SFX</Language>
+											<AudioFile>Player\Locomotion\Vehicles\Grizzler\StartMoving.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="220290240"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="StartMoving" ID="{6DFF765A-8F53-4C0F-B969-2B6729C5E267}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Stop Moving" ID="{51BCED6E-D70B-4DBD-9C94-E6159DE0F1E5}" ShortID="818825276">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{76303271-6B26-4C24-9127-2CA0A617594D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D644C3B1-4CAA-4FEE-AF64-4347A85E2B06}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Stop Moving" ID="{59B074EB-AE1D-4483-84FF-34B9E33F7FFC}">
+											<Language>SFX</Language>
+											<AudioFile>Player\Locomotion\Vehicles\Grizzler\Stop Moving.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="172724047"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Stop Moving" ID="{59B074EB-AE1D-4483-84FF-34B9E33F7FFC}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Folder Name="Turret" ID="{21DF3C70-E678-4D4C-BCF8-F29DF018C7FD}" ShortID="793067231">
+									<ChildrenList>
+										<Sound Name="Turrent_StartTurning" ID="{516A3E5A-272F-4751-8E0C-E0107136DC51}" ShortID="342027904">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{76303271-6B26-4C24-9127-2CA0A617594D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D644C3B1-4CAA-4FEE-AF64-4347A85E2B06}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Turrent_StartTurning" ID="{1C653D64-1A07-454F-B0C1-A62F8CCC0A17}">
+													<Language>SFX</Language>
+													<AudioFile>Player\Locomotion\Vehicles\Grizzler\Turrent_StartTurning.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="742121366"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Turrent_StartTurning" ID="{1C653D64-1A07-454F-B0C1-A62F8CCC0A17}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Turrent_StopTurning" ID="{BA99DB61-A70A-4E28-8BE4-78212EEA2407}" ShortID="105528060">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{76303271-6B26-4C24-9127-2CA0A617594D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D644C3B1-4CAA-4FEE-AF64-4347A85E2B06}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Turrent_StopTurning" ID="{94027607-00B1-4DC6-A1DF-E3415ECF0B4B}">
+													<Language>SFX</Language>
+													<AudioFile>Player\Locomotion\Vehicles\Grizzler\Turrent_StopTurning.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="780472207"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Turrent_StopTurning" ID="{94027607-00B1-4DC6-A1DF-E3415ECF0B4B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Turrent_TurnLoop" ID="{F8D453E7-11FD-4E88-9D2D-F2059692E00F}" ShortID="770154429">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{76303271-6B26-4C24-9127-2CA0A617594D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D644C3B1-4CAA-4FEE-AF64-4347A85E2B06}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Turrent_TurnLoop" ID="{995E857E-AC76-4EF8-95C7-16464E9D7D0F}">
+													<Language>SFX</Language>
+													<AudioFile>Player\Locomotion\Vehicles\Grizzler\Turrent_TurnLoop.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1018111715"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Turrent_TurnLoop" ID="{995E857E-AC76-4EF8-95C7-16464E9D7D0F}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</Folder>
 							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="Begine Moving" ID="{52DB7BCF-68F9-4FB2-A48B-8EEB4A4EC578}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="Stop Moving" ID="{746E6111-5FB2-4CB2-B7CA-79496EDB6D19}" ShortID="642728132">
-							<PropertyList>
-								<Property Name="MakeUpGain" Type="Real64">
-									<ValueList>
-										<Value>8</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{76303271-6B26-4C24-9127-2CA0A617594D}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D644C3B1-4CAA-4FEE-AF64-4347A85E2B06}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="StopEvent" ID="{D72007D1-2C2D-4EC4-919E-0030C5399A11}">
-									<Language>SFX</Language>
-									<AudioFile>Player\Locomotion\Vehicles\Grizzler\StopEvent.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="20269213"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="StopEvent" ID="{D72007D1-2C2D-4EC4-919E-0030C5399A11}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="Turning" ID="{58D99ADF-682E-49E4-9538-284AA122282A}" ShortID="863469350">
-							<PropertyList>
-								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{76303271-6B26-4C24-9127-2CA0A617594D}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D644C3B1-4CAA-4FEE-AF64-4347A85E2B06}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Turning" ID="{D9FE84D7-0EAD-4705-BE77-36ACE9F1D963}">
-									<Language>SFX</Language>
-									<AudioFile>Player\Locomotion\Vehicles\Grizzler\Turning.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="328188123"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="Turning" ID="{D9FE84D7-0EAD-4705-BE77-36ACE9F1D963}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="Wheels_On_Metal" ID="{47C2BAAE-8E38-4CE7-9A9E-BA41D3BE4CE7}" ShortID="1054811860">
-							<PropertyList>
-								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{76303271-6B26-4C24-9127-2CA0A617594D}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D644C3B1-4CAA-4FEE-AF64-4347A85E2B06}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Wheels_On_Concree" ID="{1FAC6A80-21CC-435B-BFD7-FDAFFDC8865E}">
-									<Language>SFX</Language>
-									<AudioFile>Player\Locomotion\Vehicles\Grizzler\Wheels_On_Concree.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="554176368"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ObjectLists>
-								<ObjectList Name="RTPC">
-									<Reference>
-										<Local>
-											<RTPC Name="" ID="{10C8924D-AE05-45DA-900A-1E0A959559E5}" ShortID="754517259">
-												<PropertyList>
-													<Property Name="PropertyName" Type="string" Value="Pitch"/>
-												</PropertyList>
-												<ReferenceList>
-													<Reference Name="ControlInput">
-														<ObjectRef Name="PlayerSpeed" ID="{FD740967-E193-465C-9D02-E5B4F2E93EC3}" WorkUnitID="{F11C780D-9938-44B0-B03A-FCD1A9E09ADC}"/>
-													</Reference>
-													<Reference Name="Curve">
-														<Custom>
-															<Curve Name="" ID="{A6FDE58A-A697-4C80-8BEF-95F3C64A1B7C}">
-																<PropertyList>
-																	<Property Name="Flags" Type="int32" Value="65537"/>
-																</PropertyList>
-																<PointList>
-																	<Point>
-																		<XPos>0</XPos>
-																		<YPos>-500</YPos>
-																		<Flags>5</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>25</XPos>
-																		<YPos>130</YPos>
-																		<Flags>37</Flags>
-																	</Point>
-																</PointList>
-															</Curve>
-														</Custom>
-													</Reference>
-												</ReferenceList>
-											</RTPC>
-										</Local>
-									</Reference>
-									<Reference>
-										<Local>
-											<RTPC Name="" ID="{510F66F6-F324-4CA8-BF53-7C2332E2C385}" ShortID="1024766116">
-												<PropertyList>
-													<Property Name="PropertyName" Type="string" Value="Volume"/>
-												</PropertyList>
-												<ReferenceList>
-													<Reference Name="ControlInput">
-														<ObjectRef Name="PlayerSpeed" ID="{FD740967-E193-465C-9D02-E5B4F2E93EC3}" WorkUnitID="{F11C780D-9938-44B0-B03A-FCD1A9E09ADC}"/>
-													</Reference>
-													<Reference Name="Curve">
-														<Custom>
-															<Curve Name="" ID="{3A410256-4813-430B-B4BE-71223A191188}">
-																<PropertyList>
-																	<Property Name="Flags" Type="int32" Value="3"/>
-																</PropertyList>
-																<PointList>
-																	<Point>
-																		<XPos>0</XPos>
-																		<YPos>-200</YPos>
-																		<Flags>5</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>1</XPos>
-																		<YPos>0</YPos>
-																		<Flags>0</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>25</XPos>
-																		<YPos>0</YPos>
-																		<Flags>37</Flags>
-																	</Point>
-																</PointList>
-															</Curve>
-														</Custom>
-													</Reference>
-												</ReferenceList>
-											</RTPC>
-										</Local>
-									</Reference>
-								</ObjectList>
-							</ObjectLists>
-							<ActiveSourceList>
-								<ActiveSource Name="Wheels_On_Concree" ID="{1FAC6A80-21CC-435B-BFD7-FDAFFDC8865E}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="Wheels_On_Concrete" ID="{462C46D2-B026-4F78-AF37-562D16C805C3}" ShortID="214325052">
-							<PropertyList>
-								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{76303271-6B26-4C24-9127-2CA0A617594D}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D644C3B1-4CAA-4FEE-AF64-4347A85E2B06}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Wheels_On_Metal_" ID="{E064D23C-0159-46DD-9DDB-124D46CC0935}">
-									<Language>SFX</Language>
-									<AudioFile>Player\Locomotion\Vehicles\Grizzler\Wheels_On_Metal_.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="385143876"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ObjectLists>
-								<ObjectList Name="RTPC">
-									<Reference>
-										<Local>
-											<RTPC Name="" ID="{D71346B3-0D53-44C9-B84C-3841823CCABE}" ShortID="1054670207">
-												<PropertyList>
-													<Property Name="PropertyName" Type="string" Value="Pitch"/>
-												</PropertyList>
-												<ReferenceList>
-													<Reference Name="ControlInput">
-														<ObjectRef Name="PlayerSpeed" ID="{FD740967-E193-465C-9D02-E5B4F2E93EC3}" WorkUnitID="{F11C780D-9938-44B0-B03A-FCD1A9E09ADC}"/>
-													</Reference>
-													<Reference Name="Curve">
-														<Custom>
-															<Curve Name="" ID="{64D459E4-CA2A-4B86-A874-A41B7F3008DE}">
-																<PropertyList>
-																	<Property Name="Flags" Type="int32" Value="65537"/>
-																</PropertyList>
-																<PointList>
-																	<Point>
-																		<XPos>0</XPos>
-																		<YPos>-500</YPos>
-																		<Flags>5</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>25</XPos>
-																		<YPos>130</YPos>
-																		<Flags>37</Flags>
-																	</Point>
-																</PointList>
-															</Curve>
-														</Custom>
-													</Reference>
-												</ReferenceList>
-											</RTPC>
-										</Local>
-									</Reference>
-									<Reference>
-										<Local>
-											<RTPC Name="" ID="{F1963665-A7BD-4789-A766-A28930688B94}" ShortID="332125494">
-												<PropertyList>
-													<Property Name="PropertyName" Type="string" Value="Volume"/>
-												</PropertyList>
-												<ReferenceList>
-													<Reference Name="ControlInput">
-														<ObjectRef Name="PlayerSpeed" ID="{FD740967-E193-465C-9D02-E5B4F2E93EC3}" WorkUnitID="{F11C780D-9938-44B0-B03A-FCD1A9E09ADC}"/>
-													</Reference>
-													<Reference Name="Curve">
-														<Custom>
-															<Curve Name="" ID="{9CBE443B-237E-4819-BBA0-3BA7AA677C46}">
-																<PropertyList>
-																	<Property Name="Flags" Type="int32" Value="3"/>
-																</PropertyList>
-																<PointList>
-																	<Point>
-																		<XPos>0</XPos>
-																		<YPos>-200</YPos>
-																		<Flags>5</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>1</XPos>
-																		<YPos>0</YPos>
-																		<Flags>0</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>25</XPos>
-																		<YPos>0</YPos>
-																		<Flags>37</Flags>
-																	</Point>
-																</PointList>
-															</Curve>
-														</Custom>
-													</Reference>
-												</ReferenceList>
-											</RTPC>
-										</Local>
-									</Reference>
-								</ObjectList>
-							</ObjectLists>
-							<ActiveSourceList>
-								<ActiveSource Name="Wheels_On_Metal_" ID="{E064D23C-0159-46DD-9DDB-124D46CC0935}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="Deccelerate" ID="{1B063DA3-6B6B-4C16-A1D7-0F5B9658E445}" ShortID="1009196194">
-							<PropertyList>
-								<Property Name="MakeUpGain" Type="Real64">
-									<ValueList>
-										<Value>3</Value>
-									</ValueList>
-								</Property>
-								<Property Name="Pitch" Type="int32">
-									<ValueList>
-										<Value>-60</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{76303271-6B26-4C24-9127-2CA0A617594D}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D644C3B1-4CAA-4FEE-AF64-4347A85E2B06}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Deccelerate" ID="{9BC3E5BD-54EA-4FE9-8D22-4F07C2FAD29C}">
-									<Language>SFX</Language>
-									<AudioFile>Player\Locomotion\Vehicles\Grizzler\Deccelerate.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="804114056"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="Deccelerate" ID="{9BC3E5BD-54EA-4FE9-8D22-4F07C2FAD29C}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
+						</Folder>
 					</ChildrenList>
 				</Folder>
 				<BlendContainer Name="Grizzler Blend Container" ID="{5EB20AB2-33A0-4324-86C4-A5FAEA410B3A}" ShortID="1004909550">
@@ -1384,6 +1603,13 @@
 					</BlendTrackList>
 				</BlendContainer>
 				<BlendContainer Name="Grizzler_Movement" ID="{D04E1FBD-CD5B-46A4-9C7C-1D7BEF0A8DAA}" ShortID="214775200">
+					<PropertyList>
+						<Property Name="Inclusion" Type="bool">
+							<ValueList>
+								<Value>False</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{76303271-6B26-4C24-9127-2CA0A617594D}"/>
@@ -1562,7 +1788,7 @@
 									<PropertyList>
 										<Property Name="MakeUpGain" Type="Real64">
 											<ValueList>
-												<Value>4</Value>
+												<Value>2</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -1587,40 +1813,11 @@
 										<ActiveSource Name="Begine Moving" ID="{B4961913-B524-416D-9C85-4AF2275F1E20}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="Stop Moving" ID="{18B02273-354A-474B-B61E-2ECB08BADAD0}" ShortID="249590467">
-									<PropertyList>
-										<Property Name="MakeUpGain" Type="Real64">
-											<ValueList>
-												<Value>4</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{76303271-6B26-4C24-9127-2CA0A617594D}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D644C3B1-4CAA-4FEE-AF64-4347A85E2B06}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="StopEvent" ID="{EDAEB03C-DD92-4132-990A-2B21CF9B71FA}">
-											<Language>SFX</Language>
-											<AudioFile>Player\Locomotion\Vehicles\Grizzler\StopEvent.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="20269213"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="StopEvent" ID="{EDAEB03C-DD92-4132-990A-2B21CF9B71FA}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
 								<Sound Name="Deccelerate" ID="{AC7FD033-C0B6-49C1-A9A4-F24E62B5F8CB}" ShortID="858848001">
 									<PropertyList>
 										<Property Name="MakeUpGain" Type="Real64">
 											<ValueList>
-												<Value>3</Value>
+												<Value>4</Value>
 											</ValueList>
 										</Property>
 										<Property Name="Pitch" Type="int32">
@@ -1650,14 +1847,43 @@
 										<ActiveSource Name="Deccelerate" ID="{AD4E6FC8-F245-405E-AB8A-C8B0C6B43BFA}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
+								<Sound Name="Stop Moving" ID="{69978702-1C22-458F-8149-39270384694C}" ShortID="429719276">
+									<PropertyList>
+										<Property Name="MakeUpGain" Type="Real64">
+											<ValueList>
+												<Value>2</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{76303271-6B26-4C24-9127-2CA0A617594D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D644C3B1-4CAA-4FEE-AF64-4347A85E2B06}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="StopEvent" ID="{84A2DCA4-727C-4250-87F9-DAC588B4F3A8}">
+											<Language>SFX</Language>
+											<AudioFile>Player\Locomotion\Vehicles\Grizzler\StopEvent.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="20269213"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="StopEvent" ID="{84A2DCA4-727C-4250-87F9-DAC588B4F3A8}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
 							</ChildrenList>
 							<GroupingInfo>
 								<GroupingBehaviorList>
 									<GroupingBehavior>
-										<ItemRef Name="Deccelerate" ID="{AC7FD033-C0B6-49C1-A9A4-F24E62B5F8CB}"/>
+										<ItemRef Name="Stop Moving" ID="{69978702-1C22-458F-8149-39270384694C}"/>
 									</GroupingBehavior>
 									<GroupingBehavior>
-										<ItemRef Name="Stop Moving" ID="{18B02273-354A-474B-B61E-2ECB08BADAD0}"/>
+										<ItemRef Name="Deccelerate" ID="{AC7FD033-C0B6-49C1-A9A4-F24E62B5F8CB}"/>
 									</GroupingBehavior>
 									<GroupingBehavior>
 										<ItemRef Name="Begin Moving" ID="{6DFAABCC-A5A8-4FA4-86E5-23B13A072F17}"/>
@@ -1667,7 +1893,7 @@
 									<Grouping>
 										<SwitchRef Name="Idle" ID="{F8489C0B-C6A7-4D57-A10F-CDBBC5074745}"/>
 										<ItemList>
-											<ItemRef Name="Stop Moving" ID="{18B02273-354A-474B-B61E-2ECB08BADAD0}"/>
+											<ItemRef Name="Stop Moving" ID="{69978702-1C22-458F-8149-39270384694C}"/>
 										</ItemList>
 									</Grouping>
 									<Grouping>
@@ -2041,7 +2267,7 @@
 								<BlendTrackAssoc>
 									<ItemRef Name="MoveLoop" ID="{E734AF1B-4969-4CEC-B3A7-B456CE179F20}"/>
 									<CrossfadingInfo>
-										<LeftEdgePos>0.479811375892211</LeftEdgePos>
+										<LeftEdgePos>0.184180408075614</LeftEdgePos>
 										<LeftFadingMode>Automatic</LeftFadingMode>
 										<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
 										<RightEdgePos>25</RightEdgePos>
@@ -2115,6 +2341,819 @@
 						</BlendTrack>
 					</BlendTrackList>
 				</BlendContainer>
+				<BlendContainer Name="Grizzler_Movement_01" ID="{5C226028-4B1D-445B-8E6F-CBED8ADBFD41}" ShortID="743655729">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{76303271-6B26-4C24-9127-2CA0A617594D}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D644C3B1-4CAA-4FEE-AF64-4347A85E2B06}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<SwitchContainer Name="Acceleration_Switch" ID="{1CE3F4CD-9300-4A8A-BB69-83058A28EEF5}" ShortID="341252106">
+							<PropertyList>
+								<Property Name="SwitchBehavior" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{76303271-6B26-4C24-9127-2CA0A617594D}"/>
+								</Reference>
+								<Reference Name="DefaultSwitchOrState">
+									<ObjectRef Name="Idle" ID="{F8489C0B-C6A7-4D57-A10F-CDBBC5074745}" WorkUnitID="{81279BA2-8A0E-47D6-A112-99F5CC6B8F72}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D644C3B1-4CAA-4FEE-AF64-4347A85E2B06}"/>
+								</Reference>
+								<Reference Name="SwitchGroupOrStateGroup">
+									<ObjectRef Name="Acceleration" ID="{E0385D1B-6CD2-43D7-951D-3DE91E0EA987}" WorkUnitID="{81279BA2-8A0E-47D6-A112-99F5CC6B8F72}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Deccelerate" ID="{0428BFFD-3DFC-4DDD-8819-71D1716DE671}" ShortID="1049958178">
+									<PropertyList>
+										<Property Name="MakeUpGain" Type="Real64">
+											<ValueList>
+												<Value>4</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-60</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{76303271-6B26-4C24-9127-2CA0A617594D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D644C3B1-4CAA-4FEE-AF64-4347A85E2B06}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Deccelerate" ID="{1B396991-3811-4868-9328-A2CEC6833786}">
+											<Language>SFX</Language>
+											<AudioFile>Player\Locomotion\Vehicles\Grizzler\Deccelerate.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="804114056"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Deccelerate" ID="{1B396991-3811-4868-9328-A2CEC6833786}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="StartMoving" ID="{7863E995-905E-4092-8958-B2D267FC6656}" ShortID="1048958239">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{76303271-6B26-4C24-9127-2CA0A617594D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D644C3B1-4CAA-4FEE-AF64-4347A85E2B06}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="StartMoving" ID="{F17E21E0-24BF-4414-A575-10A4347F5F6C}">
+											<Language>SFX</Language>
+											<AudioFile>Player\Locomotion\Vehicles\Grizzler\StartMoving.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="220290240"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="StartMoving" ID="{F17E21E0-24BF-4414-A575-10A4347F5F6C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Stop Moving_01" ID="{D3F4E159-E591-422B-943A-2D8474FEEDC7}" ShortID="928344839">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{76303271-6B26-4C24-9127-2CA0A617594D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D644C3B1-4CAA-4FEE-AF64-4347A85E2B06}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Stop Moving" ID="{D8A417D1-76F0-48C7-8236-292B7F3FFC27}">
+											<Language>SFX</Language>
+											<AudioFile>Player\Locomotion\Vehicles\Grizzler\Stop Moving.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="172724047"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Stop Moving" ID="{D8A417D1-76F0-48C7-8236-292B7F3FFC27}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<GroupingInfo>
+								<GroupingBehaviorList>
+									<GroupingBehavior>
+										<ItemRef Name="Stop Moving_01" ID="{D3F4E159-E591-422B-943A-2D8474FEEDC7}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="StartMoving" ID="{7863E995-905E-4092-8958-B2D267FC6656}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Deccelerate" ID="{0428BFFD-3DFC-4DDD-8819-71D1716DE671}"/>
+									</GroupingBehavior>
+								</GroupingBehaviorList>
+								<GroupingList>
+									<Grouping>
+										<SwitchRef Name="Idle" ID="{F8489C0B-C6A7-4D57-A10F-CDBBC5074745}"/>
+										<ItemList>
+											<ItemRef Name="Stop Moving_01" ID="{D3F4E159-E591-422B-943A-2D8474FEEDC7}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Deccel" ID="{694F2C43-125C-4448-BB20-FDB2056AB5B3}"/>
+										<ItemList>
+											<ItemRef Name="Deccelerate" ID="{0428BFFD-3DFC-4DDD-8819-71D1716DE671}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Accel" ID="{AA9E2F8A-61F8-4522-8635-5B3A3EA83C3A}"/>
+										<ItemList>
+											<ItemRef Name="StartMoving" ID="{7863E995-905E-4092-8958-B2D267FC6656}"/>
+										</ItemList>
+									</Grouping>
+								</GroupingList>
+							</GroupingInfo>
+						</SwitchContainer>
+						<SwitchContainer Name="Turning_Switch" ID="{89531355-4D9F-438D-98CF-ACF800D699B2}" ShortID="532624888">
+							<PropertyList>
+								<Property Name="SwitchBehavior" Type="int16" Value="1"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-3</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{76303271-6B26-4C24-9127-2CA0A617594D}"/>
+								</Reference>
+								<Reference Name="DefaultSwitchOrState">
+									<ObjectRef Name="NotTurning" ID="{434B14AE-493E-44BE-9BA5-738BC7FD3ACB}" WorkUnitID="{81279BA2-8A0E-47D6-A112-99F5CC6B8F72}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D644C3B1-4CAA-4FEE-AF64-4347A85E2B06}"/>
+								</Reference>
+								<Reference Name="SwitchGroupOrStateGroup">
+									<ObjectRef Name="Turning" ID="{9BE40E03-06AB-4C13-AAD5-80EE1FCBBEA2}" WorkUnitID="{81279BA2-8A0E-47D6-A112-99F5CC6B8F72}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Turning" ID="{B32E4C3C-F3C6-4876-A29A-3CBD6CDB9CBA}" ShortID="406169453">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{76303271-6B26-4C24-9127-2CA0A617594D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D644C3B1-4CAA-4FEE-AF64-4347A85E2B06}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Turning" ID="{554E13D3-4771-4FF0-B388-114E9BDA823C}">
+											<Language>SFX</Language>
+											<AudioFile>Player\Locomotion\Vehicles\Grizzler\Turning.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="328188123"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Turning" ID="{554E13D3-4771-4FF0-B388-114E9BDA823C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<GroupingInfo>
+								<GroupingBehaviorList>
+									<GroupingBehavior>
+										<ItemRef Name="Turning" ID="{B32E4C3C-F3C6-4876-A29A-3CBD6CDB9CBA}"/>
+										<PropertyList>
+											<Property Name="FadeInTime" Type="Real64">
+												<ValueList>
+													<Value>3</Value>
+												</ValueList>
+											</Property>
+											<Property Name="FadeOutTime" Type="Real64">
+												<ValueList>
+													<Value>3</Value>
+												</ValueList>
+											</Property>
+										</PropertyList>
+									</GroupingBehavior>
+								</GroupingBehaviorList>
+								<GroupingList>
+									<Grouping>
+										<SwitchRef Name="Turning" ID="{57FD0A53-297F-410E-8496-C05E38D6385E}"/>
+										<ItemList>
+											<ItemRef Name="Turning" ID="{B32E4C3C-F3C6-4876-A29A-3CBD6CDB9CBA}"/>
+										</ItemList>
+									</Grouping>
+								</GroupingList>
+							</GroupingInfo>
+						</SwitchContainer>
+						<SwitchContainer Name="Wheel_Surface_Material_Switch" ID="{ABAB0733-32CD-4274-8EF1-B20F75499F09}" ShortID="21426499">
+							<PropertyList>
+								<Property Name="SwitchBehavior" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{76303271-6B26-4C24-9127-2CA0A617594D}"/>
+								</Reference>
+								<Reference Name="DefaultSwitchOrState">
+									<ObjectRef Name="Metal" ID="{C88295FD-54D3-40EA-A433-8BFED5621460}" WorkUnitID="{81279BA2-8A0E-47D6-A112-99F5CC6B8F72}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D644C3B1-4CAA-4FEE-AF64-4347A85E2B06}"/>
+								</Reference>
+								<Reference Name="SwitchGroupOrStateGroup">
+									<ObjectRef Name="SurfaceType" ID="{82F337CB-5DA6-4464-98B5-440463210958}" WorkUnitID="{81279BA2-8A0E-47D6-A112-99F5CC6B8F72}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Wheels_On_Metal" ID="{E0BB013E-9AE1-44A0-AC75-28E1BEE117D1}" ShortID="741195036">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{76303271-6B26-4C24-9127-2CA0A617594D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D644C3B1-4CAA-4FEE-AF64-4347A85E2B06}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Wheels_On_Concree" ID="{DB67EB04-1992-4E6E-9C78-8F7F1EB9713A}">
+											<Language>SFX</Language>
+											<AudioFile>Player\Locomotion\Vehicles\Grizzler\Wheels_On_Concree.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="554176368"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="RTPC">
+											<Reference>
+												<Local>
+													<RTPC Name="" ID="{4A619ABE-D8E8-47FC-8B10-FCA2B7C307B9}" ShortID="88470922">
+														<PropertyList>
+															<Property Name="PropertyName" Type="string" Value="Pitch"/>
+														</PropertyList>
+														<ReferenceList>
+															<Reference Name="ControlInput">
+																<ObjectRef Name="PlayerSpeed" ID="{FD740967-E193-465C-9D02-E5B4F2E93EC3}" WorkUnitID="{F11C780D-9938-44B0-B03A-FCD1A9E09ADC}"/>
+															</Reference>
+															<Reference Name="Curve">
+																<Custom>
+																	<Curve Name="" ID="{D3C5D7DA-B2E9-410F-8A06-23187A2D9BA2}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="65537"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>-500</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>25</XPos>
+																				<YPos>130</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</Custom>
+															</Reference>
+														</ReferenceList>
+													</RTPC>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<RTPC Name="" ID="{6131A2C6-7B77-4DB1-9683-3EF78F9FB903}" ShortID="33779228">
+														<PropertyList>
+															<Property Name="PropertyName" Type="string" Value="Volume"/>
+														</PropertyList>
+														<ReferenceList>
+															<Reference Name="ControlInput">
+																<ObjectRef Name="PlayerSpeed" ID="{FD740967-E193-465C-9D02-E5B4F2E93EC3}" WorkUnitID="{F11C780D-9938-44B0-B03A-FCD1A9E09ADC}"/>
+															</Reference>
+															<Reference Name="Curve">
+																<Custom>
+																	<Curve Name="" ID="{5FDA03D1-4319-48D8-892F-E57B5EBD6EC0}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>-200</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>1</XPos>
+																				<YPos>0</YPos>
+																				<Flags>0</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>25</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</Custom>
+															</Reference>
+														</ReferenceList>
+													</RTPC>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+									<ActiveSourceList>
+										<ActiveSource Name="Wheels_On_Concree" ID="{DB67EB04-1992-4E6E-9C78-8F7F1EB9713A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Wheels_On_Concrete" ID="{BC6A2E80-DA4A-4B64-840D-0C4E6ACA4978}" ShortID="794648709">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{76303271-6B26-4C24-9127-2CA0A617594D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D644C3B1-4CAA-4FEE-AF64-4347A85E2B06}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Wheels_On_Metal_" ID="{84332C6D-A1B6-42F3-A58D-9E6F8055D3BC}">
+											<Language>SFX</Language>
+											<AudioFile>Player\Locomotion\Vehicles\Grizzler\Wheels_On_Metal_.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="385143876"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="RTPC">
+											<Reference>
+												<Local>
+													<RTPC Name="" ID="{0BACBDFC-AA05-4EC3-BD6D-BAB77EBB980A}" ShortID="77086317">
+														<PropertyList>
+															<Property Name="PropertyName" Type="string" Value="Pitch"/>
+														</PropertyList>
+														<ReferenceList>
+															<Reference Name="ControlInput">
+																<ObjectRef Name="PlayerSpeed" ID="{FD740967-E193-465C-9D02-E5B4F2E93EC3}" WorkUnitID="{F11C780D-9938-44B0-B03A-FCD1A9E09ADC}"/>
+															</Reference>
+															<Reference Name="Curve">
+																<Custom>
+																	<Curve Name="" ID="{5306D296-07B4-4E8C-BA94-68C96CFAEC85}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="65537"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>-500</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>25</XPos>
+																				<YPos>130</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</Custom>
+															</Reference>
+														</ReferenceList>
+													</RTPC>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<RTPC Name="" ID="{E300ACE2-955E-41E2-8F33-51C123282560}" ShortID="17430284">
+														<PropertyList>
+															<Property Name="PropertyName" Type="string" Value="Volume"/>
+														</PropertyList>
+														<ReferenceList>
+															<Reference Name="ControlInput">
+																<ObjectRef Name="PlayerSpeed" ID="{FD740967-E193-465C-9D02-E5B4F2E93EC3}" WorkUnitID="{F11C780D-9938-44B0-B03A-FCD1A9E09ADC}"/>
+															</Reference>
+															<Reference Name="Curve">
+																<Custom>
+																	<Curve Name="" ID="{6D0CDD53-D65A-4CB9-B62A-49DC55D59DDA}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>-200</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>1</XPos>
+																				<YPos>0</YPos>
+																				<Flags>0</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>25</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</Custom>
+															</Reference>
+														</ReferenceList>
+													</RTPC>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+									<ActiveSourceList>
+										<ActiveSource Name="Wheels_On_Metal_" ID="{84332C6D-A1B6-42F3-A58D-9E6F8055D3BC}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<GroupingInfo>
+								<GroupingBehaviorList>
+									<GroupingBehavior>
+										<ItemRef Name="Wheels_On_Metal" ID="{E0BB013E-9AE1-44A0-AC75-28E1BEE117D1}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Wheels_On_Concrete" ID="{BC6A2E80-DA4A-4B64-840D-0C4E6ACA4978}"/>
+									</GroupingBehavior>
+								</GroupingBehaviorList>
+								<GroupingList>
+									<Grouping>
+										<SwitchRef Name="Concrete" ID="{1102A276-BF6E-4751-B510-98811A05FC15}"/>
+										<ItemList>
+											<ItemRef Name="Wheels_On_Concrete" ID="{BC6A2E80-DA4A-4B64-840D-0C4E6ACA4978}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Metal" ID="{C88295FD-54D3-40EA-A433-8BFED5621460}"/>
+										<ItemList>
+											<ItemRef Name="Wheels_On_Metal" ID="{E0BB013E-9AE1-44A0-AC75-28E1BEE117D1}"/>
+										</ItemList>
+									</Grouping>
+								</GroupingList>
+							</GroupingInfo>
+						</SwitchContainer>
+						<Sound Name="Move" ID="{84A82148-1756-436E-AB6F-492825F67495}" ShortID="430079460">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{76303271-6B26-4C24-9127-2CA0A617594D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D644C3B1-4CAA-4FEE-AF64-4347A85E2B06}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Move" ID="{1E83338C-B19A-4914-9D56-EB8A8AAB7B84}">
+									<Language>SFX</Language>
+									<AudioFile>Player\Locomotion\Vehicles\Grizzler\Move.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="919551733"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{EC439364-BC46-46C1-BDFC-6BA9FDF2CD90}" ShortID="56211928">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Pitch"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="PlayerSpeed" ID="{FD740967-E193-465C-9D02-E5B4F2E93EC3}" WorkUnitID="{F11C780D-9938-44B0-B03A-FCD1A9E09ADC}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{87AE4BD3-F472-4EB2-A5AC-5990F01237B6}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="65537"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-483</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>2.55067</XPos>
+																		<YPos>70</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>25</XPos>
+																		<YPos>917</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+							<ActiveSourceList>
+								<ActiveSource Name="Move" ID="{1E83338C-B19A-4914-9D56-EB8A8AAB7B84}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Idle2" ID="{3E90B7C5-79A7-4648-97D6-BBDE3B189515}" ShortID="600187848">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{76303271-6B26-4C24-9127-2CA0A617594D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D644C3B1-4CAA-4FEE-AF64-4347A85E2B06}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Idle2" ID="{68DC230E-6EF5-445F-B075-D26FDD2EA0B6}">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.193598113891912"/>
+										<Property Name="TrimEnd" Type="Real64" Value="12.4870783460283"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Player\Locomotion\Vehicles\Grizzler\Idle2.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="667947165"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Idle2" ID="{68DC230E-6EF5-445F-B075-D26FDD2EA0B6}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+					<BlendTrackList>
+						<BlendTrack Name="Movement" ID="{8483E752-AE1C-4D4D-B45D-47192E79E39A}" ShortID="154378015">
+							<PropertyList>
+								<Property Name="EnableCrossFading" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="LayerCrossFadeControlInput">
+									<ObjectRef Name="PlayerSpeed" ID="{FD740967-E193-465C-9D02-E5B4F2E93EC3}" WorkUnitID="{F11C780D-9938-44B0-B03A-FCD1A9E09ADC}"/>
+								</Reference>
+							</ReferenceList>
+							<BlendTrackAssocList>
+								<BlendTrackAssoc>
+									<ItemRef Name="Idle2" ID="{3E90B7C5-79A7-4648-97D6-BBDE3B189515}"/>
+									<CrossfadingInfo>
+										<LeftEdgePos>0</LeftEdgePos>
+										<LeftFadingMode>Automatic</LeftFadingMode>
+										<RightEdgePos>1.49638899613899</RightEdgePos>
+										<RightFadingMode>Automatic</RightFadingMode>
+										<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
+									</CrossfadingInfo>
+								</BlendTrackAssoc>
+								<BlendTrackAssoc>
+									<ItemRef Name="Move" ID="{84A82148-1756-436E-AB6F-492825F67495}"/>
+									<CrossfadingInfo>
+										<LeftEdgePos>0.0005</LeftEdgePos>
+										<LeftFadingMode>Automatic</LeftFadingMode>
+										<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
+										<RightEdgePos>25</RightEdgePos>
+										<RightFadingMode>Automatic</RightFadingMode>
+									</CrossfadingInfo>
+								</BlendTrackAssoc>
+							</BlendTrackAssocList>
+						</BlendTrack>
+						<BlendTrack Name="Acceleration" ID="{C4411CFB-0D14-4BA2-ACBC-A8231957BA6E}" ShortID="336973812">
+							<PropertyList>
+								<Property Name="EnableCrossFading" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="LayerCrossFadeControlInput">
+									<ObjectRef Name="Player_Acceleration" ID="{C2AB695A-041F-43C3-B7C9-CC4F75E2D4B0}" WorkUnitID="{F11C780D-9938-44B0-B03A-FCD1A9E09ADC}"/>
+								</Reference>
+							</ReferenceList>
+							<BlendTrackAssocList>
+								<BlendTrackAssoc>
+									<ItemRef Name="Acceleration_Switch" ID="{1CE3F4CD-9300-4A8A-BB69-83058A28EEF5}"/>
+									<CrossfadingInfo>
+										<LeftEdgePos>0</LeftEdgePos>
+										<LeftFadingMode>Automatic</LeftFadingMode>
+										<RightEdgePos>2</RightEdgePos>
+										<RightFadingMode>Automatic</RightFadingMode>
+									</CrossfadingInfo>
+								</BlendTrackAssoc>
+							</BlendTrackAssocList>
+						</BlendTrack>
+						<BlendTrack Name="Turning" ID="{5073CB18-E52A-46BB-9D93-A08820C42F72}" ShortID="922426480">
+							<PropertyList>
+								<Property Name="EnableCrossFading" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="LayerCrossFadeControlInput">
+									<ObjectRef Name="Turning" ID="{D989CA62-82EC-4A5B-9319-44C97951019F}" WorkUnitID="{F11C780D-9938-44B0-B03A-FCD1A9E09ADC}"/>
+								</Reference>
+							</ReferenceList>
+							<BlendTrackAssocList>
+								<BlendTrackAssoc>
+									<ItemRef Name="Turning_Switch" ID="{89531355-4D9F-438D-98CF-ACF800D699B2}"/>
+									<CrossfadingInfo>
+										<LeftEdgePos>0</LeftEdgePos>
+										<LeftFadingMode>Automatic</LeftFadingMode>
+										<RightEdgePos>1</RightEdgePos>
+										<RightFadingMode>Automatic</RightFadingMode>
+									</CrossfadingInfo>
+								</BlendTrackAssoc>
+							</BlendTrackAssocList>
+						</BlendTrack>
+						<BlendTrack Name="Wheel Surface" ID="{B6FD5E1C-CE7B-476D-B036-FB99156679E6}" ShortID="675421896">
+							<PropertyList>
+								<Property Name="EnableCrossFading" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="LayerCrossFadeControlInput">
+									<ObjectRef Name="WheelSurface" ID="{A3AEDCC8-BDCF-4406-97C6-CD2F2A371E0B}" WorkUnitID="{F11C780D-9938-44B0-B03A-FCD1A9E09ADC}"/>
+								</Reference>
+							</ReferenceList>
+							<BlendTrackAssocList>
+								<BlendTrackAssoc>
+									<ItemRef Name="Wheel_Surface_Material_Switch" ID="{ABAB0733-32CD-4274-8EF1-B20F75499F09}"/>
+									<CrossfadingInfo>
+										<LeftEdgePos>0</LeftEdgePos>
+										<LeftFadingMode>Automatic</LeftFadingMode>
+										<RightEdgePos>1</RightEdgePos>
+										<RightFadingMode>Automatic</RightFadingMode>
+									</CrossfadingInfo>
+								</BlendTrackAssoc>
+							</BlendTrackAssocList>
+						</BlendTrack>
+					</BlendTrackList>
+				</BlendContainer>
+				<SwitchContainer Name="RotateSwitch" ID="{57B75115-6BC4-4C80-814E-5FF233D385CD}" ShortID="143367772">
+					<PropertyList>
+						<Property Name="SwitchBehavior" Type="int16" Value="1"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{76303271-6B26-4C24-9127-2CA0A617594D}"/>
+						</Reference>
+						<Reference Name="DefaultSwitchOrState">
+							<ObjectRef Name="Idle" ID="{F07EB652-D8D7-4EB4-A224-967FFA43BE40}" WorkUnitID="{81279BA2-8A0E-47D6-A112-99F5CC6B8F72}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D644C3B1-4CAA-4FEE-AF64-4347A85E2B06}"/>
+						</Reference>
+						<Reference Name="SwitchGroupOrStateGroup">
+							<ObjectRef Name="Turret" ID="{CA75343A-1137-470C-938F-B8AD05F84E9A}" WorkUnitID="{81279BA2-8A0E-47D6-A112-99F5CC6B8F72}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Turrent_StopTurning" ID="{A1EF5AA4-4515-4A76-ACD6-9028FB3612DF}" ShortID="21093326">
+							<PropertyList>
+								<Property Name="MakeUpGain" Type="Real64">
+									<ValueList>
+										<Value>4</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{76303271-6B26-4C24-9127-2CA0A617594D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D644C3B1-4CAA-4FEE-AF64-4347A85E2B06}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Turrent_StopTurning" ID="{5BF8F4EF-ED2D-4737-AC02-DFD95ED32E44}">
+									<Language>SFX</Language>
+									<AudioFile>Player\Locomotion\Vehicles\Grizzler\Turrent_StopTurning.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="780472207"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Turrent_StopTurning" ID="{5BF8F4EF-ED2D-4737-AC02-DFD95ED32E44}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Turrent_StartTurning" ID="{9E2CD0E7-B116-4251-B86B-6F1E2A763C38}" ShortID="291829175">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{76303271-6B26-4C24-9127-2CA0A617594D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D644C3B1-4CAA-4FEE-AF64-4347A85E2B06}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Turrent_StartTurning" ID="{BC28E040-2484-44D8-A61C-13A3568696DE}">
+									<Language>SFX</Language>
+									<AudioFile>Player\Locomotion\Vehicles\Grizzler\Turrent_StartTurning.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="742121366"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Turrent_StartTurning" ID="{BC28E040-2484-44D8-A61C-13A3568696DE}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Turrent_TurnLoop" ID="{76A3C284-4585-4427-B5B1-D7057595B8CC}" ShortID="1015937586">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="MakeUpGain" Type="Real64">
+									<ValueList>
+										<Value>3</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{76303271-6B26-4C24-9127-2CA0A617594D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D644C3B1-4CAA-4FEE-AF64-4347A85E2B06}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Turrent_TurnLoop" ID="{6D9F4ED1-B8C5-470B-B4AD-AA736E2C41CB}">
+									<Language>SFX</Language>
+									<AudioFile>Player\Locomotion\Vehicles\Grizzler\Turrent_TurnLoop.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1018111715"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Turrent_TurnLoop" ID="{6D9F4ED1-B8C5-470B-B4AD-AA736E2C41CB}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+					<GroupingInfo>
+						<GroupingBehaviorList>
+							<GroupingBehavior>
+								<ItemRef Name="Turrent_TurnLoop" ID="{76A3C284-4585-4427-B5B1-D7057595B8CC}"/>
+								<PropertyList>
+									<Property Name="FadeOutTime" Type="Real64">
+										<ValueList>
+											<Value>1</Value>
+										</ValueList>
+									</Property>
+								</PropertyList>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="Turrent_StopTurning" ID="{A1EF5AA4-4515-4A76-ACD6-9028FB3612DF}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="Turrent_StartTurning" ID="{9E2CD0E7-B116-4251-B86B-6F1E2A763C38}"/>
+							</GroupingBehavior>
+						</GroupingBehaviorList>
+						<GroupingList>
+							<Grouping>
+								<SwitchRef Name="StartTurning" ID="{CB113DA8-F593-40DD-AC6A-A2BD74AB5FD5}"/>
+								<ItemList>
+									<ItemRef Name="Turrent_StartTurning" ID="{9E2CD0E7-B116-4251-B86B-6F1E2A763C38}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="Turning" ID="{5113B2B9-D107-4E44-98C9-982F8C89D194}"/>
+								<ItemList>
+									<ItemRef Name="Turrent_TurnLoop" ID="{76A3C284-4585-4427-B5B1-D7057595B8CC}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="StopTurning" ID="{F293EFEA-3617-4E93-90A3-9E2237673234}"/>
+								<ItemList>
+									<ItemRef Name="Turrent_StopTurning" ID="{A1EF5AA4-4515-4A76-ACD6-9028FB3612DF}"/>
+								</ItemList>
+							</Grouping>
+						</GroupingList>
+					</GroupingInfo>
+				</SwitchContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

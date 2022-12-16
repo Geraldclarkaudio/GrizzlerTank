@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{9D68BE5F-8CA6-43E0-BCE2-C7D59F63E582}" SchemaVersion="110">
+	<DynamicDialogue>
+		<WorkUnit Name="Factory AK Convolution Reverb Effects Stereo" ID="{9D68BE5F-8CA6-43E0-BCE2-C7D59F63E582}" OwnerID="{00000000-0000-0000-0000-000000000000}" PersistMode="Nested">
+			<ChildrenList>
+				<Folder Name="Rooms" ID="{8F1E395F-AC8A-4B19-BE8C-74BF69F66604}" ShortID="520744161"/>
+				<Folder Name="Large Spaces" ID="{E582F9A1-2D34-46D9-B55E-AC8402D7F629}" ShortID="170872515"/>
+				<Folder Name="Cathedrals and Churches" ID="{F4FB196F-C7A1-4C4A-B93F-4AA3AC5473A1}" ShortID="605653257"/>
+				<Folder Name="Halls" ID="{6806ADE2-832F-487B-9A0C-597EEDD31F3F}" ShortID="482323779"/>
+				<Folder Name="Exteriors" ID="{4358A3C1-4794-4434-A840-BB3252E4B57A}" ShortID="713698831"/>
+			</ChildrenList>
+		</WorkUnit>
+	</DynamicDialogue>
+</WwiseDocument>

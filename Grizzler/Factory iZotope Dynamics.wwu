@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{70F46671-A828-4029-A11A-36BB09D872B9}" SchemaVersion="110">
+	<DynamicDialogue>
+		<WorkUnit Name="Factory iZotope Dynamics" ID="{70F46671-A828-4029-A11A-36BB09D872B9}" OwnerID="{00000000-0000-0000-0000-000000000000}" PersistMode="Nested"/>
+	</DynamicDialogue>
+</WwiseDocument>

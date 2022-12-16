@@ -14,6 +14,8 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID GRIZZLER_MOVEMENT = 4170865704U;
+        static const AkUniqueID GRIZZLER_MOVEMENT_01 = 684729214U;
+        static const AkUniqueID GRIZZLER_TURRET = 2616164525U;
     } // namespace EVENTS
 
     namespace STATES
@@ -68,6 +70,19 @@ namespace AK
             } // namespace SWITCH
         } // namespace TURNING
 
+        namespace TURRET
+        {
+            static const AkUniqueID GROUP = 2674766611U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID IDLE = 1874288895U;
+                static const AkUniqueID STARTTURNING = 1712436050U;
+                static const AkUniqueID STOPTURNING = 1370828620U;
+                static const AkUniqueID TURNING = 503499828U;
+            } // namespace SWITCH
+        } // namespace TURRET
+
     } // namespace SWITCHES
 
     namespace GAME_PARAMETERS
@@ -99,6 +114,7 @@ namespace AK
         static const AkUniqueID SS_AIR_TIMEOFDAY = 3203397129U;
         static const AkUniqueID SS_AIR_TURBULENCE = 4160247818U;
         static const AkUniqueID TURNING = 503499828U;
+        static const AkUniqueID TURRET = 2674766611U;
         static const AkUniqueID WHEELSURFACE = 1446210263U;
     } // namespace GAME_PARAMETERS
 

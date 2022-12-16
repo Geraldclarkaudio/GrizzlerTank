@@ -1,0 +1,33 @@
+Event	ID	Name			Wwise Object Path	Notes
+	4170865704	Grizzler_Movement			\PlayerEvents\Grizzler_Movement	
+
+Switch Group	ID	Name			Wwise Object Path	Notes
+	63790334	SurfaceType			\PlayerDriven\SurfaceType	
+	212170665	Acceleration			\PlayerDriven\Acceleration	
+	503499828	Turning			\PlayerDriven\Turning	
+
+Switch	ID	Name	Switch Group			Notes
+	841620460	Concrete	SurfaceType			
+	2473969246	Metal	SurfaceType			
+	1778882555	Accel	Acceleration			
+	1874288895	Idle	Acceleration			
+	3089792801	Deccel	Acceleration			
+	503499828	Turning	Turning			
+	1375871011	NotTurning	Turning			
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	503499828	Turning			\Player\Turning	
+	1446210263	WheelSurface			\Player\WheelSurface	
+	1493153371	PlayerSpeed			\Player\PlayerSpeed	
+	3698658901	Player_Acceleration			\Player\Player_Acceleration	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	20269213	Stop Moving	D:\Unity Projects\Grizzler Implementation\Grizzler\.cache\Mac\SFX\Player\Locomotion\Vehicles\Grizzler\StopEvent_10C4C929.wem		\Actor-Mixer Hierarchy\Player_Driven_Sounds\Player_Locomotion\Player_Vehicles\Grizzler\Grizzler_Movement\Acceleration_Switch\Stop Moving		768192
+	98987776	Idle	D:\Unity Projects\Grizzler Implementation\Grizzler\.cache\Mac\SFX\Player\Locomotion\Vehicles\Grizzler\Idle_D9611FCD.wem		\Actor-Mixer Hierarchy\Player_Driven_Sounds\Player_Locomotion\Player_Vehicles\Grizzler\Grizzler_Movement\Idle		363388
+	328188123	Turning	D:\Unity Projects\Grizzler Implementation\Grizzler\.cache\Mac\SFX\Player\Locomotion\Vehicles\Grizzler\Turning_D79FB2B7.wem		\Actor-Mixer Hierarchy\Player_Driven_Sounds\Player_Locomotion\Player_Vehicles\Grizzler\Grizzler_Movement\Turning_Switch\Turning		3408288
+	385143876	Wheels_On_Concrete	D:\Unity Projects\Grizzler Implementation\Grizzler\.cache\Mac\SFX\Player\Locomotion\Vehicles\Grizzler\Wheels_On_Metal__D79FB2B7.wem		\Actor-Mixer Hierarchy\Player_Driven_Sounds\Player_Locomotion\Player_Vehicles\Grizzler\Grizzler_Movement\Wheel_Surface_Material_Switch\Wheels_On_Concrete		384192
+	554176368	Wheels_On_Metal	D:\Unity Projects\Grizzler Implementation\Grizzler\.cache\Mac\SFX\Player\Locomotion\Vehicles\Grizzler\Wheels_On_Concree_D79FB2B7.wem		\Actor-Mixer Hierarchy\Player_Driven_Sounds\Player_Locomotion\Player_Vehicles\Grizzler\Grizzler_Movement\Wheel_Surface_Material_Switch\Wheels_On_Metal		384208
+	638871171	MoveLoop	D:\Unity Projects\Grizzler Implementation\Grizzler\.cache\Mac\SFX\Player\Locomotion\Vehicles\Grizzler\MoveLoop_D0285A3C.wem		\Actor-Mixer Hierarchy\Player_Driven_Sounds\Player_Locomotion\Player_Vehicles\Grizzler\Grizzler_Movement\MoveLoop		366292
+	804114056	Deccelerate	D:\Unity Projects\Grizzler Implementation\Grizzler\.cache\Mac\SFX\Player\Locomotion\Vehicles\Grizzler\Deccelerate_10C4C929.wem		\Actor-Mixer Hierarchy\Player_Driven_Sounds\Player_Locomotion\Player_Vehicles\Grizzler\Grizzler_Movement\Acceleration_Switch\Deccelerate		312192
+	1043149136	Begin Moving	D:\Unity Projects\Grizzler Implementation\Grizzler\.cache\Mac\SFX\Player\Locomotion\Vehicles\Grizzler\Begine Moving_10C4C929.wem		\Actor-Mixer Hierarchy\Player_Driven_Sounds\Player_Locomotion\Player_Vehicles\Grizzler\Grizzler_Movement\Acceleration_Switch\Begin Moving		576192
+

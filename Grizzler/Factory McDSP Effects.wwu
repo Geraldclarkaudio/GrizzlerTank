@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{C495E5B0-5DF1-4961-BC6A-4C9887E70704}" SchemaVersion="110">
+	<DynamicDialogue>
+		<WorkUnit Name="Factory McDSP Effects" ID="{C495E5B0-5DF1-4961-BC6A-4C9887E70704}" OwnerID="{00000000-0000-0000-0000-000000000000}" PersistMode="Nested">
+			<ChildrenList>
+				<Folder Name="McDSP FutzBox" ID="{74E8698D-255F-4063-AC4E-1CB2AB78D46F}" ShortID="401436544">
+					<ChildrenList>
+						<Folder Name="General" ID="{DDC9F888-4BC6-480C-B46A-FD6CF85B9542}" ShortID="620917109"/>
+						<Folder Name="Voices" ID="{68E1F043-9F6C-42D8-A172-73F1A5AB7506}" ShortID="241503289">
+							<ChildrenList>
+								<Folder Name="Character" ID="{E08BF0C9-F69D-4BEB-80A3-0CE236A718E6}" ShortID="65253809"/>
+								<Folder Name="Crunchy" ID="{F634C999-1EB7-46C2-B1EC-27F6E2079402}" ShortID="285349695"/>
+								<Folder Name="Noisy" ID="{243FB4AD-D0B4-4026-84B2-74F8C28F695D}" ShortID="723515297"/>
+							</ChildrenList>
+						</Folder>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="McDSP ML1" ID="{68501D07-9588-4E2A-A304-335DADD3E1F0}" ShortID="492487548">
+					<ChildrenList>
+						<Folder Name="Mastering" ID="{E505E5B3-7A2B-4075-839E-F2423A1EE60B}" ShortID="987040707"/>
+						<Folder Name="Music" ID="{5AD44C34-F3DF-4CBE-86C3-FA7468631972}" ShortID="49621813"/>
+						<Folder Name="Post" ID="{768952A1-FA42-4F22-BFE8-C5CFF3AFFCB8}" ShortID="772609801"/>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
+	</DynamicDialogue>
+</WwiseDocument>

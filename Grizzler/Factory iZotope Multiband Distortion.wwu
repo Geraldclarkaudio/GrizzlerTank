@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{E0243ED6-C4CC-4FD8-B8E8-2E98F6DCF3A5}" SchemaVersion="110">
+	<DynamicDialogue>
+		<WorkUnit Name="Factory iZotope Multiband Distortion" ID="{E0243ED6-C4CC-4FD8-B8E8-2E98F6DCF3A5}" OwnerID="{00000000-0000-0000-0000-000000000000}" PersistMode="Nested"/>
+	</DynamicDialogue>
+</WwiseDocument>

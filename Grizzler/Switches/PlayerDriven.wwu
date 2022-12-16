@@ -111,6 +111,52 @@
 						</Curve>
 					</SwitchOnRTPC>
 				</SwitchGroup>
+				<SwitchGroup Name="Turret" ID="{CA75343A-1137-470C-938F-B8AD05F84E9A}">
+					<PropertyList>
+						<Property Name="UseGameParameter" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Switch Name="Idle" ID="{F07EB652-D8D7-4EB4-A224-967FFA43BE40}"/>
+						<Switch Name="StartTurning" ID="{CB113DA8-F593-40DD-AC6A-A2BD74AB5FD5}"/>
+						<Switch Name="Turning" ID="{5113B2B9-D107-4E44-98C9-982F8C89D194}"/>
+						<Switch Name="StopTurning" ID="{F293EFEA-3617-4E93-90A3-9E2237673234}"/>
+					</ChildrenList>
+					<SwitchOnRTPC>
+						<GameParameterRef Name="Turret" ID="{E7921456-A026-400C-83FD-AAD84ADBBB75}"/>
+						<Curve Name="" ID="{4DC91B35-2F6E-4EE0-9FE2-2A8D4F3539D6}">
+							<PropertyList>
+								<Property Name="Flags" Type="int32" Value="65537"/>
+							</PropertyList>
+							<PointList>
+								<Point>
+									<XPos>0</XPos>
+									<YPos>1</YPos>
+									<Flags>5</Flags>
+								</Point>
+								<Point>
+									<XPos>0.06007</XPos>
+									<YPos>2</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>0.99982</XPos>
+									<YPos>3</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>2.999</XPos>
+									<YPos>4</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>3</XPos>
+									<YPos>4</YPos>
+									<Flags>37</Flags>
+								</Point>
+							</PointList>
+						</Curve>
+					</SwitchOnRTPC>
+				</SwitchGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</Switches>

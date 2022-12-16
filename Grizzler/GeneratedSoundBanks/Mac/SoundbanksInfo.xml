@@ -2,14 +2,128 @@
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="145">
 	<RootPaths>
 		<ProjectRoot>../..</ProjectRoot>
-		<SourceFilesRoot>../../.cache/Mac/</SourceFilesRoot>
+		<SourceFilesRoot>../../.cache/Mac</SourceFilesRoot>
 		<SoundBanksRoot>.</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
 		<ExternalSourcesOutputRoot>.</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{198889D8-4621-1E22-CBA2-4492937BA834}">
+		<SoundBank Id="1291779240" Type="User" Language="SFX" Hash="{9E0C5850-4522-3B35-1877-9BA34DF4BE95}">
+			<ShortName>Grizzler</ShortName>
+			<Path>Grizzler.bnk</Path>
+			<Media>
+				<File Id="20269213" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Player\Locomotion\Vehicles\Grizzler\StopEvent.wav</ShortName>
+					<CachePath>SFX/Player/Locomotion/Vehicles/Grizzler/StopEvent_10C4C929.wem</CachePath>
+				</File>
+				<File Id="98987776" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Player\Locomotion\Vehicles\Grizzler\Idle.wav</ShortName>
+					<CachePath>SFX/Player/Locomotion/Vehicles/Grizzler/Idle_D9611FCD.wem</CachePath>
+				</File>
+				<File Id="328188123" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Player\Locomotion\Vehicles\Grizzler\Turning.wav</ShortName>
+					<CachePath>SFX/Player/Locomotion/Vehicles/Grizzler/Turning_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="385143876" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Player\Locomotion\Vehicles\Grizzler\Wheels_On_Metal_.wav</ShortName>
+					<CachePath>SFX/Player/Locomotion/Vehicles/Grizzler/Wheels_On_Metal__D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="554176368" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Player\Locomotion\Vehicles\Grizzler\Wheels_On_Concree.wav</ShortName>
+					<CachePath>SFX/Player/Locomotion/Vehicles/Grizzler/Wheels_On_Concree_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="638871171" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Player\Locomotion\Vehicles\Grizzler\MoveLoop.wav</ShortName>
+					<CachePath>SFX/Player/Locomotion/Vehicles/Grizzler/MoveLoop_D0285A3C.wem</CachePath>
+				</File>
+				<File Id="804114056" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Player\Locomotion\Vehicles\Grizzler\Deccelerate.wav</ShortName>
+					<CachePath>SFX/Player/Locomotion/Vehicles/Grizzler/Deccelerate_10C4C929.wem</CachePath>
+				</File>
+				<File Id="1043149136" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Player\Locomotion\Vehicles\Grizzler\Begine Moving.wav</ShortName>
+					<CachePath>SFX/Player/Locomotion/Vehicles/Grizzler/Begine Moving_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="4170865704" Name="Grizzler_Movement" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="98987776"/>
+						<MediaRef Id="638871171"/>
+					</MediaRefs>
+					<SwitchContainers>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="212170665" Id="1874288895" Default="true"/>
+							<MediaRefs>
+								<MediaRef Id="20269213"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="212170665" Id="3089792801"/>
+							<MediaRefs>
+								<MediaRef Id="804114056"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="212170665" Id="1778882555"/>
+							<MediaRefs>
+								<MediaRef Id="1043149136"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="503499828" Id="503499828"/>
+							<MediaRefs>
+								<MediaRef Id="328188123"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="63790334" Id="841620460"/>
+							<MediaRefs>
+								<MediaRef Id="385143876"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="63790334" Id="2473969246" Default="true"/>
+							<MediaRefs>
+								<MediaRef Id="554176368"/>
+							</MediaRefs>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+			</Events>
+			<GameParameters>
+				<GameParameter Id="503499828" Name="Turning"/>
+				<GameParameter Id="1446210263" Name="WheelSurface"/>
+				<GameParameter Id="1493153371" Name="PlayerSpeed"/>
+				<GameParameter Id="3698658901" Name="Player_Acceleration"/>
+			</GameParameters>
+			<SwitchGroups>
+				<SwitchGroup Id="63790334" Name="SurfaceType">
+					<GameParameterRef Id="1446210263"/>
+					<Switches>
+						<Switch Id="841620460" Name="Concrete"/>
+						<Switch Id="2473969246" Name="Metal"/>
+					</Switches>
+				</SwitchGroup>
+				<SwitchGroup Id="212170665" Name="Acceleration">
+					<GameParameterRef Id="3698658901"/>
+					<Switches>
+						<Switch Id="1778882555" Name="Accel"/>
+						<Switch Id="1874288895" Name="Idle"/>
+						<Switch Id="3089792801" Name="Deccel"/>
+					</Switches>
+				</SwitchGroup>
+				<SwitchGroup Id="503499828" Name="Turning">
+					<GameParameterRef Id="503499828"/>
+					<Switches>
+						<Switch Id="503499828" Name="Turning"/>
+						<Switch Id="1375871011" Name="NotTurning"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
+		</SoundBank>
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{CC9E0B26-0701-C47A-6ED1-C029D24198D7}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -22,6 +136,7 @@
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
 			<GameParameters>
+				<GameParameter Id="503499828" Name="Turning"/>
 				<GameParameter Id="822163944" Name="SS_Air_RPM"/>
 				<GameParameter Id="1029930033" Name="SS_Air_Fury"/>
 				<GameParameter Id="1046277832" Name="IGN_Load"/>
@@ -44,6 +159,7 @@
 				<GameParameter Id="3203397129" Name="SS_Air_TimeOfDay"/>
 				<GameParameter Id="3610741985" Name="Player_Load"/>
 				<GameParameter Id="3696491809" Name="IgniterSynth_State"/>
+				<GameParameter Id="3698658901" Name="Player_Acceleration"/>
 				<GameParameter Id="3715662592" Name="SS_Air_Storm"/>
 				<GameParameter Id="3744760799" Name="IGN_Gearbox_Throttle"/>
 				<GameParameter Id="3847924954" Name="SS_Air_Presence"/>
@@ -60,9 +176,25 @@
 			</StateGroups>
 			<SwitchGroups>
 				<SwitchGroup Id="63790334" Name="SurfaceType">
+					<GameParameterRef Id="1446210263"/>
 					<Switches>
 						<Switch Id="841620460" Name="Concrete"/>
 						<Switch Id="2473969246" Name="Metal"/>
+					</Switches>
+				</SwitchGroup>
+				<SwitchGroup Id="212170665" Name="Acceleration">
+					<GameParameterRef Id="3698658901"/>
+					<Switches>
+						<Switch Id="1778882555" Name="Accel"/>
+						<Switch Id="1874288895" Name="Idle"/>
+						<Switch Id="3089792801" Name="Deccel"/>
+					</Switches>
+				</SwitchGroup>
+				<SwitchGroup Id="503499828" Name="Turning">
+					<GameParameterRef Id="503499828"/>
+					<Switches>
+						<Switch Id="503499828" Name="Turning"/>
+						<Switch Id="1375871011" Name="NotTurning"/>
 					</Switches>
 				</SwitchGroup>
 			</SwitchGroups>
@@ -182,5 +314,5 @@
 			</AcousticTextures>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{C2AF8EED-ADA7-0705-2157-6D6C945E9B37}</FileHash>
+	<FileHash>{797789A3-CDFF-398B-9507-CF8C110C90CE}</FileHash>
 </SoundBanksInfo>
