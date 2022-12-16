@@ -13,8 +13,10 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID GRIZZLER_FIRE = 2848769859U;
         static const AkUniqueID GRIZZLER_MOVEMENT = 4170865704U;
         static const AkUniqueID GRIZZLER_MOVEMENT_01 = 684729214U;
+        static const AkUniqueID GRIZZLER_SCIFI_MOVEMENT = 2234575187U;
         static const AkUniqueID GRIZZLER_TURRET = 2616164525U;
     } // namespace EVENTS
 

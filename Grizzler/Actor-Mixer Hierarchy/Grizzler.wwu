@@ -1038,6 +1038,143 @@
 								</Folder>
 							</ChildrenList>
 						</Folder>
+						<Sound Name="Cannon 1" ID="{8E306FF0-4F3C-4B81-8435-7131AB6FA968}" ShortID="780437627">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{B5D18001-CE56-4CA9-B5E2-A2A40B3AFFEC}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="253"/>
+													<Property Name="Min" Type="Real64" Value="-304"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{76303271-6B26-4C24-9127-2CA0A617594D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D644C3B1-4CAA-4FEE-AF64-4347A85E2B06}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Cannon 1" ID="{82D93E27-AA49-4977-A906-11A2D1C9BC5D}">
+									<Language>SFX</Language>
+									<AudioFile>Player\Weapons\Vehicles\Grizzler\Cannon 1.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="715390949"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Cannon 1" ID="{82D93E27-AA49-4977-A906-11A2D1C9BC5D}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Folder Name="SciFiVersion" ID="{3CDD6EFF-97B7-4952-BE46-FA387767DCDD}" ShortID="590763302">
+							<ChildrenList>
+								<Sound Name="Body Creeks Movement" ID="{CA876A28-9169-4812-A629-A6ECA4041776}" ShortID="563931232">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{76303271-6B26-4C24-9127-2CA0A617594D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D644C3B1-4CAA-4FEE-AF64-4347A85E2B06}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Body Creeks Movement" ID="{350CE53D-7660-4AAD-9861-E5037B443FAA}">
+											<Language>SFX</Language>
+											<AudioFile>Player\Locomotion\Vehicles\Grizzler\SciFiVersion\Body Creeks Movement.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="125955015"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Body Creeks Movement" ID="{350CE53D-7660-4AAD-9861-E5037B443FAA}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="EngineIdle" ID="{FC6649DB-1F5B-41F4-9709-98A4EFE30E84}" ShortID="843106634">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{76303271-6B26-4C24-9127-2CA0A617594D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D644C3B1-4CAA-4FEE-AF64-4347A85E2B06}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="EngineIdle" ID="{FC37B2CE-2DF0-4171-82FB-8577A8E9232E}">
+											<Language>SFX</Language>
+											<AudioFile>Player\Locomotion\Vehicles\Grizzler\SciFiVersion\EngineIdle.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="67346300"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="EngineIdle" ID="{FC37B2CE-2DF0-4171-82FB-8577A8E9232E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="EngineLoop" ID="{3B504A4C-9BEB-4BB1-B3AE-B95424F53608}" ShortID="975322664">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{76303271-6B26-4C24-9127-2CA0A617594D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D644C3B1-4CAA-4FEE-AF64-4347A85E2B06}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="EngineIdle" ID="{F08C0A92-D04F-43CA-B266-91E660FCE528}">
+											<Language>SFX</Language>
+											<AudioFile>Player\Locomotion\Vehicles\Grizzler\SciFiVersion\EngineIdle.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="67346300"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="EngineIdle" ID="{F08C0A92-D04F-43CA-B266-91E660FCE528}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</Folder>
+						<Sound Name="Turrent_TurnLoop" ID="{D33C4FD6-B770-4CC0-AF7B-71974C9DF748}" ShortID="416915781">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="MakeUpGain" Type="Real64">
+									<ValueList>
+										<Value>3</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{76303271-6B26-4C24-9127-2CA0A617594D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D644C3B1-4CAA-4FEE-AF64-4347A85E2B06}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Turrent_TurnLoop" ID="{725DF673-B353-44CA-B829-3A518B8945C5}">
+									<Language>SFX</Language>
+									<AudioFile>Player\Locomotion\Vehicles\Grizzler\Turrent_TurnLoop.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1018111715"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Turrent_TurnLoop" ID="{725DF673-B353-44CA-B829-3A518B8945C5}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</Folder>
 				<BlendContainer Name="Grizzler Blend Container" ID="{5EB20AB2-33A0-4324-86C4-A5FAEA410B3A}" ShortID="1004909550">
@@ -3082,14 +3219,9 @@
 								<ActiveSource Name="Turrent_StartTurning" ID="{BC28E040-2484-44D8-A61C-13A3568696DE}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-						<Sound Name="Turrent_TurnLoop" ID="{76A3C284-4585-4427-B5B1-D7057595B8CC}" ShortID="1015937586">
+						<Sound Name="Turret Turn" ID="{16002326-320B-42EF-8E49-58A453493F0F}" ShortID="476754617">
 							<PropertyList>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-								<Property Name="MakeUpGain" Type="Real64">
-									<ValueList>
-										<Value>3</Value>
-									</ValueList>
-								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -3100,30 +3232,23 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="Turrent_TurnLoop" ID="{6D9F4ED1-B8C5-470B-B4AD-AA736E2C41CB}">
+								<AudioFileSource Name="Turret Turn" ID="{29497881-51E5-41E3-8B7C-4AD6B8852F71}">
 									<Language>SFX</Language>
-									<AudioFile>Player\Locomotion\Vehicles\Grizzler\Turrent_TurnLoop.wav</AudioFile>
+									<AudioFile>Player\Locomotion\Vehicles\Grizzler\SciFiVersion\Turret Turn.wav</AudioFile>
 									<MediaIDList>
-										<MediaID ID="1018111715"/>
+										<MediaID ID="415938671"/>
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
-								<ActiveSource Name="Turrent_TurnLoop" ID="{6D9F4ED1-B8C5-470B-B4AD-AA736E2C41CB}" Platform="Linked"/>
+								<ActiveSource Name="Turret Turn" ID="{29497881-51E5-41E3-8B7C-4AD6B8852F71}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>
 					<GroupingInfo>
 						<GroupingBehaviorList>
 							<GroupingBehavior>
-								<ItemRef Name="Turrent_TurnLoop" ID="{76A3C284-4585-4427-B5B1-D7057595B8CC}"/>
-								<PropertyList>
-									<Property Name="FadeOutTime" Type="Real64">
-										<ValueList>
-											<Value>1</Value>
-										</ValueList>
-									</Property>
-								</PropertyList>
+								<ItemRef Name="Turret Turn" ID="{16002326-320B-42EF-8E49-58A453493F0F}"/>
 							</GroupingBehavior>
 							<GroupingBehavior>
 								<ItemRef Name="Turrent_StopTurning" ID="{A1EF5AA4-4515-4A76-ACD6-9028FB3612DF}"/>
@@ -3142,7 +3267,7 @@
 							<Grouping>
 								<SwitchRef Name="Turning" ID="{5113B2B9-D107-4E44-98C9-982F8C89D194}"/>
 								<ItemList>
-									<ItemRef Name="Turrent_TurnLoop" ID="{76A3C284-4585-4427-B5B1-D7057595B8CC}"/>
+									<ItemRef Name="Turret Turn" ID="{16002326-320B-42EF-8E49-58A453493F0F}"/>
 								</ItemList>
 							</Grouping>
 							<Grouping>
@@ -3154,6 +3279,239 @@
 						</GroupingList>
 					</GroupingInfo>
 				</SwitchContainer>
+				<BlendContainer Name="Grizzler_Sci-Fi" ID="{1775CD32-6AB9-4A96-BAFF-5DBB5D5AD8AC}" ShortID="34264965">
+					<PropertyList>
+						<Property Name="BlendBehavior" Type="int16" Value="1"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{76303271-6B26-4C24-9127-2CA0A617594D}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D644C3B1-4CAA-4FEE-AF64-4347A85E2B06}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="EngineIdle" ID="{D2B04626-DD58-498E-9951-2C171637BFE6}" ShortID="952659888">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{76303271-6B26-4C24-9127-2CA0A617594D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D644C3B1-4CAA-4FEE-AF64-4347A85E2B06}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="EngineIdle" ID="{3372B671-950D-4076-8375-3584E9F63658}">
+									<Language>SFX</Language>
+									<AudioFile>Player\Locomotion\Vehicles\Grizzler\SciFiVersion\EngineIdle.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="36251846"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="EngineIdle" ID="{3372B671-950D-4076-8375-3584E9F63658}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Body Creeks Movement" ID="{67F9831C-B0DE-47FF-99C0-3AEEFA7D9CF0}" ShortID="694374163">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-14</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{76303271-6B26-4C24-9127-2CA0A617594D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D644C3B1-4CAA-4FEE-AF64-4347A85E2B06}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Body Creeks Movement" ID="{46ED37E4-21B4-444E-AD0E-80E4B83DB9EC}">
+									<Language>SFX</Language>
+									<AudioFile>Player\Locomotion\Vehicles\Grizzler\SciFiVersion\Body Creeks Movement.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="953350999"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Body Creeks Movement" ID="{46ED37E4-21B4-444E-AD0E-80E4B83DB9EC}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="EngineLoop" ID="{196DA61B-5C9D-42F5-82FB-61487E62D5F9}" ShortID="254422972">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{76303271-6B26-4C24-9127-2CA0A617594D}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D644C3B1-4CAA-4FEE-AF64-4347A85E2B06}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="EngineIdle" ID="{36505AC6-D829-4E12-A54B-00B3FEF168C8}">
+									<Language>SFX</Language>
+									<AudioFile>Player\Locomotion\Vehicles\Grizzler\SciFiVersion\EngineIdle.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="36251846"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{4304A724-67B6-40F8-9832-E3EB18E6B603}" ShortID="785239651">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Pitch"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="PlayerSpeed" ID="{FD740967-E193-465C-9D02-E5B4F2E93EC3}" WorkUnitID="{F11C780D-9938-44B0-B03A-FCD1A9E09ADC}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{DC11F658-FCFA-4F8D-A446-7DA2B9571968}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="65537"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>25</XPos>
+																		<YPos>690</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+							<ActiveSourceList>
+								<ActiveSource Name="EngineIdle" ID="{36505AC6-D829-4E12-A54B-00B3FEF168C8}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+					<BlendTrackList>
+						<BlendTrack Name="MovementEngine" ID="{796CAF99-F24C-4E9D-9DC0-EC5F7F7F5549}" ShortID="284588931">
+							<PropertyList>
+								<Property Name="EnableCrossFading" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="LayerCrossFadeControlInput">
+									<ObjectRef Name="PlayerSpeed" ID="{FD740967-E193-465C-9D02-E5B4F2E93EC3}" WorkUnitID="{F11C780D-9938-44B0-B03A-FCD1A9E09ADC}"/>
+								</Reference>
+							</ReferenceList>
+							<BlendTrackAssocList>
+								<BlendTrackAssoc>
+									<ItemRef Name="EngineIdle" ID="{D2B04626-DD58-498E-9951-2C171637BFE6}"/>
+									<CrossfadingInfo>
+										<LeftEdgePos>0</LeftEdgePos>
+										<LeftFadingMode>Automatic</LeftFadingMode>
+										<RightEdgePos>1</RightEdgePos>
+										<RightFadingMode>Automatic</RightFadingMode>
+										<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
+									</CrossfadingInfo>
+								</BlendTrackAssoc>
+								<BlendTrackAssoc>
+									<ItemRef Name="EngineLoop" ID="{196DA61B-5C9D-42F5-82FB-61487E62D5F9}"/>
+									<CrossfadingInfo>
+										<LeftEdgePos>0.177612548272451</LeftEdgePos>
+										<LeftFadingMode>Automatic</LeftFadingMode>
+										<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
+										<RightEdgePos>25</RightEdgePos>
+										<RightFadingMode>Automatic</RightFadingMode>
+									</CrossfadingInfo>
+								</BlendTrackAssoc>
+							</BlendTrackAssocList>
+						</BlendTrack>
+						<BlendTrack Name="MovementBody" ID="{A2F5A21E-043C-4133-BEB2-9D1155C097E6}" ShortID="114388926">
+							<PropertyList>
+								<Property Name="EnableCrossFading" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="LayerCrossFadeControlInput">
+									<ObjectRef Name="PlayerSpeed" ID="{FD740967-E193-465C-9D02-E5B4F2E93EC3}" WorkUnitID="{F11C780D-9938-44B0-B03A-FCD1A9E09ADC}"/>
+								</Reference>
+							</ReferenceList>
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{0BD7D491-E673-4BAB-812D-771EF9CF5754}" ShortID="317634199">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Volume"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="PlayerSpeed" ID="{FD740967-E193-465C-9D02-E5B4F2E93EC3}" WorkUnitID="{F11C780D-9938-44B0-B03A-FCD1A9E09ADC}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{15E85B18-A172-4FA5-8D65-71A30C6FB085}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1.22283</XPos>
+																		<YPos>0.05683</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>25</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+							<BlendTrackAssocList>
+								<BlendTrackAssoc>
+									<ItemRef Name="Body Creeks Movement" ID="{67F9831C-B0DE-47FF-99C0-3AEEFA7D9CF0}"/>
+									<CrossfadingInfo>
+										<LeftEdgePos>0</LeftEdgePos>
+										<LeftFadingMode>Automatic</LeftFadingMode>
+										<RightEdgePos>25</RightEdgePos>
+										<RightFadingMode>Automatic</RightFadingMode>
+									</CrossfadingInfo>
+								</BlendTrackAssoc>
+							</BlendTrackAssocList>
+						</BlendTrack>
+					</BlendTrackList>
+				</BlendContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

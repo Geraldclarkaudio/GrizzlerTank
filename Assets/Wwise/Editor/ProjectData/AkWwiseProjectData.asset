@@ -385,8 +385,25 @@ MonoBehaviour:
     ParentPath: Events\PlayerEvents
     guid: 7fc2a4855b006942a282ae929ab4bb7b
     GuidInternal: 
-    m_lastTime: -8585304347174781874
+    m_lastTime: -8585303852696507637
     List:
+    - name: Grizzler_Fire
+      guid: 6d8b9a6ef3659146837c5ce8633e556e
+      id: 2848769859
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: PlayerEvents
+        ObjectType: 12
+        guid: 7fc2a4855b006942a282ae929ab4bb7b
+      - ElementName: Grizzler_Fire
+        ObjectType: 3
+        guid: 6d8b9a6ef3659146837c5ce8633e556e
+      Path: Events\PlayerEvents\Grizzler_Fire
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Grizzler_Movement
       guid: a67610cd45be5f4599ba5d3075b654d6
       id: 4170865704
@@ -418,6 +435,23 @@ MonoBehaviour:
         ObjectType: 3
         guid: b72f57d08b77424788877d8c8c90dbf6
       Path: Events\PlayerEvents\Grizzler_Movement_01
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Grizzler_SciFi_Movement
+      guid: c811d02b6710d14882d9eb5bc7d31d17
+      id: 2234575187
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: PlayerEvents
+        ObjectType: 12
+        guid: 7fc2a4855b006942a282ae929ab4bb7b
+      - ElementName: Grizzler_SciFi_Movement
+        ObjectType: 3
+        guid: c811d02b6710d14882d9eb5bc7d31d17
+      Path: Events\PlayerEvents\Grizzler_SciFi_Movement
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
