@@ -3,7 +3,7 @@
 	<ValidationCacheItem File="Y:\Desktop\GrizzlerTank\Grizzler\Virtual Acoustics\Factory Acoustic Textures.wwu" DateLow="1670600439" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Desktop\GrizzlerTank\Grizzler\Virtual Acoustics\Default Work Unit.wwu" DateLow="1670739049" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Desktop\GrizzlerTank\Grizzler\Triggers\Default Work Unit.wwu" DateLow="1670739049" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Desktop\GrizzlerTank\Grizzler\Switches\PlayerDriven.wwu" DateLow="1670997645" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Desktop\GrizzlerTank\Grizzler\Switches\PlayerDriven.wwu" DateLow="1671428183" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Desktop\GrizzlerTank\Grizzler\Switches\Default Work Unit.wwu" DateLow="1670739049" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Desktop\GrizzlerTank\Grizzler\States\PlayerStates.wwu" DateLow="1670742491" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Desktop\GrizzlerTank\Grizzler\States\Default Work Unit.wwu" DateLow="1670739049" DateHigh="0"/>
@@ -21,16 +21,16 @@
 	<ValidationCacheItem File="Y:\Desktop\GrizzlerTank\Grizzler\Metadata\Default Work Unit.wwu" DateLow="1670739049" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Desktop\GrizzlerTank\Grizzler\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1670739049" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Desktop\GrizzlerTank\Grizzler\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="1670739049" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Desktop\GrizzlerTank\Grizzler\Grizzler.wproj" DateLow="1670990054" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Desktop\GrizzlerTank\Grizzler\Grizzler.crossover.wsettings" DateLow="1670997863" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Desktop\GrizzlerTank\Grizzler\Game Parameters\Player.wwu" DateLow="1670997406" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Desktop\GrizzlerTank\Grizzler\Grizzler.wproj" DateLow="1671428183" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Desktop\GrizzlerTank\Grizzler\Grizzler.crossover.wsettings" DateLow="1671513099" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Desktop\GrizzlerTank\Grizzler\Game Parameters\Player.wwu" DateLow="1671428183" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Desktop\GrizzlerTank\Grizzler\Game Parameters\Misc.wwu" DateLow="1670739335" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Desktop\GrizzlerTank\Grizzler\Game Parameters\Factory Soundseed Grain.wwu" DateLow="1670739335" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Desktop\GrizzlerTank\Grizzler\Game Parameters\Factory Soundseed Air Game Syncs.wwu" DateLow="1670739335" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Desktop\GrizzlerTank\Grizzler\Game Parameters\Factory Igniter Live Synth Game Syncs.wwu" DateLow="1670739335" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Desktop\GrizzlerTank\Grizzler\Game Parameters\Factory Igniter Live Game Syncs.wwu" DateLow="1670739335" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Desktop\GrizzlerTank\Grizzler\Game Parameters\Default Work Unit.wwu" DateLow="1670739049" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Desktop\GrizzlerTank\Grizzler\Events\PlayerEvents.wwu" DateLow="1670996081" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Desktop\GrizzlerTank\Grizzler\Events\PlayerEvents.wwu" DateLow="1671428183" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Desktop\GrizzlerTank\Grizzler\Events\Default Work Unit.wwu" DateLow="1670739049" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Desktop\GrizzlerTank\Grizzler\Effects\Factory Reflect.wwu" DateLow="1670600439" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Desktop\GrizzlerTank\Grizzler\Effects\Factory McDSP Effects.wwu" DateLow="1670600439" DateHigh="0"/>
@@ -47,7 +47,23 @@
 	<ValidationCacheItem File="Y:\Desktop\GrizzlerTank\Grizzler\Effects\Factory Altiverb - Outdoor and More.wwu" DateLow="1670600440" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Desktop\GrizzlerTank\Grizzler\Effects\Factory AK Convolution Reverb Effects Stereo.wwu" DateLow="1670600439" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Desktop\GrizzlerTank\Grizzler\Effects\Factory AK Convolution Reverb Effects Ambisonics.wwu" DateLow="1670600438" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Desktop\GrizzlerTank\Grizzler\Effects\Default Work Unit.wwu" DateLow="1670739049" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Desktop\GrizzlerTank\Grizzler\Effects\Default Work Unit.wwu" DateLow="1671428183" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Desktop\GrizzlerTank\Grizzler\Dynamic Dialogue\Effects\Factory Reflect.wwu" DateLow="1671428183" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Desktop\GrizzlerTank\Grizzler\Dynamic Dialogue\Effects\Factory McDSP Effects.wwu" DateLow="1671428183" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Desktop\GrizzlerTank\Grizzler\Dynamic Dialogue\Effects\Factory Mastering Suite.wwu" DateLow="1671428183" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Desktop\GrizzlerTank\Grizzler\Dynamic Dialogue\Effects\Factory iZotope Singleband Distortion.wwu" DateLow="1671428183" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Desktop\GrizzlerTank\Grizzler\Dynamic Dialogue\Effects\Factory iZotope Multiband Distortion.wwu" DateLow="1671428183" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Desktop\GrizzlerTank\Grizzler\Dynamic Dialogue\Effects\Factory iZotope Hybrid Reverb Effects.wwu" DateLow="1671428183" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Desktop\GrizzlerTank\Grizzler\Dynamic Dialogue\Effects\Factory iZotope Filters.wwu" DateLow="1671428183" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Desktop\GrizzlerTank\Grizzler\Dynamic Dialogue\Effects\Factory iZotope Dynamics.wwu" DateLow="1671428183" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Desktop\GrizzlerTank\Grizzler\Dynamic Dialogue\Effects\Factory iZotope Delay.wwu" DateLow="1671428183" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Desktop\GrizzlerTank\Grizzler\Dynamic Dialogue\Effects\Factory iZotope Box Modeler.wwu" DateLow="1671428183" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Desktop\GrizzlerTank\Grizzler\Dynamic Dialogue\Effects\Factory Effects.wwu" DateLow="1671428183" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Desktop\GrizzlerTank\Grizzler\Dynamic Dialogue\Effects\Factory Auro Headphone.wwu" DateLow="1671428183" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Desktop\GrizzlerTank\Grizzler\Dynamic Dialogue\Effects\Factory Altiverb - Outdoor and More.wwu" DateLow="1671428183" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Desktop\GrizzlerTank\Grizzler\Dynamic Dialogue\Effects\Factory AK Convolution Reverb Effects Stereo.wwu" DateLow="1671428183" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Desktop\GrizzlerTank\Grizzler\Dynamic Dialogue\Effects\Factory AK Convolution Reverb Effects Ambisonics.wwu" DateLow="1671428183" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Desktop\GrizzlerTank\Grizzler\Dynamic Dialogue\Effects\Default Work Unit.wwu" DateLow="1671428183" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Desktop\GrizzlerTank\Grizzler\Dynamic Dialogue\Default Work Unit.wwu" DateLow="1670739049" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Desktop\GrizzlerTank\Grizzler\Conversion Settings\Factory Soundseed Grain.wwu" DateLow="1670600440" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Desktop\GrizzlerTank\Grizzler\Conversion Settings\Factory Conversion Settings.wwu" DateLow="1670600437" DateHigh="0"/>
@@ -59,7 +75,7 @@
 	<ValidationCacheItem File="Y:\Desktop\GrizzlerTank\Grizzler\Actor-Mixer Hierarchy\Player_Locomotion.wwu" DateLow="1670739335" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Desktop\GrizzlerTank\Grizzler\Actor-Mixer Hierarchy\Player_Driven_Sounds.wwu" DateLow="1670739335" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Desktop\GrizzlerTank\Grizzler\Actor-Mixer Hierarchy\Misc.wwu" DateLow="1670739335" DateHigh="0"/>
-	<ValidationCacheItem File="Y:\Desktop\GrizzlerTank\Grizzler\Actor-Mixer Hierarchy\Grizzler.wwu" DateLow="1670997853" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Desktop\GrizzlerTank\Grizzler\Actor-Mixer Hierarchy\Grizzler.wwu" DateLow="1671513097" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Desktop\GrizzlerTank\Grizzler\Actor-Mixer Hierarchy\Factory Synth One.wwu" DateLow="1670739335" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Desktop\GrizzlerTank\Grizzler\Actor-Mixer Hierarchy\Factory Soundseed Grain.wwu" DateLow="1670739335" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Desktop\GrizzlerTank\Grizzler\Actor-Mixer Hierarchy\Factory Soundseed Air Objects.wwu" DateLow="1670739335" DateHigh="0"/>

@@ -1,10 +1,15 @@
 Event	ID	Name			Wwise Object Path	Notes
+	684729214	Grizzler_Movement_01			\PlayerEvents\Grizzler_Movement_01	
+	2234575187	Grizzler_SciFi_Movement			\PlayerEvents\Grizzler_SciFi_Movement	
+	2616164525	Grizzler_Turret			\PlayerEvents\Grizzler_Turret	
+	2848769859	Grizzler_Fire			\PlayerEvents\Grizzler_Fire	
 	4170865704	Grizzler_Movement			\PlayerEvents\Grizzler_Movement	
 
 Switch Group	ID	Name			Wwise Object Path	Notes
 	63790334	SurfaceType			\PlayerDriven\SurfaceType	
 	212170665	Acceleration			\PlayerDriven\Acceleration	
 	503499828	Turning			\PlayerDriven\Turning	
+	2674766611	Turret			\PlayerDriven\Turret	
 
 Switch	ID	Name	Switch Group			Notes
 	841620460	Concrete	SurfaceType			
@@ -14,20 +19,31 @@ Switch	ID	Name	Switch Group			Notes
 	3089792801	Deccel	Acceleration			
 	503499828	Turning	Turning			
 	1375871011	NotTurning	Turning			
+	503499828	Turning	Turret			
+	1370828620	StopTurning	Turret			
+	1712436050	StartTurning	Turret			
+	1874288895	Idle	Turret			
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	503499828	Turning			\Player\Turning	
 	1446210263	WheelSurface			\Player\WheelSurface	
 	1493153371	PlayerSpeed			\Player\PlayerSpeed	
+	2674766611	Turret			\Player\Turret	
 	3698658901	Player_Acceleration			\Player\Player_Acceleration	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	20269213	Stop Moving	D:\Unity Projects\Grizzler Implementation\Grizzler\.cache\Mac\SFX\Player\Locomotion\Vehicles\Grizzler\StopEvent_10C4C929.wem		\Actor-Mixer Hierarchy\Player_Driven_Sounds\Player_Locomotion\Player_Vehicles\Grizzler\Grizzler_Movement\Acceleration_Switch\Stop Moving		768192
-	98987776	Idle	D:\Unity Projects\Grizzler Implementation\Grizzler\.cache\Mac\SFX\Player\Locomotion\Vehicles\Grizzler\Idle_D9611FCD.wem		\Actor-Mixer Hierarchy\Player_Driven_Sounds\Player_Locomotion\Player_Vehicles\Grizzler\Grizzler_Movement\Idle		363388
-	328188123	Turning	D:\Unity Projects\Grizzler Implementation\Grizzler\.cache\Mac\SFX\Player\Locomotion\Vehicles\Grizzler\Turning_D79FB2B7.wem		\Actor-Mixer Hierarchy\Player_Driven_Sounds\Player_Locomotion\Player_Vehicles\Grizzler\Grizzler_Movement\Turning_Switch\Turning		3408288
-	385143876	Wheels_On_Concrete	D:\Unity Projects\Grizzler Implementation\Grizzler\.cache\Mac\SFX\Player\Locomotion\Vehicles\Grizzler\Wheels_On_Metal__D79FB2B7.wem		\Actor-Mixer Hierarchy\Player_Driven_Sounds\Player_Locomotion\Player_Vehicles\Grizzler\Grizzler_Movement\Wheel_Surface_Material_Switch\Wheels_On_Concrete		384192
-	554176368	Wheels_On_Metal	D:\Unity Projects\Grizzler Implementation\Grizzler\.cache\Mac\SFX\Player\Locomotion\Vehicles\Grizzler\Wheels_On_Concree_D79FB2B7.wem		\Actor-Mixer Hierarchy\Player_Driven_Sounds\Player_Locomotion\Player_Vehicles\Grizzler\Grizzler_Movement\Wheel_Surface_Material_Switch\Wheels_On_Metal		384208
-	638871171	MoveLoop	D:\Unity Projects\Grizzler Implementation\Grizzler\.cache\Mac\SFX\Player\Locomotion\Vehicles\Grizzler\MoveLoop_D0285A3C.wem		\Actor-Mixer Hierarchy\Player_Driven_Sounds\Player_Locomotion\Player_Vehicles\Grizzler\Grizzler_Movement\MoveLoop		366292
-	804114056	Deccelerate	D:\Unity Projects\Grizzler Implementation\Grizzler\.cache\Mac\SFX\Player\Locomotion\Vehicles\Grizzler\Deccelerate_10C4C929.wem		\Actor-Mixer Hierarchy\Player_Driven_Sounds\Player_Locomotion\Player_Vehicles\Grizzler\Grizzler_Movement\Acceleration_Switch\Deccelerate		312192
-	1043149136	Begin Moving	D:\Unity Projects\Grizzler Implementation\Grizzler\.cache\Mac\SFX\Player\Locomotion\Vehicles\Grizzler\Begine Moving_10C4C929.wem		\Actor-Mixer Hierarchy\Player_Driven_Sounds\Player_Locomotion\Player_Vehicles\Grizzler\Grizzler_Movement\Acceleration_Switch\Begin Moving		576192
+	36251846	EngineIdle	Y:\Desktop\GrizzlerTank\Grizzler\.cache\Mac\SFX\Player\Locomotion\Vehicles\Grizzler\SciFiVersion\EngineIdle_D79FB2B7.wem		\Actor-Mixer Hierarchy\Player_Driven_Sounds\Player_Locomotion\Player_Vehicles\Grizzler\Grizzler_Sci-Fi\EngineIdle		576256
+	172724047	Stop Moving_01	Y:\Desktop\GrizzlerTank\Grizzler\.cache\Mac\SFX\Player\Locomotion\Vehicles\Grizzler\Stop Moving_10C4C929.wem		\Actor-Mixer Hierarchy\Player_Driven_Sounds\Player_Locomotion\Player_Vehicles\Grizzler\Grizzler_Movement_01\Acceleration_Switch\Stop Moving_01		768192
+	220290240	StartMoving	Y:\Desktop\GrizzlerTank\Grizzler\.cache\Mac\SFX\Player\Locomotion\Vehicles\Grizzler\StartMoving_10C4C929.wem		\Actor-Mixer Hierarchy\Player_Driven_Sounds\Player_Locomotion\Player_Vehicles\Grizzler\Grizzler_Movement_01\Acceleration_Switch\StartMoving		576192
+	328188123	Turning	Y:\Desktop\GrizzlerTank\Grizzler\.cache\Mac\SFX\Player\Locomotion\Vehicles\Grizzler\Turning_D79FB2B7.wem		\Actor-Mixer Hierarchy\Player_Driven_Sounds\Player_Locomotion\Player_Vehicles\Grizzler\Grizzler_Movement_01\Turning_Switch\Turning		3408288
+	385143876	Wheels_On_Concrete	Y:\Desktop\GrizzlerTank\Grizzler\.cache\Mac\SFX\Player\Locomotion\Vehicles\Grizzler\Wheels_On_Metal__D79FB2B7.wem		\Actor-Mixer Hierarchy\Player_Driven_Sounds\Player_Locomotion\Player_Vehicles\Grizzler\Grizzler_Movement_01\Wheel_Surface_Material_Switch\Wheels_On_Concrete		384192
+	415938671	Turret Turn	Y:\Desktop\GrizzlerTank\Grizzler\.cache\Mac\SFX\Player\Locomotion\Vehicles\Grizzler\SciFiVersion\Turret Turn_D79FB2B7.wem		\Actor-Mixer Hierarchy\Player_Driven_Sounds\Player_Locomotion\Player_Vehicles\Grizzler\RotateSwitch\Turret Turn		396708
+	554176368	Wheels_On_Metal	Y:\Desktop\GrizzlerTank\Grizzler\.cache\Mac\SFX\Player\Locomotion\Vehicles\Grizzler\Wheels_On_Concree_D79FB2B7.wem		\Actor-Mixer Hierarchy\Player_Driven_Sounds\Player_Locomotion\Player_Vehicles\Grizzler\Grizzler_Movement_01\Wheel_Surface_Material_Switch\Wheels_On_Metal		384208
+	667947165	Idle2	Y:\Desktop\GrizzlerTank\Grizzler\.cache\Mac\SFX\Player\Locomotion\Vehicles\Grizzler\Idle2_B2586505.wem		\Actor-Mixer Hierarchy\Player_Driven_Sounds\Player_Locomotion\Player_Vehicles\Grizzler\Grizzler_Movement_01\Idle2		2360540
+	715390949	Cannon 1	Y:\Desktop\GrizzlerTank\Grizzler\.cache\Mac\SFX\Player\Weapons\Vehicles\Grizzler\Cannon 1_10C4C929.wem		\Actor-Mixer Hierarchy\Player_Driven_Sounds\Player_Locomotion\Player_Vehicles\Grizzler\Imported Assets\Cannon 1		594692
+	742121366	Turrent_StartTurning	Y:\Desktop\GrizzlerTank\Grizzler\.cache\Mac\SFX\Player\Locomotion\Vehicles\Grizzler\Turrent_StartTurning_10C4C929.wem		\Actor-Mixer Hierarchy\Player_Driven_Sounds\Player_Locomotion\Player_Vehicles\Grizzler\RotateSwitch\Turrent_StartTurning		480192
+	780472207	Turrent_StopTurning	Y:\Desktop\GrizzlerTank\Grizzler\.cache\Mac\SFX\Player\Locomotion\Vehicles\Grizzler\Turrent_StopTurning_10C4C929.wem		\Actor-Mixer Hierarchy\Player_Driven_Sounds\Player_Locomotion\Player_Vehicles\Grizzler\RotateSwitch\Turrent_StopTurning		1008256
+	804114056	Deccelerate	Y:\Desktop\GrizzlerTank\Grizzler\.cache\Mac\SFX\Player\Locomotion\Vehicles\Grizzler\Deccelerate_10C4C929.wem		\Actor-Mixer Hierarchy\Player_Driven_Sounds\Player_Locomotion\Player_Vehicles\Grizzler\Grizzler_Movement_01\Acceleration_Switch\Deccelerate		312192
+	919551733	Move	Y:\Desktop\GrizzlerTank\Grizzler\.cache\Mac\SFX\Player\Locomotion\Vehicles\Grizzler\Move_D79FB2B7.wem		\Actor-Mixer Hierarchy\Player_Driven_Sounds\Player_Locomotion\Player_Vehicles\Grizzler\Grizzler_Movement_01\Move		2440288
+	953350999	Body Creeks Movement	Y:\Desktop\GrizzlerTank\Grizzler\.cache\Mac\SFX\Player\Locomotion\Vehicles\Grizzler\SciFiVersion\Body Creeks Movement_D79FB2B7.wem		\Actor-Mixer Hierarchy\Player_Driven_Sounds\Player_Locomotion\Player_Vehicles\Grizzler\Grizzler_Sci-Fi\Body Creeks Movement		2440256
 

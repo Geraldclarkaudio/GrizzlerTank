@@ -9,7 +9,7 @@
   <ObjectReferenceAutoCleanup>true</ObjectReferenceAutoCleanup>
   <ShowMissingRigidBodyWarning>true</ShowMissingRigidBodyWarning>
   <ShowSpatialAudioWarningMsg>true</ShowSpatialAudioWarningMsg>
-  <WwiseInstallationPathMac />
+  <WwiseInstallationPathMac>/Applications/Audiokinetic/Wwise 2022.1.0.8070/Wwise.app</WwiseInstallationPathMac>
   <WwiseInstallationPathWindows>D:\Wwise</WwiseInstallationPathWindows>
   <WwiseProjectPath>../Grizzler/Grizzler.wproj</WwiseProjectPath>
   <UseWaapi>true</UseWaapi>

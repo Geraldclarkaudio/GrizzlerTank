@@ -1,25 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="145">
 	<RootPaths>
-		<ProjectRoot>../..</ProjectRoot>
-		<SourceFilesRoot>../../.cache/Mac</SourceFilesRoot>
+		<ProjectRoot>../../</ProjectRoot>
+		<SourceFilesRoot>../../.cache/Mac/</SourceFilesRoot>
 		<SoundBanksRoot>.</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
 		<ExternalSourcesOutputRoot>.</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1291779240" Type="User" Language="SFX" Hash="{9E0C5850-4522-3B35-1877-9BA34DF4BE95}">
+		<SoundBank Id="1291779240" Type="User" Language="SFX" Hash="{F808C005-3E70-CBED-5DBF-A5F8D30B60CD}">
 			<ShortName>Grizzler</ShortName>
 			<Path>Grizzler.bnk</Path>
 			<Media>
-				<File Id="20269213" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Player\Locomotion\Vehicles\Grizzler\StopEvent.wav</ShortName>
-					<CachePath>SFX/Player/Locomotion/Vehicles/Grizzler/StopEvent_10C4C929.wem</CachePath>
+				<File Id="36251846" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Player\Locomotion\Vehicles\Grizzler\SciFiVersion\EngineIdle.wav</ShortName>
+					<CachePath>SFX/Player/Locomotion/Vehicles/Grizzler/SciFiVersion/EngineIdle_D79FB2B7.wem</CachePath>
 				</File>
-				<File Id="98987776" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Player\Locomotion\Vehicles\Grizzler\Idle.wav</ShortName>
-					<CachePath>SFX/Player/Locomotion/Vehicles/Grizzler/Idle_D9611FCD.wem</CachePath>
+				<File Id="172724047" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Player\Locomotion\Vehicles\Grizzler\Stop Moving.wav</ShortName>
+					<CachePath>SFX/Player/Locomotion/Vehicles/Grizzler/Stop Moving_10C4C929.wem</CachePath>
+				</File>
+				<File Id="220290240" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Player\Locomotion\Vehicles\Grizzler\StartMoving.wav</ShortName>
+					<CachePath>SFX/Player/Locomotion/Vehicles/Grizzler/StartMoving_10C4C929.wem</CachePath>
 				</File>
 				<File Id="328188123" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Player\Locomotion\Vehicles\Grizzler\Turning.wav</ShortName>
@@ -29,34 +33,60 @@
 					<ShortName>Player\Locomotion\Vehicles\Grizzler\Wheels_On_Metal_.wav</ShortName>
 					<CachePath>SFX/Player/Locomotion/Vehicles/Grizzler/Wheels_On_Metal__D79FB2B7.wem</CachePath>
 				</File>
+				<File Id="415938671" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Player\Locomotion\Vehicles\Grizzler\SciFiVersion\Turret Turn.wav</ShortName>
+					<CachePath>SFX/Player/Locomotion/Vehicles/Grizzler/SciFiVersion/Turret Turn_D79FB2B7.wem</CachePath>
+				</File>
 				<File Id="554176368" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Player\Locomotion\Vehicles\Grizzler\Wheels_On_Concree.wav</ShortName>
 					<CachePath>SFX/Player/Locomotion/Vehicles/Grizzler/Wheels_On_Concree_D79FB2B7.wem</CachePath>
 				</File>
-				<File Id="638871171" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Player\Locomotion\Vehicles\Grizzler\MoveLoop.wav</ShortName>
-					<CachePath>SFX/Player/Locomotion/Vehicles/Grizzler/MoveLoop_D0285A3C.wem</CachePath>
+				<File Id="667947165" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Player\Locomotion\Vehicles\Grizzler\Idle2.wav</ShortName>
+					<CachePath>SFX/Player/Locomotion/Vehicles/Grizzler/Idle2_B2586505.wem</CachePath>
+				</File>
+				<File Id="715390949" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Player\Weapons\Vehicles\Grizzler\Cannon 1.wav</ShortName>
+					<CachePath>SFX/Player/Weapons/Vehicles/Grizzler/Cannon 1_10C4C929.wem</CachePath>
+				</File>
+				<File Id="742121366" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Player\Locomotion\Vehicles\Grizzler\Turrent_StartTurning.wav</ShortName>
+					<CachePath>SFX/Player/Locomotion/Vehicles/Grizzler/Turrent_StartTurning_10C4C929.wem</CachePath>
+				</File>
+				<File Id="780472207" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Player\Locomotion\Vehicles\Grizzler\Turrent_StopTurning.wav</ShortName>
+					<CachePath>SFX/Player/Locomotion/Vehicles/Grizzler/Turrent_StopTurning_10C4C929.wem</CachePath>
 				</File>
 				<File Id="804114056" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Player\Locomotion\Vehicles\Grizzler\Deccelerate.wav</ShortName>
 					<CachePath>SFX/Player/Locomotion/Vehicles/Grizzler/Deccelerate_10C4C929.wem</CachePath>
 				</File>
-				<File Id="1043149136" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Player\Locomotion\Vehicles\Grizzler\Begine Moving.wav</ShortName>
-					<CachePath>SFX/Player/Locomotion/Vehicles/Grizzler/Begine Moving_10C4C929.wem</CachePath>
+				<File Id="919551733" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Player\Locomotion\Vehicles\Grizzler\Move.wav</ShortName>
+					<CachePath>SFX/Player/Locomotion/Vehicles/Grizzler/Move_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="953350999" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Player\Locomotion\Vehicles\Grizzler\SciFiVersion\Body Creeks Movement.wav</ShortName>
+					<CachePath>SFX/Player/Locomotion/Vehicles/Grizzler/SciFiVersion/Body Creeks Movement_D79FB2B7.wem</CachePath>
 				</File>
 			</Media>
 			<Events>
-				<Event Id="4170865704" Name="Grizzler_Movement" DurationType="Infinite">
+				<Event Id="2848769859" Name="Grizzler_Fire" DurationType="OneShot" DurationMin="2.6753676" DurationMax="3.6907241">
 					<MediaRefs>
-						<MediaRef Id="98987776"/>
-						<MediaRef Id="638871171"/>
+						<MediaRef Id="715390949"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="4170865704" Name="Grizzler_Movement" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="684729214" Name="Grizzler_Movement_01" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="667947165"/>
+						<MediaRef Id="919551733"/>
 					</MediaRefs>
 					<SwitchContainers>
 						<SwitchContainer>
 							<SwitchValue GroupType="Switch" GroupId="212170665" Id="1874288895" Default="true"/>
 							<MediaRefs>
-								<MediaRef Id="20269213"/>
+								<MediaRef Id="172724047"/>
 							</MediaRefs>
 						</SwitchContainer>
 						<SwitchContainer>
@@ -68,7 +98,7 @@
 						<SwitchContainer>
 							<SwitchValue GroupType="Switch" GroupId="212170665" Id="1778882555"/>
 							<MediaRefs>
-								<MediaRef Id="1043149136"/>
+								<MediaRef Id="220290240"/>
 							</MediaRefs>
 						</SwitchContainer>
 						<SwitchContainer>
@@ -91,11 +121,40 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
+				<Event Id="2234575187" Name="Grizzler_SciFi_Movement" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="36251846"/>
+						<MediaRef Id="953350999"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2616164525" Name="Grizzler_Turret" DurationType="Infinite">
+					<SwitchContainers>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="2674766611" Id="1712436050"/>
+							<MediaRefs>
+								<MediaRef Id="742121366"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="2674766611" Id="503499828"/>
+							<MediaRefs>
+								<MediaRef Id="415938671"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="2674766611" Id="1370828620"/>
+							<MediaRefs>
+								<MediaRef Id="780472207"/>
+							</MediaRefs>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
 			</Events>
 			<GameParameters>
 				<GameParameter Id="503499828" Name="Turning"/>
 				<GameParameter Id="1446210263" Name="WheelSurface"/>
 				<GameParameter Id="1493153371" Name="PlayerSpeed"/>
+				<GameParameter Id="2674766611" Name="Turret"/>
 				<GameParameter Id="3698658901" Name="Player_Acceleration"/>
 			</GameParameters>
 			<SwitchGroups>
@@ -121,9 +180,18 @@
 						<Switch Id="1375871011" Name="NotTurning"/>
 					</Switches>
 				</SwitchGroup>
+				<SwitchGroup Id="2674766611" Name="Turret">
+					<GameParameterRef Id="2674766611"/>
+					<Switches>
+						<Switch Id="503499828" Name="Turning"/>
+						<Switch Id="1370828620" Name="StopTurning"/>
+						<Switch Id="1712436050" Name="StartTurning"/>
+						<Switch Id="1874288895" Name="Idle"/>
+					</Switches>
+				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{CC9E0B26-0701-C47A-6ED1-C029D24198D7}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{DAB3494D-C2CD-98EA-ED96-A7F9C7BA990F}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -153,6 +221,7 @@
 				<GameParameter Id="2428833394" Name="Simulation_FA_SSGrain"/>
 				<GameParameter Id="2481728872" Name="Immersion_FA_SSGrain"/>
 				<GameParameter Id="2648548617" Name="SS_Air_Month"/>
+				<GameParameter Id="2674766611" Name="Turret"/>
 				<GameParameter Id="2715217995" Name="Density_FA_SSGrain"/>
 				<GameParameter Id="3002758120" Name="SS_Air_Freefall"/>
 				<GameParameter Id="3074696722" Name="SS_Air_Size"/>
@@ -195,6 +264,15 @@
 					<Switches>
 						<Switch Id="503499828" Name="Turning"/>
 						<Switch Id="1375871011" Name="NotTurning"/>
+					</Switches>
+				</SwitchGroup>
+				<SwitchGroup Id="2674766611" Name="Turret">
+					<GameParameterRef Id="2674766611"/>
+					<Switches>
+						<Switch Id="503499828" Name="Turning"/>
+						<Switch Id="1370828620" Name="StopTurning"/>
+						<Switch Id="1712436050" Name="StartTurning"/>
+						<Switch Id="1874288895" Name="Idle"/>
 					</Switches>
 				</SwitchGroup>
 			</SwitchGroups>
@@ -314,5 +392,5 @@
 			</AcousticTextures>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{797789A3-CDFF-398B-9507-CF8C110C90CE}</FileHash>
+	<FileHash>{FFC86B7D-715B-36FF-35DB-BE1D09473873}</FileHash>
 </SoundBanksInfo>
