@@ -8,18 +8,7 @@
 						<Action Name="" ID="{1235F07C-D762-49B3-B82B-3094C699F136}" ShortID="746991684">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Grizzler_Movement" ID="{D04E1FBD-CD5B-46A4-9C7C-1D7BEF0A8DAA}" WorkUnitID="{973B0F3E-63A1-43F6-BC7D-7BA9D8CAA641}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Grizzler_Movement_01" ID="{D0572FB7-778B-4742-8887-7D8C8C90DBF6}">
-					<ChildrenList>
-						<Action Name="" ID="{0210CEFA-A69A-45A2-BE17-8C58DBC5273F}" ShortID="1032962212">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Grizzler_Movement_01" ID="{5C226028-4B1D-445B-8E6F-CBED8ADBFD41}" WorkUnitID="{973B0F3E-63A1-43F6-BC7D-7BA9D8CAA641}"/>
+									<ObjectRef Name="Movement" ID="{8C3B69A2-F39D-4B89-8B3B-33A09FA9A624}" WorkUnitID="{973B0F3E-63A1-43F6-BC7D-7BA9D8CAA641}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -30,7 +19,7 @@
 						<Action Name="" ID="{FBE5BCCF-341E-4651-8BBE-262239AE4B67}" ShortID="376009484">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="RotateSwitch" ID="{57B75115-6BC4-4C80-814E-5FF233D385CD}" WorkUnitID="{973B0F3E-63A1-43F6-BC7D-7BA9D8CAA641}"/>
+									<ObjectRef Name="Turret_Switch" ID="{57B75115-6BC4-4C80-814E-5FF233D385CD}" WorkUnitID="{973B0F3E-63A1-43F6-BC7D-7BA9D8CAA641}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -41,7 +30,7 @@
 						<Action Name="" ID="{A25D9CBF-976E-4C68-A5E0-9687AB196466}" ShortID="860200646">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Cannon 1" ID="{8E306FF0-4F3C-4B81-8435-7131AB6FA968}" WorkUnitID="{973B0F3E-63A1-43F6-BC7D-7BA9D8CAA641}"/>
+									<ObjectRef Name="Turret_Fire" ID="{FE4B150B-6C59-461D-94D1-64F121485298}" WorkUnitID="{973B0F3E-63A1-43F6-BC7D-7BA9D8CAA641}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -52,7 +41,7 @@
 						<Action Name="" ID="{534DB4EE-B962-4C4A-B154-006D361B2B96}" ShortID="517209514">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Grizzler_Sci-Fi" ID="{1775CD32-6AB9-4A96-BAFF-5DBB5D5AD8AC}" WorkUnitID="{973B0F3E-63A1-43F6-BC7D-7BA9D8CAA641}"/>
+									<ObjectRef Name="Movement" ID="{8C3B69A2-F39D-4B89-8B3B-33A09FA9A624}" WorkUnitID="{973B0F3E-63A1-43F6-BC7D-7BA9D8CAA641}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

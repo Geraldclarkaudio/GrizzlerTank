@@ -9,25 +9,21 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1291779240" Type="User" Language="SFX" Hash="{F808C005-3E70-CBED-5DBF-A5F8D30B60CD}">
+		<SoundBank Id="1291779240" Type="User" Language="SFX" Hash="{546209F6-2CB6-56E5-E1B6-35D71E9CBB0A}">
 			<ShortName>Grizzler</ShortName>
 			<Path>Grizzler.bnk</Path>
 			<Media>
-				<File Id="36251846" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Player\Locomotion\Vehicles\Grizzler\SciFiVersion\EngineIdle.wav</ShortName>
-					<CachePath>SFX/Player/Locomotion/Vehicles/Grizzler/SciFiVersion/EngineIdle_D79FB2B7.wem</CachePath>
-				</File>
-				<File Id="172724047" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Player\Locomotion\Vehicles\Grizzler\Stop Moving.wav</ShortName>
-					<CachePath>SFX/Player/Locomotion/Vehicles/Grizzler/Stop Moving_10C4C929.wem</CachePath>
-				</File>
-				<File Id="220290240" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Player\Locomotion\Vehicles\Grizzler\StartMoving.wav</ShortName>
-					<CachePath>SFX/Player/Locomotion/Vehicles/Grizzler/StartMoving_10C4C929.wem</CachePath>
+				<File Id="20269213" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Player\Locomotion\Vehicles\Grizzler\StopEvent.wav</ShortName>
+					<CachePath>SFX/Player/Locomotion/Vehicles/Grizzler/StopEvent_10C4C929.wem</CachePath>
 				</File>
 				<File Id="328188123" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Player\Locomotion\Vehicles\Grizzler\Turning.wav</ShortName>
 					<CachePath>SFX/Player/Locomotion/Vehicles/Grizzler/Turning_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="362130209" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Player\Locomotion\Vehicles\Grizzler\Idea 4\Idle Loop.wav</ShortName>
+					<CachePath>SFX/Player/Locomotion/Vehicles/Grizzler/Idea 4/Idle Loop_45256623.wem</CachePath>
 				</File>
 				<File Id="385143876" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Player\Locomotion\Vehicles\Grizzler\Wheels_On_Metal_.wav</ShortName>
@@ -57,10 +53,6 @@
 					<ShortName>Player\Locomotion\Vehicles\Grizzler\Turrent_StopTurning.wav</ShortName>
 					<CachePath>SFX/Player/Locomotion/Vehicles/Grizzler/Turrent_StopTurning_10C4C929.wem</CachePath>
 				</File>
-				<File Id="804114056" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Player\Locomotion\Vehicles\Grizzler\Deccelerate.wav</ShortName>
-					<CachePath>SFX/Player/Locomotion/Vehicles/Grizzler/Deccelerate_10C4C929.wem</CachePath>
-				</File>
 				<File Id="919551733" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Player\Locomotion\Vehicles\Grizzler\Move.wav</ShortName>
 					<CachePath>SFX/Player/Locomotion/Vehicles/Grizzler/Move_D79FB2B7.wem</CachePath>
@@ -69,6 +61,10 @@
 					<ShortName>Player\Locomotion\Vehicles\Grizzler\SciFiVersion\Body Creeks Movement.wav</ShortName>
 					<CachePath>SFX/Player/Locomotion/Vehicles/Grizzler/SciFiVersion/Body Creeks Movement_D79FB2B7.wem</CachePath>
 				</File>
+				<File Id="1043149136" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Player\Locomotion\Vehicles\Grizzler\Begine Moving.wav</ShortName>
+					<CachePath>SFX/Player/Locomotion/Vehicles/Grizzler/Begine Moving_10C4C929.wem</CachePath>
+				</File>
 			</Media>
 			<Events>
 				<Event Id="2848769859" Name="Grizzler_Fire" DurationType="OneShot" DurationMin="2.6753676" DurationMax="3.6907241">
@@ -76,29 +72,24 @@
 						<MediaRef Id="715390949"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="4170865704" Name="Grizzler_Movement" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-				<Event Id="684729214" Name="Grizzler_Movement_01" DurationType="Infinite">
+				<Event Id="4170865704" Name="Grizzler_Movement" DurationType="Infinite">
 					<MediaRefs>
+						<MediaRef Id="362130209"/>
 						<MediaRef Id="667947165"/>
 						<MediaRef Id="919551733"/>
+						<MediaRef Id="953350999"/>
 					</MediaRefs>
 					<SwitchContainers>
 						<SwitchContainer>
-							<SwitchValue GroupType="Switch" GroupId="212170665" Id="1874288895" Default="true"/>
-							<MediaRefs>
-								<MediaRef Id="172724047"/>
-							</MediaRefs>
-						</SwitchContainer>
-						<SwitchContainer>
 							<SwitchValue GroupType="Switch" GroupId="212170665" Id="3089792801"/>
 							<MediaRefs>
-								<MediaRef Id="804114056"/>
+								<MediaRef Id="20269213"/>
 							</MediaRefs>
 						</SwitchContainer>
 						<SwitchContainer>
 							<SwitchValue GroupType="Switch" GroupId="212170665" Id="1778882555"/>
 							<MediaRefs>
-								<MediaRef Id="220290240"/>
+								<MediaRef Id="1043149136"/>
 							</MediaRefs>
 						</SwitchContainer>
 						<SwitchContainer>
@@ -121,11 +112,46 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
+				<Event Id="684729214" Name="Grizzler_Movement_01" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="2234575187" Name="Grizzler_SciFi_Movement" DurationType="Infinite">
 					<MediaRefs>
-						<MediaRef Id="36251846"/>
+						<MediaRef Id="362130209"/>
+						<MediaRef Id="667947165"/>
+						<MediaRef Id="919551733"/>
 						<MediaRef Id="953350999"/>
 					</MediaRefs>
+					<SwitchContainers>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="212170665" Id="3089792801"/>
+							<MediaRefs>
+								<MediaRef Id="20269213"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="212170665" Id="1778882555"/>
+							<MediaRefs>
+								<MediaRef Id="1043149136"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="503499828" Id="503499828"/>
+							<MediaRefs>
+								<MediaRef Id="328188123"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="63790334" Id="841620460"/>
+							<MediaRefs>
+								<MediaRef Id="385143876"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="63790334" Id="2473969246" Default="true"/>
+							<MediaRefs>
+								<MediaRef Id="554176368"/>
+							</MediaRefs>
+						</SwitchContainer>
+					</SwitchContainers>
 				</Event>
 				<Event Id="2616164525" Name="Grizzler_Turret" DurationType="Infinite">
 					<SwitchContainers>
@@ -392,5 +418,5 @@
 			</AcousticTextures>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{84A7FEDD-0EF4-5633-C6A2-DC8F7ABF42C5}</FileHash>
+	<FileHash>{93E6A4E4-4C28-E7DF-51B8-E5948BAEF71F}</FileHash>
 </SoundBanksInfo>

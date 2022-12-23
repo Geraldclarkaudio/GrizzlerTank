@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657868, g: 0.4964124, b: 0.574817, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2507,11 +2507,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 427898449}
-  - component: {fileID: 427898456}
   - component: {fileID: 427898452}
   - component: {fileID: 427898453}
   - component: {fileID: 427898454}
-  - component: {fileID: 427898455}
   - component: {fileID: 427898457}
   - component: {fileID: 427898458}
   m_Layer: 0
@@ -2587,66 +2585,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1.4807805, z: 1}
-  m_Center: {x: -0, y: 0.67460996, z: -0}
---- !u!143 &427898455
-CharacterController:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 427898448}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Height: 2
-  m_Radius: 0.5
-  m_SlopeLimit: 45
-  m_StepOffset: 0.3
-  m_SkinWidth: 0.08
-  m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 0.98, z: 0}
---- !u!114 &427898456
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 427898448}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6989376dccde97048861a8192eba15f4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tankController: {fileID: 427898455}
-  moveDirection: {x: 0, y: 0, z: 0}
-  gravity: 100
-  speed: 1
-  rotSpeed: 25
-  surface: 0
-  turn: 0
-  acceleration: 0
-  grizzlerMovement:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: b79c976f934eba04b89362a6d6e09393, type: 2}
-  playerSpeedRTPC:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 38ca57777dfd5894fa060c1a5132f375, type: 2}
-  playerAcceleration:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 8c04f3861c40a8546898382792b4b854, type: 2}
-  playerTurning:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: f16fc1fed2b8a3442b96cff0eecfee16, type: 2}
-  wheelSurface:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 3a791bb9b818e524e91cf4dd13a02870, type: 2}
+  m_Size: {x: 1, y: 1.6750698, z: 1}
+  m_Center: {x: -0, y: 0.5774655, z: -0}
 --- !u!114 &427898457
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2669,7 +2609,7 @@ MonoBehaviour:
   grizzlerEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 92bfbf0a1c8ef5a4ea0f4e02bc8ce950, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: b79c976f934eba04b89362a6d6e09393, type: 2}
   playerSpeedRTPC:
     idInternal: 0
     valueGuidInternal: 
@@ -3080,10 +3020,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 467901555}
-  - component: {fileID: 467901556}
   m_Layer: 0
   m_Name: ConcreteFloor (1)
-  m_TagString: Concrete Floor
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3167,19 +3106,6 @@ Transform:
   m_Father: {fileID: 1761124949}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &467901556
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 467901554}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &486588564
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4003,10 +3929,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 604140757}
-  - component: {fileID: 604140758}
   m_Layer: 0
   m_Name: Metal Floor (1)
-  m_TagString: MetalFloor
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4034,19 +3959,6 @@ Transform:
   m_Father: {fileID: 1761124949}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &604140758
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 604140756}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &644597102
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8667,7 +8579,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!64 &1390328850
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -11511,7 +11423,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1761124949
 Transform:
   m_ObjectHideFlags: 0
@@ -12061,7 +11973,7 @@ GameObject:
   - component: {fileID: 1915891965}
   m_Layer: 0
   m_Name: ConcreteFloor
-  m_TagString: Concrete Floor
+  m_TagString: ConcreteFloor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12156,8 +12068,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 43.97, y: 1, z: 604.43}
-  m_Center: {x: 0, y: 0, z: -228.9}
+  m_Size: {x: 26.703339, y: 1, z: 604.43}
+  m_Center: {x: 13.620766, y: 0, z: -228.9}
 --- !u!1001 &1936149072
 PrefabInstance:
   m_ObjectHideFlags: 0

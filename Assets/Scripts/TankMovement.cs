@@ -44,11 +44,16 @@ public class TankMovement : MonoBehaviour
     {
         if(other.CompareTag("MetalFloor"))
         {
+            Debug.Log("colliding with metal");
+
             surface = 0;
+            wheelSurface.SetValue(gameObject, surface);
         }
-        if(other.CompareTag("Concrete Floor"))
+        if(other.CompareTag("ConcreteFloor"))
         {
+            Debug.Log("Colliding with Concrete");
             surface = 1;
+            wheelSurface.SetValue(gameObject, surface);
         }
     }
 
@@ -58,7 +63,7 @@ public class TankMovement : MonoBehaviour
         playerSpeedRTPC.SetValue(gameObject, _speed);
         playerAcceleration.SetValue(gameObject, acceleration);
         playerTurning.SetValue(gameObject, turn);
-        wheelSurface.SetValue(gameObject, surface);
+  
 
         //Inputs
         float verticalInput = Mathf.Abs(Input.GetAxisRaw("Vertical"));

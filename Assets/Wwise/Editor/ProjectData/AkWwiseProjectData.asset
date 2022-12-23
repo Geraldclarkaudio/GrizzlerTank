@@ -385,7 +385,7 @@ MonoBehaviour:
     ParentPath: Events/PlayerEvents
     guid: 7fc2a4855b006942a282ae929ab4bb7b
     GuidInternal: 
-    m_lastTime: -8585301787023744203
+    m_lastTime: -8585299187209273746
     List:
     - name: Grizzler_Fire
       guid: 6d8b9a6ef3659146837c5ce8633e556e
@@ -418,23 +418,6 @@ MonoBehaviour:
         ObjectType: 3
         guid: a67610cd45be5f4599ba5d3075b654d6
       Path: Events/PlayerEvents/Grizzler_Movement
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: Grizzler_Movement_01
-      guid: b72f57d08b77424788877d8c8c90dbf6
-      id: 684729214
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: PlayerEvents
-        ObjectType: 12
-        guid: 7fc2a4855b006942a282ae929ab4bb7b
-      - ElementName: Grizzler_Movement_01
-        ObjectType: 3
-        guid: b72f57d08b77424788877d8c8c90dbf6
-      Path: Events/PlayerEvents/Grizzler_Movement_01
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -1434,7 +1417,7 @@ MonoBehaviour:
     m_lastTime: -8585308678359834396
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 
+  ExpandedWaapiItemIds: 010000000500000007000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

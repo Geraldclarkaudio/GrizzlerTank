@@ -6,6 +6,8 @@ TagManager:
   tags:
   - MetalFloor
   - Concrete Floor
+  - CinemachineTarget
+  - ConcreteFloor
   layers:
   - Default
   - TransparentFX
