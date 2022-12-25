@@ -15,7 +15,6 @@ namespace AK
     {
         static const AkUniqueID GRIZZLER_FIRE = 2848769859U;
         static const AkUniqueID GRIZZLER_MOVEMENT = 4170865704U;
-        static const AkUniqueID GRIZZLER_SCIFI_MOVEMENT = 2234575187U;
         static const AkUniqueID GRIZZLER_TURRET = 2616164525U;
     } // namespace EVENTS
 
@@ -59,6 +58,17 @@ namespace AK
                 static const AkUniqueID METAL = 2473969246U;
             } // namespace SWITCH
         } // namespace SURFACETYPE
+
+        namespace SUSPENSIONEVENT
+        {
+            static const AkUniqueID GROUP = 2887795126U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID OFF = 930712164U;
+                static const AkUniqueID ON = 1651971902U;
+            } // namespace SWITCH
+        } // namespace SUSPENSIONEVENT
 
         namespace TURNING
         {
@@ -114,6 +124,7 @@ namespace AK
         static const AkUniqueID SS_AIR_STORM = 3715662592U;
         static const AkUniqueID SS_AIR_TIMEOFDAY = 3203397129U;
         static const AkUniqueID SS_AIR_TURBULENCE = 4160247818U;
+        static const AkUniqueID SUSPENSIONEVENT = 2887795126U;
         static const AkUniqueID TURNING = 503499828U;
         static const AkUniqueID TURRET = 2674766611U;
         static const AkUniqueID WHEELSURFACE = 1446210263U;
@@ -128,6 +139,8 @@ namespace AK
     namespace BUSSES
     {
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
+        static const AkUniqueID VEHCILE_MOVEMENT = 2716796269U;
+        static const AkUniqueID VEHICLE_WEAPON = 1554669706U;
     } // namespace BUSSES
 
     namespace AUDIO_DEVICES

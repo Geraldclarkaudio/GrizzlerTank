@@ -9,6 +9,25 @@
 							<ObjectRef Name="System" ID="{3698D52B-FE69-40F5-902A-C485EF4B2BB6}" WorkUnitID="{1B979CEC-1E9F-4AAA-B350-82268F159F1C}"/>
 						</Reference>
 					</ReferenceList>
+					<ChildrenList>
+						<Bus Name="Vehcile_Movement" ID="{07126FEB-DFE8-4014-87BF-F464C7BEFCC5}"/>
+						<Bus Name="Vehicle_Weapon" ID="{CD772E7D-1DC4-4DC8-9764-82A93FB0490D}">
+							<PropertyList>
+								<Property Name="RecoveryTime" Type="Real64" Value="0"/>
+							</PropertyList>
+							<DuckingList>
+								<DuckItem>
+									<BusRef Name="Vehcile_Movement" ID="{07126FEB-DFE8-4014-87BF-F464C7BEFCC5}"/>
+									<DuckingParam>
+										<Volume>-5</Volume>
+										<FadeInTime>0.5</FadeInTime>
+										<FadeOutTime>0.5</FadeOutTime>
+										<FadeCurve>FadeLog2</FadeCurve>
+									</DuckingParam>
+								</DuckItem>
+							</DuckingList>
+						</Bus>
+					</ChildrenList>
 				</Bus>
 			</ChildrenList>
 		</WorkUnit>

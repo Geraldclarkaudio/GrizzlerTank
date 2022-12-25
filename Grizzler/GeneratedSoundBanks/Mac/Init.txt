@@ -3,6 +3,7 @@ Switch Group	ID	Name			Wwise Object Path	Notes
 	212170665	Acceleration			\PlayerDriven\Acceleration	
 	503499828	Turning			\PlayerDriven\Turning	
 	2674766611	Turret			\PlayerDriven\Turret	
+	2887795126	SuspensionEvent			\PlayerDriven\SuspensionEvent	
 
 Switch	ID	Name	Switch Group			Notes
 	841620460	Concrete	SurfaceType			
@@ -16,6 +17,8 @@ Switch	ID	Name	Switch Group			Notes
 	1370828620	StopTurning	Turret			
 	1712436050	StartTurning	Turret			
 	1874288895	Idle	Turret			
+	930712164	Off	SuspensionEvent			
+	1651971902	On	SuspensionEvent			
 
 State Group	ID	Name			Wwise Object Path	Notes
 	1350496757	PlayerMovement			\PlayerStates\PlayerMovement	
@@ -42,6 +45,8 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 	4262522749	Wood_Bright			\Factory Acoustic Textures\Textures\Wood_Bright	
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
+	1554669706	Vehicle_Weapon			\Default Work Unit\Master Audio Bus\Vehicle_Weapon	
+	2716796269	Vehcile_Movement			\Default Work Unit\Master Audio Bus\Vehcile_Movement	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
 
 Audio Devices	ID	Name	Type				Notes

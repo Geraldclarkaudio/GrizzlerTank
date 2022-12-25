@@ -3,7 +3,11 @@
 	<MixingSessions>
 		<WorkUnit Name="Default Work Unit" ID="{F578CBC2-EEFE-4FC7-907B-FC8DFB54C979}" PersistMode="Standalone">
 			<ChildrenList>
-				<MixingSession Name="Grizzler Mixer" ID="{50F27B93-D100-43FB-888D-B4CC0B65C7D6}"/>
+				<MixingSession Name="Grizzler Mixer" ID="{50F27B93-D100-43FB-888D-B4CC0B65C7D6}">
+					<ObjectList>
+						<ObjectRef Name="Movement" ID="{8C3B69A2-F39D-4B89-8B3B-33A09FA9A624}" WorkUnitID="{973B0F3E-63A1-43F6-BC7D-7BA9D8CAA641}"/>
+					</ObjectList>
+				</MixingSession>
 			</ChildrenList>
 		</WorkUnit>
 	</MixingSessions>

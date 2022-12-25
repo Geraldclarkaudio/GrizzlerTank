@@ -487,15 +487,42 @@
 												<ActiveSource Name="EngineIdle" ID="{F08C0A92-D04F-43CA-B266-91E660FCE528}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
+										<Sound Name="Suspension Event 1" ID="{8FAF31CE-1759-48FC-A84E-012295FBFAEA}" ShortID="27058747">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{76303271-6B26-4C24-9127-2CA0A617594D}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D644C3B1-4CAA-4FEE-AF64-4347A85E2B06}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Suspension Event 1" ID="{1E391A8D-3981-434C-8596-9C15AD8C72A2}">
+													<Language>SFX</Language>
+													<AudioFile>Player\Locomotion\Vehicles\Grizzler\Suspension Event 1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="382667379"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Suspension Event 1" ID="{1E391A8D-3981-434C-8596-9C15AD8C72A2}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
 									</ChildrenList>
 								</Folder>
 							</ChildrenList>
 						</Folder>
 					</ChildrenList>
 				</Folder>
-				<SwitchContainer Name="Turret_Switch" ID="{57B75115-6BC4-4C80-814E-5FF233D385CD}" ShortID="143367772">
+				<SwitchContainer Name="Turret_Turn_Switch" ID="{57B75115-6BC4-4C80-814E-5FF233D385CD}" ShortID="143367772">
 					<PropertyList>
 						<Property Name="SwitchBehavior" Type="int16" Value="1"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-8</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -505,7 +532,7 @@
 							<ObjectRef Name="Idle" ID="{F07EB652-D8D7-4EB4-A224-967FFA43BE40}" WorkUnitID="{81279BA2-8A0E-47D6-A112-99F5CC6B8F72}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D644C3B1-4CAA-4FEE-AF64-4347A85E2B06}"/>
+							<ObjectRef Name="Vehicle_Weapon" ID="{CD772E7D-1DC4-4DC8-9764-82A93FB0490D}" WorkUnitID="{D644C3B1-4CAA-4FEE-AF64-4347A85E2B06}"/>
 						</Reference>
 						<Reference Name="SwitchGroupOrStateGroup">
 							<ObjectRef Name="Turret" ID="{CA75343A-1137-470C-938F-B8AD05F84E9A}" WorkUnitID="{81279BA2-8A0E-47D6-A112-99F5CC6B8F72}"/>
@@ -626,13 +653,21 @@
 				<BlendContainer Name="Movement" ID="{8C3B69A2-F39D-4B89-8B3B-33A09FA9A624}" ShortID="1037583783">
 					<PropertyList>
 						<Property Name="BlendBehavior" Type="int16" Value="1"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-12</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{76303271-6B26-4C24-9127-2CA0A617594D}"/>
 						</Reference>
+						<Reference Name="Effect0" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
+							<ObjectRef Name="Dialog_Leveler_Hard" ID="{865FB36F-8717-4D30-AD05-14E56375CD40}"/>
+						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D644C3B1-4CAA-4FEE-AF64-4347A85E2B06}"/>
+							<ObjectRef Name="Vehcile_Movement" ID="{07126FEB-DFE8-4014-87BF-F464C7BEFCC5}" WorkUnitID="{D644C3B1-4CAA-4FEE-AF64-4347A85E2B06}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -682,6 +717,9 @@
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{76303271-6B26-4C24-9127-2CA0A617594D}"/>
+								</Reference>
+								<Reference Name="Effect0" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
+									<ObjectRef Name="Dialog_Too_Quiet" ID="{F9C77BF1-1CCC-415B-B93F-B048979CA620}"/>
 								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D644C3B1-4CAA-4FEE-AF64-4347A85E2B06}"/>
@@ -894,36 +932,11 @@
 										<ActiveSource Name="StopEvent" ID="{0C93FE85-C829-455E-BB7B-8CBB5F523FDD}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="Begin Moving_01" ID="{E9815CD0-3F43-4AD7-A9B7-17FDEE540510}" ShortID="436881759">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{76303271-6B26-4C24-9127-2CA0A617594D}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D644C3B1-4CAA-4FEE-AF64-4347A85E2B06}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Begine Moving" ID="{DFE1E046-5FFB-4CBF-A339-7EAA8275054B}">
-											<Language>SFX</Language>
-											<AudioFile>Player\Locomotion\Vehicles\Grizzler\Begine Moving.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="1043149136"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="Begine Moving" ID="{DFE1E046-5FFB-4CBF-A339-7EAA8275054B}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
 							</ChildrenList>
 							<GroupingInfo>
 								<GroupingBehaviorList>
 									<GroupingBehavior>
 										<ItemRef Name="Begin Moving" ID="{7B9E1B9F-5F38-4EFA-BC17-7BDEF3E4D349}"/>
-									</GroupingBehavior>
-									<GroupingBehavior>
-										<ItemRef Name="Begin Moving_01" ID="{E9815CD0-3F43-4AD7-A9B7-17FDEE540510}"/>
 									</GroupingBehavior>
 									<GroupingBehavior>
 										<ItemRef Name="Stop Moving" ID="{092626E0-CE0C-48FF-A55E-E320D33A011A}"/>
@@ -1031,6 +1044,7 @@
 										<Value>1</Value>
 									</ValueList>
 								</Property>
+								<Property Name="OverrideEffect" Type="bool" Value="True"/>
 								<Property Name="Pitch" Type="int32">
 									<ValueList>
 										<Value>-1020</Value>
@@ -1049,6 +1063,9 @@
 								</Reference>
 								<Reference Name="DefaultSwitchOrState">
 									<ObjectRef Name="Metal" ID="{C88295FD-54D3-40EA-A433-8BFED5621460}" WorkUnitID="{81279BA2-8A0E-47D6-A112-99F5CC6B8F72}"/>
+								</Reference>
+								<Reference Name="Effect0" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
+									<ObjectRef Name="Attack_Remover" ID="{174E7B9A-A16F-4CA7-86D0-530212B5A6AA}"/>
 								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D644C3B1-4CAA-4FEE-AF64-4347A85E2B06}"/>
@@ -1454,6 +1471,82 @@
 								</BlendTrack>
 							</BlendTrackList>
 						</BlendContainer>
+						<SwitchContainer Name="Suspension" ID="{1D4A739A-206D-46D9-AA7A-1768A85142B2}" ShortID="707269418">
+							<PropertyList>
+								<Property Name="MakeUpGain" Type="Real64">
+									<ValueList>
+										<Value>6</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{3E5D7FC4-2172-4C38-86DF-437BEF8AF027}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="126"/>
+													<Property Name="Min" Type="Real64" Value="-76"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="SwitchBehavior" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{76303271-6B26-4C24-9127-2CA0A617594D}"/>
+								</Reference>
+								<Reference Name="DefaultSwitchOrState">
+									<ObjectRef Name="Off" ID="{F8C8BC5D-851E-45B1-9B2B-242E76AD385E}" WorkUnitID="{81279BA2-8A0E-47D6-A112-99F5CC6B8F72}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D644C3B1-4CAA-4FEE-AF64-4347A85E2B06}"/>
+								</Reference>
+								<Reference Name="SwitchGroupOrStateGroup">
+									<ObjectRef Name="SuspensionEvent" ID="{7169F411-1CE7-4802-99BB-C226E9FC0836}" WorkUnitID="{81279BA2-8A0E-47D6-A112-99F5CC6B8F72}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Suspension Event 1" ID="{4088ACBF-F8EB-4681-975B-112F037363BB}" ShortID="195581421">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{76303271-6B26-4C24-9127-2CA0A617594D}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D644C3B1-4CAA-4FEE-AF64-4347A85E2B06}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Suspension Event 1" ID="{459BDE96-DA24-4C12-AB50-1D8AB721D173}">
+											<Language>SFX</Language>
+											<AudioFile>Player\Locomotion\Vehicles\Grizzler\Suspension Event 1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="382667379"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Suspension Event 1" ID="{459BDE96-DA24-4C12-AB50-1D8AB721D173}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<GroupingInfo>
+								<GroupingBehaviorList>
+									<GroupingBehavior>
+										<ItemRef Name="Suspension Event 1" ID="{4088ACBF-F8EB-4681-975B-112F037363BB}"/>
+									</GroupingBehavior>
+								</GroupingBehaviorList>
+								<GroupingList>
+									<Grouping>
+										<SwitchRef Name="On" ID="{94CDD5E7-5E0F-4B96-95A8-C0E3D45E1F59}"/>
+										<ItemList>
+											<ItemRef Name="Suspension Event 1" ID="{4088ACBF-F8EB-4681-975B-112F037363BB}"/>
+										</ItemList>
+									</Grouping>
+								</GroupingList>
+							</GroupingInfo>
+						</SwitchContainer>
 					</ChildrenList>
 					<BlendTrackList>
 						<BlendTrack Name="IdleToMove" ID="{718C3A90-3BB4-40FB-BFA6-3B9F8CFDA11F}" ShortID="1062107691">
@@ -1483,90 +1576,6 @@
 										<LeftFadingMode>Automatic</LeftFadingMode>
 										<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
 										<RightEdgePos>25</RightEdgePos>
-										<RightFadingMode>Automatic</RightFadingMode>
-									</CrossfadingInfo>
-								</BlendTrackAssoc>
-							</BlendTrackAssocList>
-						</BlendTrack>
-						<BlendTrack Name="BodyMovement" ID="{6026BCF8-F61D-4F3E-8646-0A92292A39CE}" ShortID="582129608">
-							<PropertyList>
-								<Property Name="EnableCrossFading" Type="bool" Value="True"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="LayerCrossFadeControlInput">
-									<ObjectRef Name="PlayerSpeed" ID="{FD740967-E193-465C-9D02-E5B4F2E93EC3}" WorkUnitID="{F11C780D-9938-44B0-B03A-FCD1A9E09ADC}"/>
-								</Reference>
-							</ReferenceList>
-							<BlendTrackAssocList>
-								<BlendTrackAssoc>
-									<ItemRef Name="Body Creeks Movement" ID="{68F81774-DE21-4722-B79A-B2A4760D3626}"/>
-									<CrossfadingInfo>
-										<LeftEdgePos>0</LeftEdgePos>
-										<LeftFadingMode>Automatic</LeftFadingMode>
-										<RightEdgePos>25</RightEdgePos>
-										<RightFadingMode>Automatic</RightFadingMode>
-									</CrossfadingInfo>
-								</BlendTrackAssoc>
-							</BlendTrackAssocList>
-						</BlendTrack>
-						<BlendTrack Name="Acceleration" ID="{D3A8C941-A6B4-4B64-A537-9625229D7A69}" ShortID="801079089">
-							<PropertyList>
-								<Property Name="EnableCrossFading" Type="bool" Value="True"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="LayerCrossFadeControlInput">
-									<ObjectRef Name="Player_Acceleration" ID="{C2AB695A-041F-43C3-B7C9-CC4F75E2D4B0}" WorkUnitID="{F11C780D-9938-44B0-B03A-FCD1A9E09ADC}"/>
-								</Reference>
-							</ReferenceList>
-							<BlendTrackAssocList>
-								<BlendTrackAssoc>
-									<ItemRef Name="Acceleration Swich" ID="{D0463D2D-3127-4A05-9A30-ECCD59C05B3F}"/>
-									<CrossfadingInfo>
-										<LeftEdgePos>0</LeftEdgePos>
-										<LeftFadingMode>Automatic</LeftFadingMode>
-										<RightEdgePos>2</RightEdgePos>
-										<RightFadingMode>Automatic</RightFadingMode>
-									</CrossfadingInfo>
-								</BlendTrackAssoc>
-							</BlendTrackAssocList>
-						</BlendTrack>
-						<BlendTrack Name="Turning" ID="{DB69E784-6676-4B9A-A3F3-5983B8D2018B}" ShortID="1068907747">
-							<PropertyList>
-								<Property Name="EnableCrossFading" Type="bool" Value="True"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="LayerCrossFadeControlInput">
-									<ObjectRef Name="Turning" ID="{D989CA62-82EC-4A5B-9319-44C97951019F}" WorkUnitID="{F11C780D-9938-44B0-B03A-FCD1A9E09ADC}"/>
-								</Reference>
-							</ReferenceList>
-							<BlendTrackAssocList>
-								<BlendTrackAssoc>
-									<ItemRef Name="Turning_Switch" ID="{A52CED7D-36FC-42A7-8E1B-302C0D82984F}"/>
-									<CrossfadingInfo>
-										<LeftEdgePos>0</LeftEdgePos>
-										<LeftFadingMode>Automatic</LeftFadingMode>
-										<RightEdgePos>1</RightEdgePos>
-										<RightFadingMode>Automatic</RightFadingMode>
-									</CrossfadingInfo>
-								</BlendTrackAssoc>
-							</BlendTrackAssocList>
-						</BlendTrack>
-						<BlendTrack Name="Wheel Surface" ID="{4ACEBD1C-7721-483D-A19A-E900D3E85187}" ShortID="622588365">
-							<PropertyList>
-								<Property Name="EnableCrossFading" Type="bool" Value="True"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="LayerCrossFadeControlInput">
-									<ObjectRef Name="WheelSurface" ID="{A3AEDCC8-BDCF-4406-97C6-CD2F2A371E0B}" WorkUnitID="{F11C780D-9938-44B0-B03A-FCD1A9E09ADC}"/>
-								</Reference>
-							</ReferenceList>
-							<BlendTrackAssocList>
-								<BlendTrackAssoc>
-									<ItemRef Name="Wheel_Surface_Material_Switch" ID="{08B07012-0E95-45D5-A2AC-020F871B308E}"/>
-									<CrossfadingInfo>
-										<LeftEdgePos>0</LeftEdgePos>
-										<LeftFadingMode>Automatic</LeftFadingMode>
-										<RightEdgePos>1</RightEdgePos>
 										<RightFadingMode>Automatic</RightFadingMode>
 									</CrossfadingInfo>
 								</BlendTrackAssoc>
@@ -1602,6 +1611,16 @@
 								</ModifierInfo>
 							</ModifierList>
 						</Property>
+						<Property Name="RenderEffect0" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
+						<Property Name="RenderEffect1" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
 						<Property Name="Volume" Type="Real64">
 							<ModifierList>
 								<ModifierInfo>
@@ -1620,8 +1639,14 @@
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{76303271-6B26-4C24-9127-2CA0A617594D}"/>
 						</Reference>
+						<Reference Name="Effect0" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
+							<ObjectRef Name="High_Impact" ID="{2AFD6FB0-C906-4683-A377-FEEEF72967B0}"/>
+						</Reference>
+						<Reference Name="Effect1" PluginName="Wwise Peak Limiter" CompanyID="0" PluginID="110" PluginType="3">
+							<ObjectRef Name="Extreme_Limiting_1" ID="{8F08A8A7-3313-4E5D-9EBD-2B1B564DE411}"/>
+						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{D644C3B1-4CAA-4FEE-AF64-4347A85E2B06}"/>
+							<ObjectRef Name="Vehicle_Weapon" ID="{CD772E7D-1DC4-4DC8-9764-82A93FB0490D}" WorkUnitID="{D644C3B1-4CAA-4FEE-AF64-4347A85E2B06}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -1636,6 +1661,11 @@
 							</ReferenceList>
 							<ChildrenList>
 								<AudioFileSource Name="Tank FIre 2" ID="{D8C86E3A-F03E-4D29-864C-5B0AFCC6DA8B}">
+									<PropertyList>
+										<Property Name="FadeOutDuration" Type="Real64" Value="3.74749642346209"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimEnd" Type="Real64" Value="3.74749642346209"/>
+									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>Player\Weapons\Vehicles\Grizzler\Tank FIre 2.wav</AudioFile>
 									<MediaIDList>
@@ -1657,7 +1687,12 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="Tank FIre " ID="{E3ACA5FE-B2A6-444F-BF88-438CDB3FF8D8}">
+								<AudioFileSource Name="Tank FIre" ID="{E3ACA5FE-B2A6-444F-BF88-438CDB3FF8D8}">
+									<PropertyList>
+										<Property Name="FadeOutDuration" Type="Real64" Value="3.231"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimEnd" Type="Real64" Value="3.74749642346209"/>
+									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>Player\Weapons\Vehicles\Grizzler\Tank FIre .wav</AudioFile>
 									<MediaIDList>
@@ -1666,7 +1701,7 @@
 								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
-								<ActiveSource Name="Tank FIre " ID="{E3ACA5FE-B2A6-444F-BF88-438CDB3FF8D8}" Platform="Linked"/>
+								<ActiveSource Name="Tank FIre" ID="{E3ACA5FE-B2A6-444F-BF88-438CDB3FF8D8}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>

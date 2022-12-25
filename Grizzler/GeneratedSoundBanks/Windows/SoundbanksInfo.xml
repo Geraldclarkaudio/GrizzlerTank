@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1291779240" Type="User" Language="SFX" Hash="{546209F6-2CB6-56E5-E1B6-35D71E9CBB0A}">
+		<SoundBank Id="1291779240" Type="User" Language="SFX" Hash="{B46C516B-DFFA-8F05-1709-30D2BAA7EE23}">
 			<ShortName>Grizzler</ShortName>
 			<Path>Grizzler.bnk</Path>
 			<Media>
@@ -25,6 +25,10 @@
 					<ShortName>Player\Locomotion\Vehicles\Grizzler\Idea 4\Idle Loop.wav</ShortName>
 					<CachePath>SFX/Player/Locomotion/Vehicles/Grizzler/Idea 4/Idle Loop_45256623.wem</CachePath>
 				</File>
+				<File Id="382667379" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Player\Locomotion\Vehicles\Grizzler\Suspension Event 1.wav</ShortName>
+					<CachePath>SFX/Player/Locomotion/Vehicles/Grizzler/Suspension Event 1_10C4C929.wem</CachePath>
+				</File>
 				<File Id="385143876" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Player\Locomotion\Vehicles\Grizzler\Wheels_On_Metal_.wav</ShortName>
 					<CachePath>SFX/Player/Locomotion/Vehicles/Grizzler/Wheels_On_Metal__D79FB2B7.wem</CachePath>
@@ -32,6 +36,10 @@
 				<File Id="415938671" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Player\Locomotion\Vehicles\Grizzler\SciFiVersion\Turret Turn.wav</ShortName>
 					<CachePath>SFX/Player/Locomotion/Vehicles/Grizzler/SciFiVersion/Turret Turn_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="471617682" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Player\Weapons\Vehicles\Grizzler\Tank FIre .wav</ShortName>
+					<CachePath>SFX/Player/Weapons/Vehicles/Grizzler/Tank FIre _10C4C929.wem</CachePath>
 				</File>
 				<File Id="554176368" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Player\Locomotion\Vehicles\Grizzler\Wheels_On_Concree.wav</ShortName>
@@ -41,9 +49,9 @@
 					<ShortName>Player\Locomotion\Vehicles\Grizzler\Idle2.wav</ShortName>
 					<CachePath>SFX/Player/Locomotion/Vehicles/Grizzler/Idle2_B2586505.wem</CachePath>
 				</File>
-				<File Id="715390949" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Player\Weapons\Vehicles\Grizzler\Cannon 1.wav</ShortName>
-					<CachePath>SFX/Player/Weapons/Vehicles/Grizzler/Cannon 1_10C4C929.wem</CachePath>
+				<File Id="688997753" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Player\Weapons\Vehicles\Grizzler\Tank FIre 2.wav</ShortName>
+					<CachePath>SFX/Player/Weapons/Vehicles/Grizzler/Tank FIre 2_10C4C929.wem</CachePath>
 				</File>
 				<File Id="742121366" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Player\Locomotion\Vehicles\Grizzler\Turrent_StartTurning.wav</ShortName>
@@ -67,9 +75,10 @@
 				</File>
 			</Media>
 			<Events>
-				<Event Id="2848769859" Name="Grizzler_Fire" DurationType="OneShot" DurationMin="2.6753676" DurationMax="3.6907241">
+				<Event Id="2848769859" Name="Grizzler_Fire" DurationType="OneShot" DurationMin="6.13164" DurationMax="6.7877793">
 					<MediaRefs>
-						<MediaRef Id="715390949"/>
+						<MediaRef Id="471617682"/>
+						<MediaRef Id="688997753"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="4170865704" Name="Grizzler_Movement" DurationType="Infinite">
@@ -110,9 +119,14 @@
 								<MediaRef Id="554176368"/>
 							</MediaRefs>
 						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="2887795126" Id="1651971902"/>
+							<MediaRefs>
+								<MediaRef Id="382667379"/>
+							</MediaRefs>
+						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
-				<Event Id="684729214" Name="Grizzler_Movement_01" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="2234575187" Name="Grizzler_SciFi_Movement" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="362130209"/>
@@ -151,6 +165,12 @@
 								<MediaRef Id="554176368"/>
 							</MediaRefs>
 						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="2887795126" Id="1651971902"/>
+							<MediaRefs>
+								<MediaRef Id="382667379"/>
+							</MediaRefs>
+						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
 				<Event Id="2616164525" Name="Grizzler_Turret" DurationType="Infinite">
@@ -181,6 +201,7 @@
 				<GameParameter Id="1446210263" Name="WheelSurface"/>
 				<GameParameter Id="1493153371" Name="PlayerSpeed"/>
 				<GameParameter Id="2674766611" Name="Turret"/>
+				<GameParameter Id="2887795126" Name="SuspensionEvent"/>
 				<GameParameter Id="3698658901" Name="Player_Acceleration"/>
 			</GameParameters>
 			<SwitchGroups>
@@ -215,9 +236,16 @@
 						<Switch Id="1874288895" Name="Idle"/>
 					</Switches>
 				</SwitchGroup>
+				<SwitchGroup Id="2887795126" Name="SuspensionEvent">
+					<GameParameterRef Id="2887795126"/>
+					<Switches>
+						<Switch Id="930712164" Name="Off"/>
+						<Switch Id="1651971902" Name="On"/>
+					</Switches>
+				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{94B80639-40E1-4D4C-8ABC-3DE57568E1C5}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{3E6012A7-7F99-A7B8-A391-CCFFAEBD3AC1}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -249,6 +277,7 @@
 				<GameParameter Id="2648548617" Name="SS_Air_Month"/>
 				<GameParameter Id="2674766611" Name="Turret"/>
 				<GameParameter Id="2715217995" Name="Density_FA_SSGrain"/>
+				<GameParameter Id="2887795126" Name="SuspensionEvent"/>
 				<GameParameter Id="3002758120" Name="SS_Air_Freefall"/>
 				<GameParameter Id="3074696722" Name="SS_Air_Size"/>
 				<GameParameter Id="3203397129" Name="SS_Air_TimeOfDay"/>
@@ -299,6 +328,13 @@
 						<Switch Id="1370828620" Name="StopTurning"/>
 						<Switch Id="1712436050" Name="StartTurning"/>
 						<Switch Id="1874288895" Name="Idle"/>
+					</Switches>
+				</SwitchGroup>
+				<SwitchGroup Id="2887795126" Name="SuspensionEvent">
+					<GameParameterRef Id="2887795126"/>
+					<Switches>
+						<Switch Id="930712164" Name="Off"/>
+						<Switch Id="1651971902" Name="On"/>
 					</Switches>
 				</SwitchGroup>
 			</SwitchGroups>
@@ -418,5 +454,5 @@
 			</AcousticTextures>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{93E6A4E4-4C28-E7DF-51B8-E5948BAEF71F}</FileHash>
+	<FileHash>{61EB1D2D-DD58-6E6F-6AEA-81DCCB7DDAF0}</FileHash>
 </SoundBanksInfo>

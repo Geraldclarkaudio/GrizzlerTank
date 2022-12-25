@@ -303,7 +303,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy/Default Work Unit
     guid: b1c344d6aa4cee4faf644347a85e2b06
     GuidInternal: 
-    m_lastTime: -8585308678360245796
+    m_lastTime: -8585296633193734703
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -319,6 +319,40 @@ MonoBehaviour:
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
       Path: Master-Mixer Hierarchy/Default Work Unit/Master Audio Bus
+    - name: Vehcile_Movement
+      guid: eb6f1207e8df144087bff464c7befcc5
+      id: 2716796269
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: b1c344d6aa4cee4faf644347a85e2b06
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Vehcile_Movement
+        ObjectType: 2
+        guid: eb6f1207e8df144087bff464c7befcc5
+      Path: Master-Mixer Hierarchy/Default Work Unit/Master Audio Bus/Vehcile_Movement
+    - name: Vehicle_Weapon
+      guid: 7d2e77cdc41dc84d976482a93fb0490d
+      id: 1554669706
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: b1c344d6aa4cee4faf644347a85e2b06
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Vehicle_Weapon
+        ObjectType: 2
+        guid: 7d2e77cdc41dc84d976482a93fb0490d
+      Path: Master-Mixer Hierarchy/Default Work Unit/Master Audio Bus/Vehicle_Weapon
   BankWwu:
   - PhysicalPath: SoundBanks/Default Work Unit.wwu
     PathAndIcons:
@@ -385,7 +419,7 @@ MonoBehaviour:
     ParentPath: Events/PlayerEvents
     guid: 7fc2a4855b006942a282ae929ab4bb7b
     GuidInternal: 
-    m_lastTime: -8585299187209273746
+    m_lastTime: -8585296669847760098
     List:
     - name: Grizzler_Fire
       guid: 6d8b9a6ef3659146837c5ce8633e556e
@@ -418,23 +452,6 @@ MonoBehaviour:
         ObjectType: 3
         guid: a67610cd45be5f4599ba5d3075b654d6
       Path: Events/PlayerEvents/Grizzler_Movement
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: Grizzler_SciFi_Movement
-      guid: c811d02b6710d14882d9eb5bc7d31d17
-      id: 2234575187
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: PlayerEvents
-        ObjectType: 12
-        guid: 7fc2a4855b006942a282ae929ab4bb7b
-      - ElementName: Grizzler_SciFi_Movement
-        ObjectType: 3
-        guid: c811d02b6710d14882d9eb5bc7d31d17
-      Path: Events/PlayerEvents/Grizzler_SciFi_Movement
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -948,7 +965,7 @@ MonoBehaviour:
     ParentPath: Game Parameters/Player
     guid: 0d781cf13899b044b03afcd1a9e09adc
     GuidInternal: 
-    m_lastTime: -8585301787023707948
+    m_lastTime: -8585297754900765656
     List:
     - name: Player_Acceleration
       guid: 5a69abc21f04c343b7c9cc4f75e2d4b0
@@ -992,6 +1009,20 @@ MonoBehaviour:
         ObjectType: 13
         guid: 670974fd93e15c469d02e5b4f2e93ec3
       Path: Game Parameters/Player/PlayerSpeed
+    - name: SuspensionEvent
+      guid: 6afb8e99aa0cd541914797c49bb2e014
+      id: 2887795126
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Player
+        ObjectType: 12
+        guid: 0d781cf13899b044b03afcd1a9e09adc
+      - ElementName: SuspensionEvent
+        ObjectType: 13
+        guid: 6afb8e99aa0cd541914797c49bb2e014
+      Path: Game Parameters/Player/SuspensionEvent
     - name: Turning
       guid: 62ca89d9ec825b4a931944c97951019f
       id: 503499828
@@ -1152,7 +1183,7 @@ MonoBehaviour:
     ParentPath: Switches/PlayerDriven
     guid: a29b27810e8ad647a11299f5cc6b8f72
     GuidInternal: 
-    m_lastTime: -8585301787019138921
+    m_lastTime: -8585297754900898732
     List:
     - name: Acceleration
       guid: 1b5d38e0d26cd743951d3de91e0ea987
@@ -1267,6 +1298,56 @@ MonoBehaviour:
         - ElementName: Metal
           ObjectType: 10
           guid: fd9582c8d354ea40a4338bfed5621460
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: SuspensionEvent
+      guid: 11f46971e71c024899bbc226e9fc0836
+      id: 2887795126
+      PathAndIcons:
+      - ElementName: Switches
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: PlayerDriven
+        ObjectType: 12
+        guid: a29b27810e8ad647a11299f5cc6b8f72
+      - ElementName: SuspensionEvent
+        ObjectType: 11
+        guid: 11f46971e71c024899bbc226e9fc0836
+      Path: Switches/PlayerDriven/SuspensionEvent
+      values:
+      - name: Off
+        guid: 5dbcc8f81e85b1459b2b242e76ad385e
+        id: 930712164
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: PlayerDriven
+          ObjectType: 12
+          guid: a29b27810e8ad647a11299f5cc6b8f72
+        - ElementName: SuspensionEvent
+          ObjectType: 11
+          guid: 11f46971e71c024899bbc226e9fc0836
+        - ElementName: Off
+          ObjectType: 10
+          guid: 5dbcc8f81e85b1459b2b242e76ad385e
+      - name: On
+        guid: e7d5cd940f5e964b95a8c0e3d45e1f59
+        id: 1651971902
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: PlayerDriven
+          ObjectType: 12
+          guid: a29b27810e8ad647a11299f5cc6b8f72
+        - ElementName: SuspensionEvent
+          ObjectType: 11
+          guid: 11f46971e71c024899bbc226e9fc0836
+        - ElementName: On
+          ObjectType: 10
+          guid: e7d5cd940f5e964b95a8c0e3d45e1f59
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
@@ -1417,7 +1498,7 @@ MonoBehaviour:
     m_lastTime: -8585308678359834396
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 010000000500000007000000
+  ExpandedWaapiItemIds: 01000000050000000700000020000000210000002700000028000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

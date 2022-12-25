@@ -19,7 +19,7 @@
 						<Action Name="" ID="{FBE5BCCF-341E-4651-8BBE-262239AE4B67}" ShortID="376009484">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Turret_Switch" ID="{57B75115-6BC4-4C80-814E-5FF233D385CD}" WorkUnitID="{973B0F3E-63A1-43F6-BC7D-7BA9D8CAA641}"/>
+									<ObjectRef Name="Turret_Turn_Switch" ID="{57B75115-6BC4-4C80-814E-5FF233D385CD}" WorkUnitID="{973B0F3E-63A1-43F6-BC7D-7BA9D8CAA641}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -31,17 +31,6 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Turret_Fire" ID="{FE4B150B-6C59-461D-94D1-64F121485298}" WorkUnitID="{973B0F3E-63A1-43F6-BC7D-7BA9D8CAA641}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Grizzler_SciFi_Movement" ID="{2BD011C8-1067-48D1-82D9-EB5BC7D31D17}">
-					<ChildrenList>
-						<Action Name="" ID="{534DB4EE-B962-4C4A-B154-006D361B2B96}" ShortID="517209514">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Movement" ID="{8C3B69A2-F39D-4B89-8B3B-33A09FA9A624}" WorkUnitID="{973B0F3E-63A1-43F6-BC7D-7BA9D8CAA641}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

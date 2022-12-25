@@ -32,6 +32,8 @@ public class TankMovement : MonoBehaviour
     private AK.Wwise.RTPC playerTurning;
     [SerializeField]
     private AK.Wwise.RTPC wheelSurface;
+    [SerializeField]
+    private AK.Wwise.RTPC suspensionEvent;
 
 
     // Start is called before the first frame update
@@ -55,6 +57,18 @@ public class TankMovement : MonoBehaviour
             surface = 1;
             wheelSurface.SetValue(gameObject, surface);
         }
+
+        if(other.CompareTag("Suspension"))
+        {
+            suspensionEvent.SetValue(gameObject, 1);
+            StartCoroutine(SusEvent());
+        }
+    }
+
+    IEnumerator SusEvent()
+    {
+        yield return new WaitForSeconds(1.5f);
+        suspensionEvent.SetValue(gameObject, 0);
     }
 
     private void Update()

@@ -157,6 +157,35 @@
 						</Curve>
 					</SwitchOnRTPC>
 				</SwitchGroup>
+				<SwitchGroup Name="SuspensionEvent" ID="{7169F411-1CE7-4802-99BB-C226E9FC0836}">
+					<PropertyList>
+						<Property Name="UseGameParameter" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Switch Name="Off" ID="{F8C8BC5D-851E-45B1-9B2B-242E76AD385E}"/>
+						<Switch Name="On" ID="{94CDD5E7-5E0F-4B96-95A8-C0E3D45E1F59}"/>
+					</ChildrenList>
+					<SwitchOnRTPC>
+						<GameParameterRef Name="SuspensionEvent" ID="{998EFB6A-0CAA-41D5-9147-97C49BB2E014}"/>
+						<Curve Name="" ID="{56AECB3F-0208-417E-806E-87682B7ED0F9}">
+							<PropertyList>
+								<Property Name="Flags" Type="int32" Value="65537"/>
+							</PropertyList>
+							<PointList>
+								<Point>
+									<XPos>0</XPos>
+									<YPos>0</YPos>
+									<Flags>5</Flags>
+								</Point>
+								<Point>
+									<XPos>1</XPos>
+									<YPos>2</YPos>
+									<Flags>37</Flags>
+								</Point>
+							</PointList>
+						</Curve>
+					</SwitchOnRTPC>
+				</SwitchGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</Switches>

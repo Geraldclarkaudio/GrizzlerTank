@@ -4,10 +4,36 @@
 		<WorkUnit Name="Vehicle Session" ID="{3817A49C-46CE-4F8C-8E3A-BBF29DBA184B}" PersistMode="Standalone">
 			<ChildrenList>
 				<SoundcasterSession Name="Grizzler" ID="{ACD96C63-2285-4953-B5E1-168214C7BDE0}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Movement" ID="{8C3B69A2-F39D-4B89-8B3B-33A09FA9A624}" WorkUnitID="{973B0F3E-63A1-43F6-BC7D-7BA9D8CAA641}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Turret_Turn_Switch" ID="{57B75115-6BC4-4C80-814E-5FF233D385CD}" WorkUnitID="{973B0F3E-63A1-43F6-BC7D-7BA9D8CAA641}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Turret_Fire" ID="{FE4B150B-6C59-461D-94D1-64F121485298}" WorkUnitID="{973B0F3E-63A1-43F6-BC7D-7BA9D8CAA641}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+					</ModuleList>
 					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="Turret" ID="{E7921456-A026-400C-83FD-AAD84ADBBB75}"/>
+							<Value>3</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SuspensionEvent" ID="{998EFB6A-0CAA-41D5-9147-97C49BB2E014}"/>
+							<Value>1</Value>
+						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Player_Load" ID="{DC855666-1EF9-4244-A312-E6709A6D0A1C}"/>
 							<Value>1</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Player_Acceleration" ID="{C2AB695A-041F-43C3-B7C9-CC4F75E2D4B0}"/>
+							<Value>0.38</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="WheelSurface" ID="{A3AEDCC8-BDCF-4406-97C6-CD2F2A371E0B}"/>
@@ -17,9 +43,19 @@
 							<GameParameterRef Name="PlayerSpeed" ID="{FD740967-E193-465C-9D02-E5B4F2E93EC3}"/>
 							<Value>25</Value>
 						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Turning" ID="{D989CA62-82EC-4A5B-9319-44C97951019F}"/>
+							<Value>1</Value>
+						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true"/>
-					<CurrentSwitchList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="Accel" ID="{AA9E2F8A-61F8-4522-8635-5B3A3EA83C3A}"/>
+						<CurrentSwitchRef Name="Concrete" ID="{1102A276-BF6E-4751-B510-98811A05FC15}"/>
+						<CurrentSwitchRef Name="StopTurning" ID="{F293EFEA-3617-4E93-90A3-9E2237673234}"/>
+						<CurrentSwitchRef Name="On" ID="{94CDD5E7-5E0F-4B96-95A8-C0E3D45E1F59}"/>
+						<CurrentSwitchRef Name="Turning" ID="{57FD0A53-297F-410E-8496-C05E38D6385E}"/>
+					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>
 		</WorkUnit>
