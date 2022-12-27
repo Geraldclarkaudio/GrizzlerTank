@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1291779240" Type="User" Language="SFX" Hash="{B46C516B-DFFA-8F05-1709-30D2BAA7EE23}">
+		<SoundBank Id="1291779240" Type="User" Language="SFX" Hash="{29351388-4D57-02B0-BC88-0E186290AE14}">
 			<ShortName>Grizzler</ShortName>
 			<Path>Grizzler.bnk</Path>
 			<Media>
@@ -39,7 +39,7 @@
 				</File>
 				<File Id="471617682" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Player\Weapons\Vehicles\Grizzler\Tank FIre .wav</ShortName>
-					<CachePath>SFX/Player/Weapons/Vehicles/Grizzler/Tank FIre _10C4C929.wem</CachePath>
+					<CachePath>SFX/Player/Weapons/Vehicles/Grizzler/Tank FIre _BAFF43FF.wem</CachePath>
 				</File>
 				<File Id="554176368" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Player\Locomotion\Vehicles\Grizzler\Wheels_On_Concree.wav</ShortName>
@@ -51,7 +51,7 @@
 				</File>
 				<File Id="688997753" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Player\Weapons\Vehicles\Grizzler\Tank FIre 2.wav</ShortName>
-					<CachePath>SFX/Player/Weapons/Vehicles/Grizzler/Tank FIre 2_10C4C929.wem</CachePath>
+					<CachePath>SFX/Player/Weapons/Vehicles/Grizzler/Tank FIre 2_AE8A7C47.wem</CachePath>
 				</File>
 				<File Id="742121366" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Player\Locomotion\Vehicles\Grizzler\Turrent_StartTurning.wav</ShortName>
@@ -74,8 +74,14 @@
 					<CachePath>SFX/Player/Locomotion/Vehicles/Grizzler/Begine Moving_10C4C929.wem</CachePath>
 				</File>
 			</Media>
+			<Plugins>
+				<ShareSets>
+					<Plugin Id="86245554" Name="Attack_Remover" LibName="Wwise Compressor" LibId="7077891"/>
+					<Plugin Id="2171939413" Name="Dialog_Leveler_Hard" LibName="Wwise Compressor" LibId="7077891"/>
+				</ShareSets>
+			</Plugins>
 			<Events>
-				<Event Id="2848769859" Name="Grizzler_Fire" DurationType="OneShot" DurationMin="6.13164" DurationMax="6.7877793">
+				<Event Id="2848769859" Name="Grizzler_Fire" DurationType="OneShot" DurationMin="3.5351229" DurationMax="3.913412">
 					<MediaRefs>
 						<MediaRef Id="471617682"/>
 						<MediaRef Id="688997753"/>
@@ -88,88 +94,77 @@
 						<MediaRef Id="919551733"/>
 						<MediaRef Id="953350999"/>
 					</MediaRefs>
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="2171939413"/>
+						</ShareSets>
+					</PluginRefs>
 					<SwitchContainers>
 						<SwitchContainer>
 							<SwitchValue GroupType="Switch" GroupId="212170665" Id="3089792801"/>
 							<MediaRefs>
 								<MediaRef Id="20269213"/>
 							</MediaRefs>
+							<PluginRefs>
+								<ShareSets>
+									<PluginRef Id="2171939413"/>
+								</ShareSets>
+							</PluginRefs>
 						</SwitchContainer>
 						<SwitchContainer>
 							<SwitchValue GroupType="Switch" GroupId="212170665" Id="1778882555"/>
 							<MediaRefs>
 								<MediaRef Id="1043149136"/>
 							</MediaRefs>
+							<PluginRefs>
+								<ShareSets>
+									<PluginRef Id="2171939413"/>
+								</ShareSets>
+							</PluginRefs>
 						</SwitchContainer>
 						<SwitchContainer>
 							<SwitchValue GroupType="Switch" GroupId="503499828" Id="503499828"/>
 							<MediaRefs>
 								<MediaRef Id="328188123"/>
 							</MediaRefs>
+							<PluginRefs>
+								<ShareSets>
+									<PluginRef Id="2171939413"/>
+								</ShareSets>
+							</PluginRefs>
 						</SwitchContainer>
 						<SwitchContainer>
 							<SwitchValue GroupType="Switch" GroupId="63790334" Id="841620460"/>
 							<MediaRefs>
 								<MediaRef Id="385143876"/>
 							</MediaRefs>
+							<PluginRefs>
+								<ShareSets>
+									<PluginRef Id="86245554"/>
+								</ShareSets>
+							</PluginRefs>
 						</SwitchContainer>
 						<SwitchContainer>
 							<SwitchValue GroupType="Switch" GroupId="63790334" Id="2473969246" Default="true"/>
 							<MediaRefs>
 								<MediaRef Id="554176368"/>
 							</MediaRefs>
+							<PluginRefs>
+								<ShareSets>
+									<PluginRef Id="86245554"/>
+								</ShareSets>
+							</PluginRefs>
 						</SwitchContainer>
 						<SwitchContainer>
 							<SwitchValue GroupType="Switch" GroupId="2887795126" Id="1651971902"/>
 							<MediaRefs>
 								<MediaRef Id="382667379"/>
 							</MediaRefs>
-						</SwitchContainer>
-					</SwitchContainers>
-				</Event>
-				<Event Id="2234575187" Name="Grizzler_SciFi_Movement" DurationType="Infinite">
-					<MediaRefs>
-						<MediaRef Id="362130209"/>
-						<MediaRef Id="667947165"/>
-						<MediaRef Id="919551733"/>
-						<MediaRef Id="953350999"/>
-					</MediaRefs>
-					<SwitchContainers>
-						<SwitchContainer>
-							<SwitchValue GroupType="Switch" GroupId="212170665" Id="3089792801"/>
-							<MediaRefs>
-								<MediaRef Id="20269213"/>
-							</MediaRefs>
-						</SwitchContainer>
-						<SwitchContainer>
-							<SwitchValue GroupType="Switch" GroupId="212170665" Id="1778882555"/>
-							<MediaRefs>
-								<MediaRef Id="1043149136"/>
-							</MediaRefs>
-						</SwitchContainer>
-						<SwitchContainer>
-							<SwitchValue GroupType="Switch" GroupId="503499828" Id="503499828"/>
-							<MediaRefs>
-								<MediaRef Id="328188123"/>
-							</MediaRefs>
-						</SwitchContainer>
-						<SwitchContainer>
-							<SwitchValue GroupType="Switch" GroupId="63790334" Id="841620460"/>
-							<MediaRefs>
-								<MediaRef Id="385143876"/>
-							</MediaRefs>
-						</SwitchContainer>
-						<SwitchContainer>
-							<SwitchValue GroupType="Switch" GroupId="63790334" Id="2473969246" Default="true"/>
-							<MediaRefs>
-								<MediaRef Id="554176368"/>
-							</MediaRefs>
-						</SwitchContainer>
-						<SwitchContainer>
-							<SwitchValue GroupType="Switch" GroupId="2887795126" Id="1651971902"/>
-							<MediaRefs>
-								<MediaRef Id="382667379"/>
-							</MediaRefs>
+							<PluginRefs>
+								<ShareSets>
+									<PluginRef Id="2171939413"/>
+								</ShareSets>
+							</PluginRefs>
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
@@ -245,7 +240,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{3E6012A7-7F99-A7B8-A391-CCFFAEBD3AC1}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{05DD46E4-9CB8-2EAE-C2D1-E13C4181A500}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -255,6 +250,8 @@
 				</AudioDevices>
 			</Plugins>
 			<Busses>
+				<Bus Id="1554669706" Name="Vehicle_Weapon"/>
+				<Bus Id="2716796269" Name="Vehcile_Movement"/>
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
 			<GameParameters>
@@ -454,5 +451,5 @@
 			</AcousticTextures>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{61EB1D2D-DD58-6E6F-6AEA-81DCCB7DDAF0}</FileHash>
+	<FileHash>{05614C84-0884-292B-1E44-1A347DCA4955}</FileHash>
 </SoundBanksInfo>

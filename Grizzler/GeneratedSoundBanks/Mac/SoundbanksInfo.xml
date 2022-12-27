@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1291779240" Type="User" Language="SFX" Hash="{8FD4EF96-0515-8532-749D-8231359F517D}">
+		<SoundBank Id="1291779240" Type="User" Language="SFX" Hash="{EACD7141-F2BB-F6D4-F03B-6F288BE80C8F}">
 			<ShortName>Grizzler</ShortName>
 			<Path>Grizzler.bnk</Path>
 			<Media>
@@ -39,7 +39,7 @@
 				</File>
 				<File Id="471617682" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Player\Weapons\Vehicles\Grizzler\Tank FIre .wav</ShortName>
-					<CachePath>SFX/Player/Weapons/Vehicles/Grizzler/Tank FIre _22D1D829.wem</CachePath>
+					<CachePath>SFX/Player/Weapons/Vehicles/Grizzler/Tank FIre _58C81D52.wem</CachePath>
 				</File>
 				<File Id="554176368" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Player\Locomotion\Vehicles\Grizzler\Wheels_On_Concree.wav</ShortName>
@@ -51,7 +51,7 @@
 				</File>
 				<File Id="688997753" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Player\Weapons\Vehicles\Grizzler\Tank FIre 2.wav</ShortName>
-					<CachePath>SFX/Player/Weapons/Vehicles/Grizzler/Tank FIre 2_01AC9880.wem</CachePath>
+					<CachePath>SFX/Player/Weapons/Vehicles/Grizzler/Tank FIre 2_095C440A.wem</CachePath>
 				</File>
 				<File Id="742121366" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Player\Locomotion\Vehicles\Grizzler\Turrent_StartTurning.wav</ShortName>
@@ -451,5 +451,5 @@
 			</AcousticTextures>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{40C2CDE8-6335-F72C-C8F7-7342B7C31504}</FileHash>
+	<FileHash>{EE9D5939-FDB9-9C18-50A2-DD4E378B788F}</FileHash>
 </SoundBanksInfo>

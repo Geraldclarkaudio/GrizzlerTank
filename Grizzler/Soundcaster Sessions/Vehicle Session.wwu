@@ -33,7 +33,7 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Player_Acceleration" ID="{C2AB695A-041F-43C3-B7C9-CC4F75E2D4B0}"/>
-							<Value>0.38</Value>
+							<Value>0.76</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="WheelSurface" ID="{A3AEDCC8-BDCF-4406-97C6-CD2F2A371E0B}"/>
@@ -45,7 +45,7 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Turning" ID="{D989CA62-82EC-4A5B-9319-44C97951019F}"/>
-							<Value>1</Value>
+							<Value>0</Value>
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true"/>
@@ -54,7 +54,7 @@
 						<CurrentSwitchRef Name="Concrete" ID="{1102A276-BF6E-4751-B510-98811A05FC15}"/>
 						<CurrentSwitchRef Name="StopTurning" ID="{F293EFEA-3617-4E93-90A3-9E2237673234}"/>
 						<CurrentSwitchRef Name="On" ID="{94CDD5E7-5E0F-4B96-95A8-C0E3D45E1F59}"/>
-						<CurrentSwitchRef Name="Turning" ID="{57FD0A53-297F-410E-8496-C05E38D6385E}"/>
+						<CurrentSwitchRef Name="NotTurning" ID="{434B14AE-493E-44BE-9BA5-738BC7FD3ACB}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>

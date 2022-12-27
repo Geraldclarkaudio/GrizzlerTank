@@ -518,11 +518,6 @@
 				<SwitchContainer Name="Turret_Turn_Switch" ID="{57B75115-6BC4-4C80-814E-5FF233D385CD}" ShortID="143367772">
 					<PropertyList>
 						<Property Name="SwitchBehavior" Type="int16" Value="1"/>
-						<Property Name="Volume" Type="Real64">
-							<ValueList>
-								<Value>-8</Value>
-							</ValueList>
-						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -708,6 +703,11 @@
 						<Sound Name="MoveLoop" ID="{F23DCF72-8910-43FE-945C-856E943E3AF7}" ShortID="587336241">
 							<PropertyList>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="MakeUpGain" Type="Real64">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
 										<Value>3</Value>
@@ -857,6 +857,11 @@
 						</Sound>
 						<SwitchContainer Name="Acceleration Swich" ID="{D0463D2D-3127-4A05-9A30-ECCD59C05B3F}" ShortID="991692129">
 							<PropertyList>
+								<Property Name="MakeUpGain" Type="Real64">
+									<ValueList>
+										<Value>7</Value>
+									</ValueList>
+								</Property>
 								<Property Name="SwitchBehavior" Type="int16" Value="1"/>
 							</PropertyList>
 							<ReferenceList>
@@ -875,13 +880,6 @@
 							</ReferenceList>
 							<ChildrenList>
 								<Sound Name="Begin Moving" ID="{7B9E1B9F-5F38-4EFA-BC17-7BDEF3E4D349}" ShortID="656527898">
-									<PropertyList>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-3</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{76303271-6B26-4C24-9127-2CA0A617594D}"/>
@@ -904,13 +902,6 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Stop Moving" ID="{092626E0-CE0C-48FF-A55E-E320D33A011A}" ShortID="1021771246">
-									<PropertyList>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-3</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{76303271-6B26-4C24-9127-2CA0A617594D}"/>
@@ -961,11 +952,6 @@
 						<SwitchContainer Name="Turning_Switch" ID="{A52CED7D-36FC-42A7-8E1B-302C0D82984F}" ShortID="407144745">
 							<PropertyList>
 								<Property Name="SwitchBehavior" Type="int16" Value="1"/>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-3</Value>
-									</ValueList>
-								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -1054,6 +1040,11 @@
 								<Property Name="UseMaxSoundPerInstance" Type="bool">
 									<ValueList>
 										<Value>True</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>2</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -1310,13 +1301,6 @@
 							</GroupingInfo>
 						</SwitchContainer>
 						<BlendContainer Name="MovementBlend2" ID="{8495BDA6-4004-451E-8F0A-80127A5007CA}" ShortID="338570442">
-							<PropertyList>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-8</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{76303271-6B26-4C24-9127-2CA0A617594D}"/>
@@ -1492,6 +1476,11 @@
 									</ModifierList>
 								</Property>
 								<Property Name="SwitchBehavior" Type="int16" Value="1"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>4</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -1626,7 +1615,6 @@
 								<ModifierInfo>
 									<Modifier Name="" ID="{CBD85FBB-7273-46AC-AB0C-EBD154A9CA1B}">
 										<PropertyList>
-											<Property Name="Enabled" Type="bool" Value="True"/>
 											<Property Name="Max" Type="Real64" Value="2"/>
 											<Property Name="Min" Type="Real64" Value="-2"/>
 										</PropertyList>
